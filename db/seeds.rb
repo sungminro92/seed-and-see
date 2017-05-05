@@ -12,11 +12,20 @@ beans = Plant.create(
 	img_url: 'http://i.imgur.com/O9EobIJ.png'
 	)
 
-  create_table "plants", force: :cascade do |t|
-    t.string   "name"
-    t.text     "description"
-    t.string   "color"
-    t.integer  "days_to_water"
-    t.string   "img_url"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+beets = Plant.create(
+	name: 'Beets',
+	days_to_water:'1',
+	img_url: 'http://i.imgur.com/O9EobIJ.png'
+	)
+
+broccoli = Plant.create(
+	name: 'Broccoli',
+	days_to_water:'2',
+	img_url: 'http://i.imgur.com/O9EobIJ.png'
+	)
+
+brussels_sprouts = Plant.create(
+	name: 'Brussels sprouts',
+	days_to_water:'',
+	img_url: 'http://i.imgur.com/O9EobIJ.png'
+	)
