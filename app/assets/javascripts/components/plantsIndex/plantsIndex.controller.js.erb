@@ -1,0 +1,17 @@
+angular
+  .module('seedAndSee')
+  .controller('PlantsIndexController', PlantsIndexController);
+
+PlantsIndexController.$inject = ['plantsService'];
+
+function PlantsIndexController(plantsService) {
+  var vm = this;
+
+  vm.plants = [];
+
+  plantsService
+  	.getPlants()
+  	.then(function(res) {
+	    vm.plants = res.data;
+	});
+}

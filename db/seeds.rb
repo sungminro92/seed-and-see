@@ -6,6 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Plant.destroy_all
+
 beans = Plant.create(
 	name: 'Beans',
 	days_to_water:'2',
@@ -29,3 +31,5 @@ brussels_sprouts = Plant.create(
 	days_to_water:'',
 	img_url: 'http://i.imgur.com/O9EobIJ.png'
 	)
+
+print "\n Seeding Done."

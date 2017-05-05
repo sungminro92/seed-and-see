@@ -7,10 +7,11 @@ angular
     controller: HomePageController
   });
 
-HomePageController.$inject = [];
+HomePageController.$inject = ['$http'];
 
-function HomePageController() {
+function HomePageController($http) {
   var vm = this;
+
 
   vm.message = 'Hello World!';
 }

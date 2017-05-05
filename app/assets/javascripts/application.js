@@ -33,6 +33,10 @@ angular
       .state('home', {
         url: '/',
         component: 'homePage'
+      })
+      .state('plants', {
+        url: '/plants',
+        component: 'plantsIndex'
       });
 
     // default fall back route

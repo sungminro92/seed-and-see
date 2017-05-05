@@ -5,6 +5,7 @@ class ClientController < ApplicationController
   layout false
 
   def index
+  	# @plants = Plant.all
   end
 end
 # this controller action will render the HTML file.
