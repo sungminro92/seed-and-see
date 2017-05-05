@@ -35,6 +35,12 @@ gem 'devise'
 gem 'angular_rails_csrf'
 # ----------------------
 
+# BOOTSTRAP ADDED ------
+gem 'bootswatch-rails'
+gem 'bootstrap-sass'
+gem 'bootstrap', '~> 4.0.0.alpha6'
+# ----------------------
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
