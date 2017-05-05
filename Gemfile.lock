@@ -177,7 +177,7 @@ PLATFORMS
 
 DEPENDENCIES
   angular_rails_csrf
-  bootstrap (~> 4.0.0.alpha6)
+  bootstrap
   bootstrap-sass
   bootswatch-rails
   byebug
