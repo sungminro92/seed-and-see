@@ -5,3 +5,18 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+beans = Plant.create(
+	name: 'Beans',
+	days_to_water:'2',
+	img_url: 'http://i.imgur.com/O9EobIJ.png'
+	)
+
+  create_table "plants", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "color"
+    t.integer  "days_to_water"
+    t.string   "img_url"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false

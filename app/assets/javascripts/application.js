@@ -13,11 +13,16 @@
 //= require jquery
 //= require jquery_ujs
 
+// -- ADDED ANGULAR --
 //= require angular/angular
 //= require angular-ui-router/release/angular-ui-router
+// ---------------------
 
+// -- ADDED ------------
 //= require_self
 // This makes app initialization/configuration code  is loaded before any files in assets/javascript folder.
+// ---------------------
+
 //= require_tree .
 
 
