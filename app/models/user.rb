@@ -1,4 +1,9 @@
 class User < ApplicationRecord
+	has_one :garden
+	has_many :garden_plants, through: :garden
+	has_many :posts
+	has_many :comments
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
