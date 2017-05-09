@@ -1,0 +1,15 @@
+<h1> garden New </h1>
+
+<form>
+  <label>Garden Name</label>
+  <input ng-model="$ctrl.garden.name">
+  <br/>
+
+  <label>Choose size</label>
+  <input ng-model="$ctrl.post.size" type="radio" name="garden-size" value="1"> small<br>
+  <input ng-model="$ctrl.post.size" type="radio" name="garden-size" value="2"> medium<br>
+  <input ng-model="$ctrl.post.size" type="radio" name="garden-size" value="3"> large<br>
+
+  <br/>
+  <button ng-click="$ctrl.saveGarden()"> Create a Garden</button>
+<form>

@@ -1,0 +1,43 @@
+angular
+  .module('seedAndSee')
+  .controller('GardenNewController', GardenNewController);
+
+GardenNewController.$inject = ['$state', 'gardenService'];
+
+function GardenNewController($state, gardenService) {
+  var vm = this;
+  
+	vm.garden = {
+	name:'',
+	size:''
+  	};
+
+  vm.saveGarden = saveGarden;
+
+  // redirect user if user has a garden
+  gardenService
+  	.getGarden()
+  	.then(function(res) {
+  		if (res.data == !null) {
+  			$state.go('gardenIndex')
+  		} else {
+  			alert('You must create a garden to have garden_plants')
+  		};
+  	})
+
+  // create a garden to user's
+  function saveGarden() {
+  	gardenService
+      .createGarden(vm.garden)
+      .then(function(res) {
+      	console.log(vm.garden)
+      	if(res.status == 201) {
+      		$state.go('gardenIndex')
+      	} else {
+      		alert('Something went wrong')
+      	};
+    });
+  };
+
+
+}
