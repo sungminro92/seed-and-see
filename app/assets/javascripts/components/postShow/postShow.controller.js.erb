@@ -1,0 +1,24 @@
+angular
+  .module('seedAndSee')
+  .controller('PostShowController', PostShowController);
+
+PostShowController.$inject = ['$stateParams','postsService'];
+
+function PostShowController($stateParams, postsService) {
+  var vm = this;
+
+  vm.post = {};
+  vm.comments = [];
+
+  var userId = $stateParams.userId;
+  var id = $stateParams.id;
+
+  postsService
+    .postShow(userId, id)
+    .then(function(res){
+      console.log(res)
+      vm.post = res.data.post;
+      vm.comments = res.data.comments;
+    });
+  
+}

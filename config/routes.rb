@@ -5,9 +5,14 @@ Rails.application.routes.draw do
 	}
 
   namespace :api do
+    resources :posts, :only => [:index]
     resources :plants
+
+    post '/users/garden' => 'garden_plants#create'
+
     resources :users do
-    	resources :posts do
+      resources :garden, :only => [:index]
+    	resources :posts, :except => :index do
     		resources :comments
     	end
     end

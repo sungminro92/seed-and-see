@@ -1,4 +1,4 @@
-<!-- in app/views/client/index.html.erb -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,6 +12,8 @@
   <body ng-app="seedAndSee">
     <nav>
       <% if user_signed_in? %>
+        <a ui-sref="userShow({id:<%= current_user.id %>})">View Profile</a>
+        
         <%= link_to 'Home', root_path %>
         <%= link_to 'Edit account', edit_user_registration_path, target: '_self' %>
         <%= link_to 'Sign out', destroy_user_session_path, method: 'delete', target: '_self' %>

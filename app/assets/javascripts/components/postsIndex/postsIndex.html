@@ -1,0 +1,8 @@
+<h1> Post Index </h1>
+
+<button ui-sref="postNew({ userId: $ctrl.currentUser.id })">Create a post</button>
+
+<ul ng-repeat="post in $ctrl.posts">
+	<a ui-sref="postShow({ userId: post.user_id, id: post.id })"><li> {{ post.title }} </li></a>
+	<li> {{ post.description }} </li>
+</ul>

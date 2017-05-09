@@ -1,0 +1,9 @@
+<h1> User Profile page </h1>
+
+{{ $ctrl.user.email }}
+{{ $ctrl.user.name }}
+
+<ul ng-repeat="post in $ctrl.posts">
+	<li> {{ post.title }} </li>
+	<li> {{ post.description }} </li>
+</ul>

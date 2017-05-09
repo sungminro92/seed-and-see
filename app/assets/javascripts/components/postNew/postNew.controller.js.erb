@@ -1,0 +1,36 @@
+angular
+  .module('seedAndSee')
+  .controller('PostNewController', PostNewController);
+
+PostNewController.$inject = ['$state','$stateParams','postsService'];
+
+function PostNewController($state, $stateParams, postsService) {
+  var vm = this;
+
+  vm.post = {
+    title:'',
+    description:'',
+    img_url: '',
+  };
+
+  vm.savePost = savePost;
+
+
+  function savePost() {
+    console.log(vm.post);
+
+    var userId = $stateParams.userId;
+
+    postsService
+      .createPost(vm.post, userId)
+      .then(function(res) {
+        if(res.status == 201) {
+          $state.go('userShow', { id: userId})
+        } else {
+          alert('Something went wrong. check your inputs again')
+        };
+      });
+  };
+
+  
+}

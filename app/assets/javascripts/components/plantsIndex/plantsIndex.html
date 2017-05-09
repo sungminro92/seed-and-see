@@ -1,6 +1,9 @@
 <h1>Plants Index Page</h1>
 
-<p ng-repeat="plant in $ctrl.plants">
-  name: {{ plant.name }}
-</p>
+<!-- Search: <input ng-model="$ctrl.query" />
+ -->
 
+<div ng-repeat="plant in $ctrl.plants">
+  <p>name: <a ui-sref="plantShow({id: plant.id})">{{ plant.name }}</a></p>
+  <a ng-click="$ctrl.saveToGarden()">Save to My Garden</a>
+</div>

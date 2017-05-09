@@ -1,0 +1,22 @@
+angular
+  .module('seedAndSee')
+  .controller('PostsIndexController', PostsIndexController);
+
+PostsIndexController.$inject = ['$stateParams','postsService'];
+
+function PostsIndexController($stateParams, postsService) {
+  var vm = this;
+
+  vm.posts = [];
+  // vm.userId = $stateParams.userId
+  vm.currentUser = {};
+
+	postsService
+  	.getPosts() 
+  	.then(function(res) {
+      console.log(res);
+	    vm.posts = res.data.posts;
+      vm.currentUser = res.data.currentUser;
+	});
+
+}

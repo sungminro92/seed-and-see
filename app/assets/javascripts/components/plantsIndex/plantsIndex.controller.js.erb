@@ -2,16 +2,28 @@ angular
   .module('seedAndSee')
   .controller('PlantsIndexController', PlantsIndexController);
 
-PlantsIndexController.$inject = ['plantsService'];
+PlantsIndexController.$inject = ['$state','plantsService'];
 
-function PlantsIndexController(plantsService) {
+function PlantsIndexController($state, plantsService) {
   var vm = this;
 
   vm.plants = [];
+  vm.saveToGarden = saveToGarden;
 
   plantsService
-  	.getPlants()
-  	.then(function(res) {
-	    vm.plants = res.data;
-	});
+    .getPlants()
+    .then(function(res) {
+      console.log(res);
+      vm.plants = res.data;
+    });
+
+  function saveToGarden(plant) {
+    console.log(plant);
+    plantsService
+      .saveToGarden(plant_id)
+      .then(function(res){
+        if(res.status == 201) {alert('plant has been saved in your garden!')};
+      }); 
+  }
+
 }

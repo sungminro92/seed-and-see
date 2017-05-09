@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170505173444) do
+ActiveRecord::Schema.define(version: 20170508192344) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,11 +19,15 @@ ActiveRecord::Schema.define(version: 20170505173444) do
     t.text     "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "user_id"
+    t.integer  "post_id"
   end
 
   create_table "garden_plants", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "plant_id"
+    t.integer  "garden_id"
   end
 
   create_table "gardens", force: :cascade do |t|
@@ -31,6 +35,7 @@ ActiveRecord::Schema.define(version: 20170505173444) do
     t.integer  "size"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "user_id"
   end
 
   create_table "plants", force: :cascade do |t|
@@ -41,6 +46,7 @@ ActiveRecord::Schema.define(version: 20170505173444) do
     t.string   "img_url"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.string   "icon"
   end
 
   create_table "posts", force: :cascade do |t|
@@ -49,6 +55,7 @@ ActiveRecord::Schema.define(version: 20170505173444) do
     t.string   "img_url"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.integer  "user_id"
   end
 
   create_table "users", force: :cascade do |t|

@@ -2,16 +2,20 @@ angular
   .module('seedAndSee')
   .controller('UserShowController', UserShowController);
 
-UserShowController.$inject = ['plantsService'];
+UserShowController.$inject = ['$stateParams','usersService'];
 
-function UserShowController(plantsService) {
+function UserShowController($stateParams, usersService) {
   var vm = this;
 
-  vm.plants = [];
+  vm.user = {};
+  vm.posts = [];
 
-  plantsService
-  	.getPlants()
+	usersService
+  	.getUser($stateParams.id) 
+  	// ?????
   	.then(function(res) {
-	    vm.plants = res.data;
+      console.log(res)
+	    vm.user = res.data.user;
+      vm.posts = res.data.posts;
 	});
 }

@@ -6,30 +6,60 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+User.destroy_all
 Plant.destroy_all
+Post.destroy_all
+# Comment.destroy_all
 
-beans = Plant.create(
+user1 = User.create(
+	name: 'Sungmin ro',
+	email: 'sungminro@gmail.com',
+	password: '123456',
+	password_confirmation:'123456'
+	)
+
+user2 = User.create(
+	name: 'Jesse Lee',
+	email: 'jesselee@gmail.com',
+	password: '123456',
+	password_confirmation:'123456'
+	)
+
+user3 = User.create(
+	name: 'Mario Cart',
+	email: 'mariocart@gmail.com',
+	password: '123456',
+	password_confirmation:'123456'
+	)
+
+plant1 = Plant.create(
 	name: 'Beans',
 	days_to_water:'2',
 	img_url: 'http://i.imgur.com/O9EobIJ.png'
 	)
 
-beets = Plant.create(
+plant2 = Plant.create(
 	name: 'Beets',
 	days_to_water:'1',
 	img_url: 'http://i.imgur.com/O9EobIJ.png'
 	)
 
-broccoli = Plant.create(
+plant3 = Plant.create(
 	name: 'Broccoli',
 	days_to_water:'2',
 	img_url: 'http://i.imgur.com/O9EobIJ.png'
 	)
 
-brussels_sprouts = Plant.create(
+plant4 = Plant.create(
 	name: 'Brussels sprouts',
 	days_to_water:'',
 	img_url: 'http://i.imgur.com/O9EobIJ.png'
 	)
+
+post1 = Post.create(
+	title: "POWMEOW!",
+	description: "This is my cat in the garden!",
+	img_url: "http://i.imgur.com/O9EobIJ.png",
+	user_id: user1.id)
 
 print "\n Seeding Done."

@@ -1,0 +1,16 @@
+<h1> Post New Page</h1>
+
+<h1>New Post</h1>
+
+<form>
+  <label>Title</label>
+  <input ng-model="$ctrl.post.title">
+  <br/>
+  <label>Content</label>
+  <textarea ng-model="$ctrl.post.description"></textarea>
+  <br/>
+  <label>Image URL</label>
+  <input ng-model="$ctrl.post.img_url">
+  <br/>
+  <button ng-click="$ctrl.savePost()"> Create new post!</button>
+<form>

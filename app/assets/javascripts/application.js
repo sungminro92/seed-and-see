@@ -37,10 +37,34 @@ angular
         url: '/',
         component: 'homePage'
       })
+      // WHERE PLANTS LIBRARY IS
       .state('plants', {
         url: '/plants',
         component: 'plantsIndex'
-      });
+      })
+      .state('plantShow', {
+        url: '/plants/:id',
+        component: 'plantShow'
+      })
+      // WHERE IT SHOWS ALL USERS + THIER POSTS
+      .state('postIndex', { 
+        url: '/posts',
+        component: 'postsIndex'
+      })
+      // USER PROFILE + USER'S POSTS
+      .state('userShow', {
+        url: '/users/:id',
+        component: 'userShow'
+      })
+      .state('postNew', {
+      url: '/users/:userId/posts/new',
+      component: 'postNew'
+      })
+      .state('postShow', {
+        url: '/users/:userId/posts/:id',
+        component: 'postShow'
+      })
+    
 
     // default fall back route
     $urlRouterProvider.otherwise('/');

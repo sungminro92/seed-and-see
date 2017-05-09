@@ -11,6 +11,14 @@ function plantsService($http) {
     return $http.get('/api/plants');
   }
 
-  return factory;
+  factory.plantShow = function(id) {
+  	return $http.get('/api/plants/' + id);
+  }
 
+  // NEED MORE CLEAR UNDERSTANDING! 
+  factory.saveToGarden = function(plant_id) {
+    return $http.post('/api/users/garden', {plant_id: plant_id});
+  }
+
+  return factory;
 }
