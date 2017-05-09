@@ -1,9 +1,54 @@
+<div class="container">
+    <div class="span3 well">
+        <center>
+        <img data-toggle="modal" data-target="#myModal" src="http://vignette1.wikia.nocookie.net/pokemon/images/b/b8/001Bulbasaur_Dream.png/revision/latest?cb=20140903033758" width="140" height="140" class="img-circle">
+        <h3>{{ $ctrl.user.name }}</h3>
+        <em>{{ $ctrl.user.email }}</em>
+		</center>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title" id="myModalLabel">More About Joe</h4>
+                </div>
+                <div class="modal-body">
+                    <center>
+	                    <img src="http://vignette1.wikia.nocookie.net/pokemon/images/b/b8/001Bulbasaur_Dream.png/revision/latest?cb=20140903033758" name="aboutme" width="140" height="140" border="0" class="img-circle">
+	                    <h3 class="media-heading">{{ $ctrl.user.name }}<small>{{ $ctrl.user.email }}</small></h3>
+	                    <span><strong>Skills: </strong></span>
+	                        <span class="label label-warning">HTML5/CSS</span>
+	                        <span class="label label-info">Adobe CS 5.5</span>
+	                        <span class="label label-info">Microsoft Office</span>
+	                        <span class="label label-success">Windows XP, Vista, 7</span>
+                    </center>
+                    <hr>
+                    <center>
+                    <p class="text-left"><strong>Bio: </strong><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.</p>
+                    <br>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <center>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about Joe</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <h1> User Profile page </h1>
 
-{{ $ctrl.user.email }}
-{{ $ctrl.user.name }}
-
 <ul ng-repeat="post in $ctrl.posts">
-	<li><a ui-sref="postShow({userId: post.user_id, id: post.id})"> {{ post.title }} </a></li>
-	<li> {{ post.description }} </li>
+<div class="gallery">
+  <a ui-sref="postShow({userId: post.userId, id: post.id})">
+    <img src="{{post.img_url}}" alt="Mountains" width="300" height="200">
+  </a>
+  <div class="desc">{{ post.title }}</div>
+  <div class="desc">{{ post.description }}</div>
+</div>
 </ul>
