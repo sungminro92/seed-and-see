@@ -13,13 +13,13 @@ function postsService($http, $stateParams) {
   }
 
   factory.getPost = function(userId, id) {
-  return $http
-    .get('/api/users/' + userId + '/posts/' + id);
+    return $http
+      .get('/api/users/' + userId + '/posts/' + id);
   }
 
-  factory.updatePost = function(userId, post) {
+  factory.updatePost = function(userId, id, post) {
     return $http
-      .patch('/api/users/' + userId + '/posts/' + id, post);
+      .put('/api/users/' + userId + '/posts/' + id, post);
   }
 
   factory.createPost = function(newPost, userId) {

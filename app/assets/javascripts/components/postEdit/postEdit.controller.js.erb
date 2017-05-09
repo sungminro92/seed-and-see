@@ -9,21 +9,25 @@ function PostEditController($stateParams, $state, postsService) {
   var vm = this;
 
   vm.post = {};
-
+  // vm.getPost = getPost;
   vm.savePost = savePost;
+
 
   var userId = $stateParams.userId;
   var id = $stateParams.id
+  activate();
 
+  function activate() {
   postsService.getPost(userId, id)
     .then(function(res) {
-      vm.post = res.data;
+      vm.post = res.data.post;
+      console.log(vm.post);
   });
+  }
 
   function savePost() {
-
-    postsService.updatePost(userId, vm.post).then(function() {
-      if(resp.status == 200) {
+    postsService.updatePost(userId, id, vm.post).then(function(res) {
+      if(res.status == 200) {
         $state.go('postShow', {
             userId: vm.post.user_id,
             id: vm.post.id })

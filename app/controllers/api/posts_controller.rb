@@ -8,7 +8,7 @@ class Api::PostsController < ApplicationController
   def show
   	@post = Post.find(params[:id])
     @comments = @post.comments
-      render json: { post: @post, comments: @comments }
+    render json: { post: @post, comments: @comments }
   end
 
 
@@ -22,7 +22,12 @@ class Api::PostsController < ApplicationController
     end
   end
 
+  def edit
+
+  end
+
   def update
+    # @post = Post.find(params[:id])
     @post = current_user.posts.find(params[:id])
 
     if @post.update(post_params)
