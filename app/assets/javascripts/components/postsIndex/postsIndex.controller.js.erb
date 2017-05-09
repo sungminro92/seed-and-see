@@ -2,12 +2,13 @@ angular
   .module('seedAndSee')
   .controller('PostsIndexController', PostsIndexController);
 
-PostsIndexController.$inject = ['$stateParams','postsService'];
+PostsIndexController.$inject = ['$stateParams','postsService','usersService'];
 
-function PostsIndexController($stateParams, postsService) {
+function PostsIndexController($stateParams, postsService, usersService) {
   var vm = this;
 
   vm.posts = [];
+  vm.users = [];
   // vm.userId = $stateParams.userId
   vm.currentUser = {};
 

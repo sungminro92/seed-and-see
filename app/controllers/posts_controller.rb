@@ -1,7 +1,10 @@
 class PostsController < ApplicationController
 	def index
 		@posts = Post.all
-		render json: @posts
+		respond_to do |format|
+			format.json { render :json => @posts.to_json(:include => :user) }
+		end
+		# render json: { posts: @posts, users: @users }
 	end
 
 	def show
