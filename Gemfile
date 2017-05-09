@@ -36,9 +36,6 @@ gem 'angular_rails_csrf'
 # ----------------------
 
 # BOOTSTRAP ADDED ------
-gem 'bootswatch-rails'
-gem 'bootstrap-sass'
-gem 'bootstrap'
 # ----------------------
 
 # Use Capistrano for deployment
