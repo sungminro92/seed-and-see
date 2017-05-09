@@ -14,7 +14,7 @@ function PostShowController($stateParams, postsService) {
   var id = $stateParams.id;
 
   postsService
-    .postShow(userId, id)
+    .getPost(userId, id)
     .then(function(res){
       console.log(res)
       vm.post = res.data.post;

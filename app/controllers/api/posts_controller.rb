@@ -22,6 +22,24 @@ class Api::PostsController < ApplicationController
     end
   end
 
+  def update
+    @post = current_user.posts.find(params[:id])
+
+    if @post.update(post_params)
+      render json: @post, status: :ok
+    else
+      render json: @post.errors, status: :unprocessable_entity
+    end
+  end
+
+  # def destroy
+  #   @post = current_user.posts.find(params[:id])
+
+  #   @post.destroy
+
+  #   render json: '', status: :no_content
+  # end
+
   private
   # Only allow a trusted parameter "white list" through.
   # Also we want to add the current_user's id to the hash

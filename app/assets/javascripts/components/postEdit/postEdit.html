@@ -1,0 +1,15 @@
+<h1>Edit Post</h1>
+
+<form>
+  <label>Title</label>
+  <input ng-model="$ctrl.post.title" />
+  <br/>
+  <label>description</label>
+  <textarea ng-model="$ctrl.post.description"></textarea>
+  <br/>
+  <label>img_url</label>
+  <input ng-model="$ctrl.post.img_url" />
+  <br/>
+  <button ng-click="$ctrl.savePost()">Update</button>
+<form>
+

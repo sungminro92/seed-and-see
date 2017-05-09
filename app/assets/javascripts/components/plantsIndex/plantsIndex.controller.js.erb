@@ -20,7 +20,7 @@ function PlantsIndexController($state, plantsService) {
   function saveToGarden(plant) {
     console.log(plant);
     plantsService
-      .saveToGarden(plant_id)
+      .saveToGarden(plant)
       .then(function(res){
         if(res.status == 201) {alert('plant has been saved in your garden!')};
       }); 

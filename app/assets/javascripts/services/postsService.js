@@ -12,9 +12,14 @@ function postsService($http, $stateParams) {
     	.get('/api/posts');
   }
 
-  factory.postShow = function(userId, id) {
+  factory.getPost = function(userId, id) {
+  return $http
+    .get('/api/users/' + userId + '/posts/' + id);
+  }
+
+  factory.updatePost = function(userId, post) {
     return $http
-      .get('/api/users/' + userId + '/posts/' + id);
+      .patch('/api/users/' + userId + '/posts/' + id, post);
   }
 
   factory.createPost = function(newPost, userId) {

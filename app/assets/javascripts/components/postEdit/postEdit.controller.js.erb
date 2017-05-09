@@ -1,0 +1,35 @@
+
+angular
+  .module('seedAndSee')
+  .controller('PostEditController', PostEditController);
+
+PostEditController.$inject = ['$stateParams', '$state', 'postsService',];
+
+function PostEditController($stateParams, $state, postsService) {
+  var vm = this;
+
+  vm.post = {};
+
+  vm.savePost = savePost;
+
+  var userId = $stateParams.userId;
+  var id = $stateParams.id
+
+  postsService.getPost(userId, id)
+    .then(function(res) {
+      vm.post = res.data;
+  });
+
+  function savePost() {
+
+    postsService.updatePost(userId, vm.post).then(function() {
+      if(resp.status == 200) {
+        $state.go('postShow', {
+            userId: vm.post.user_id,
+            id: vm.post.id })
+      } else {
+        alert('Something went wrong when trying to update')
+      }
+    });
+  }
+}

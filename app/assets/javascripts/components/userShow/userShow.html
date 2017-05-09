@@ -4,6 +4,6 @@
 {{ $ctrl.user.name }}
 
 <ul ng-repeat="post in $ctrl.posts">
-	<li> {{ post.title }} </li>
+	<li><a ui-sref="postShow({userId: post.user_id, id: post.id})"> {{ post.title }} </a></li>
 	<li> {{ post.description }} </li>
 </ul>

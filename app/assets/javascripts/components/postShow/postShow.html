@@ -2,3 +2,5 @@
 
 <p>{{$ctrl.post.title}}</p>
 <p>{{$ctrl.post.description}}</p>
+<a ui-sref="postEdit({userId: $ctrl.post.user_id, id: $ctrl.post.id})">Edit Post</a><br>
+<a ng-click="$ctrl.deletePost()">delete Post</a>

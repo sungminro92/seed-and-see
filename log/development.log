@@ -7608,3 +7608,823 @@ Processing by Api::PlantsController#index as HTML
 Completed 200 OK in 6ms (Views: 2.3ms | ActiveRecord: 1.4ms)
 
 
+Started GET "/" for ::1 at 2017-05-08 20:22:42 -0400
+Processing by ClientController#index as HTML
+  [1m[36mUser Load (6.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (500.0ms)
+Completed 200 OK in 591ms (Views: 502.3ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-08 20:28:59 -0400
+Processing by ClientController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (357.9ms)
+Completed 200 OK in 364ms (Views: 359.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-08 20:29:17 -0400
+Processing by ClientController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (70.3ms)
+Completed 200 OK in 75ms (Views: 71.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-05-08 20:29:21 -0400
+Processing by ClientController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (68.3ms)
+Completed 200 OK in 75ms (Views: 70.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-08 20:29:24 -0400
+Processing by ClientController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (69.9ms)
+Completed 200 OK in 75ms (Views: 71.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-05-08 20:30:15 -0400
+Processing by ClientController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (86.7ms)
+Completed 200 OK in 92ms (Views: 88.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-08 20:30:47 -0400
+Processing by ClientController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (449.2ms)
+Completed 200 OK in 455ms (Views: 451.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-08 20:31:03 -0400
+Processing by ClientController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (85.0ms)
+Completed 200 OK in 89ms (Views: 86.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-05-08 20:41:25 -0400
+Processing by ClientController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (2187.4ms)
+Completed 200 OK in 2192ms (Views: 2189.0ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+Started GET "/api/users/4" for ::1 at 2017-05-08 20:42:28 -0400
+Processing by Api::UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 36ms (Views: 11.2ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/users/4" for ::1 at 2017-05-08 20:45:25 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (392.6ms)
+Completed 200 OK in 405ms (Views: 394.6ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/api/users/4" for ::1 at 2017-05-08 20:45:26 -0400
+Processing by Api::UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 8ms (Views: 2.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/4" for ::1 at 2017-05-08 20:46:00 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (409.1ms)
+Completed 200 OK in 415ms (Views: 411.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/4" for ::1 at 2017-05-08 20:46:01 -0400
+Processing by Api::UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 8ms (Views: 2.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/4" for ::1 at 2017-05-08 20:46:24 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (370.5ms)
+Completed 200 OK in 375ms (Views: 371.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/users/4" for ::1 at 2017-05-08 20:46:25 -0400
+Processing by Api::UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 7ms (Views: 3.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 20:46:26 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 13ms (Views: 2.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/api/users/4" for ::1 at 2017-05-08 20:46:28 -0400
+Processing by Api::UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 9ms (Views: 3.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 20:53:09 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (2.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 37ms (Views: 2.5ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/api/users/4" for ::1 at 2017-05-08 20:53:17 -0400
+Processing by Api::UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 11ms (Views: 4.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/4" for ::1 at 2017-05-08 20:58:15 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (400.0ms)
+Completed 200 OK in 405ms (Views: 402.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/4" for ::1 at 2017-05-08 20:58:16 -0400
+Processing by Api::UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 7ms (Views: 2.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 20:58:17 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 6ms (Views: 1.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/4/posts/1" for ::1 at 2017-05-08 20:58:24 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (363.4ms)
+Completed 200 OK in 368ms (Views: 364.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 20:58:26 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 7ms (Views: 1.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/4/posts/1" for ::1 at 2017-05-08 20:58:52 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (370.8ms)
+Completed 200 OK in 375ms (Views: 372.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 20:58:54 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/4/posts/1" for ::1 at 2017-05-08 21:00:02 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (374.6ms)
+Completed 200 OK in 379ms (Views: 376.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 21:00:03 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/4/posts/1/edit" for ::1 at 2017-05-08 21:19:58 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1/edit"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (360.7ms)
+Completed 200 OK in 365ms (Views: 362.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/4/posts/1/edit" for ::1 at 2017-05-08 21:24:46 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1/edit"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (391.8ms)
+Completed 200 OK in 397ms (Views: 393.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/1/posts/undefined" for ::1 at 2017-05-08 21:24:48 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"undefined"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=undefined):
+  
+app/controllers/api/posts_controller.rb:9:in `show'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.4ms)
+Started GET "/users/4/posts/1/edit" for ::1 at 2017-05-08 21:25:38 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1/edit"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (444.2ms)
+Completed 200 OK in 450ms (Views: 446.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 21:25:40 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 6ms (Views: 1.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/4/posts/1/edit" for ::1 at 2017-05-08 21:28:06 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1/edit"}
+  [1m[36mUser Load (5.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (366.2ms)
+Completed 200 OK in 376ms (Views: 367.5ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 21:28:07 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/4/posts/1" for ::1 at 2017-05-08 21:29:18 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (79.8ms)
+Completed 200 OK in 84ms (Views: 81.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 21:29:19 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 21:29:22 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (6.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 14ms (Views: 2.4ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/users/4/posts/1/edit" for ::1 at 2017-05-08 22:02:01 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1/edit"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (377.5ms)
+Completed 200 OK in 382ms (Views: 379.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/users/4/posts/1edit" for ::1 at 2017-05-08 22:02:02 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1edit"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 6ms (Views: 1.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/4/posts/1" for ::1 at 2017-05-08 22:14:53 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (380.0ms)
+Completed 200 OK in 385ms (Views: 381.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 22:14:54 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 7ms (Views: 2.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 22:15:31 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 22:15:34 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 6ms (Views: 1.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 22:15:36 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 6ms (Views: 1.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 22:15:37 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 6ms (Views: 1.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 22:15:39 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 7ms (Views: 1.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/4/posts/1/edit" for ::1 at 2017-05-08 23:00:17 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1/edit"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (390.7ms)
+Completed 200 OK in 396ms (Views: 392.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 23:00:19 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/4/posts/1/edit" for ::1 at 2017-05-08 23:09:19 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1/edit"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (78.8ms)
+Completed 200 OK in 83ms (Views: 80.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 23:09:19 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/4/posts/1/edit" for ::1 at 2017-05-08 23:12:26 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1/edit"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (403.6ms)
+Completed 200 OK in 425ms (Views: 405.4ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 23:12:27 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 31ms (Views: 1.8ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/users/4/posts/1/edit" for ::1 at 2017-05-08 23:13:25 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1/edit"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (384.9ms)
+Completed 200 OK in 390ms (Views: 386.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 23:13:27 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 6ms (Views: 1.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/4/posts/1/edit" for ::1 at 2017-05-08 23:16:22 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1/edit"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (387.8ms)
+Completed 200 OK in 393ms (Views: 389.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 23:16:23 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 6ms (Views: 1.5ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/api/users/4/posts/undefined" for ::1 at 2017-05-08 23:16:26 -0400
+Processing by Api::PostsController#update as HTML
+  Parameters: {"post"=>{"id"=>1, "title"=>"POWMEOW!", "description"=>"This is my cat in the garden!", "img_url"=>"http://i.imgur.com/O9EobIJ.png", "created_at"=>"2017-05-08T15:40:20.587Z", "updated_at"=>"2017-05-08T15:40:20.587Z", "user_id"=>4}, "comments"=>[], "title"=>"dddd", "description"=>"dddd", "img_url"=>"#", "user_id"=>"4", "id"=>"undefined"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = $1 AND "posts"."id" = $2 LIMIT $3[0m  [["user_id", 4], ["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 6ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=undefined [WHERE "posts"."user_id" = $1]):
+  
+app/controllers/api/posts_controller.rb:26:in `update'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.8ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.2ms)
+Started GET "/users/4/posts/1/edit" for ::1 at 2017-05-08 23:17:08 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1/edit"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (383.8ms)
+Completed 200 OK in 388ms (Views: 385.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 23:17:09 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 6ms (Views: 1.2ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/api/users/4/posts/undefined" for ::1 at 2017-05-08 23:17:12 -0400
+Processing by Api::PostsController#update as HTML
+  Parameters: {"_json"=>1, "user_id"=>"4", "id"=>"undefined", "post"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = $1 AND "posts"."id" = $2 LIMIT $3[0m  [["user_id", 4], ["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 5ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=undefined [WHERE "posts"."user_id" = $1]):
+  
+app/controllers/api/posts_controller.rb:26:in `update'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.3ms)
+Started GET "/users/4/posts/1/edit" for ::1 at 2017-05-08 23:18:17 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1/edit"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (409.4ms)
+Completed 200 OK in 416ms (Views: 411.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 23:18:18 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 6ms (Views: 1.1ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/api/users/[object%20Object]/posts/undefined" for ::1 at 2017-05-08 23:18:20 -0400
+Processing by Api::PostsController#update as HTML
+  Parameters: {"user_id"=>"[object Object]", "id"=>"undefined"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = $1 AND "posts"."id" = $2 LIMIT $3[0m  [["user_id", 4], ["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 6ms (ActiveRecord: 1.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=undefined [WHERE "posts"."user_id" = $1]):
+  
+app/controllers/api/posts_controller.rb:26:in `update'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.5ms)
+Started PATCH "/api/users/[object%20Object]/posts/undefined" for ::1 at 2017-05-08 23:18:22 -0400
+Processing by Api::PostsController#update as HTML
+  Parameters: {"user_id"=>"[object Object]", "id"=>"undefined"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = $1 AND "posts"."id" = $2 LIMIT $3[0m  [["user_id", 4], ["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 5ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=undefined [WHERE "posts"."user_id" = $1]):
+  
+app/controllers/api/posts_controller.rb:26:in `update'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.4ms)
+Started PATCH "/api/users/[object%20Object]/posts/undefined" for ::1 at 2017-05-08 23:18:27 -0400
+Processing by Api::PostsController#update as HTML
+  Parameters: {"user_id"=>"[object Object]", "id"=>"undefined"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = $1 AND "posts"."id" = $2 LIMIT $3[0m  [["user_id", 4], ["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 5ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=undefined [WHERE "posts"."user_id" = $1]):
+  
+app/controllers/api/posts_controller.rb:26:in `update'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.7ms)
+Started GET "/users/4/posts/1/edit" for ::1 at 2017-05-08 23:18:51 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1/edit"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (397.5ms)
+Completed 200 OK in 404ms (Views: 399.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 23:18:52 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/api/users/4/posts/undefined" for ::1 at 2017-05-08 23:18:57 -0400
+Processing by Api::PostsController#update as HTML
+  Parameters: {"post"=>{"id"=>1, "title"=>"POWMEOW!", "description"=>"This is my cat in the garden!", "img_url"=>"http://i.imgur.com/O9EobIJ.png", "created_at"=>"2017-05-08T15:40:20.587Z", "updated_at"=>"2017-05-08T15:40:20.587Z", "user_id"=>4}, "comments"=>[], "title"=>"dddd", "description"=>"dddd", "user_id"=>"4", "id"=>"undefined"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = $1 AND "posts"."id" = $2 LIMIT $3[0m  [["user_id", 4], ["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 5ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=undefined [WHERE "posts"."user_id" = $1]):
+  
+app/controllers/api/posts_controller.rb:26:in `update'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.9ms)
+Started GET "/users/4/posts/1/edit" for ::1 at 2017-05-08 23:19:07 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1/edit"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (411.1ms)
+Completed 200 OK in 416ms (Views: 412.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 23:19:08 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/api/users/4/posts/undefined" for ::1 at 2017-05-08 23:19:10 -0400
+Processing by Api::PostsController#update as HTML
+  Parameters: {"post"=>{"id"=>1, "title"=>"POWMEOW!", "description"=>"This is my cat in the garden!", "img_url"=>"http://i.imgur.com/O9EobIJ.png", "created_at"=>"2017-05-08T15:40:20.587Z", "updated_at"=>"2017-05-08T15:40:20.587Z", "user_id"=>4}, "comments"=>[], "title"=>"ddd", "description"=>"ddd", "user_id"=>"4", "id"=>"undefined"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = $1 AND "posts"."id" = $2 LIMIT $3[0m  [["user_id", 4], ["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 5ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=undefined [WHERE "posts"."user_id" = $1]):
+  
+app/controllers/api/posts_controller.rb:26:in `update'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.5ms)
+Started GET "/users/4/posts/1/edit" for ::1 at 2017-05-08 23:19:44 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1/edit"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (386.9ms)
+Completed 200 OK in 391ms (Views: 388.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 23:19:45 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/4/posts/1/edit" for ::1 at 2017-05-08 23:22:16 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1/edit"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (401.7ms)
+Completed 200 OK in 408ms (Views: 403.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users/undefined/posts/undefined" for ::1 at 2017-05-08 23:22:17 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"undefined", "id"=>"undefined"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=undefined):
+  
+app/controllers/api/posts_controller.rb:9:in `show'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.3ms)
+Started GET "/users/4/posts/1/edit" for ::1 at 2017-05-08 23:22:35 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1/edit"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (403.5ms)
+Completed 200 OK in 409ms (Views: 405.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 23:22:37 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 8ms (Views: 2.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/4/posts/1/edit" for ::1 at 2017-05-08 23:22:44 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/1/edit"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (468.4ms)
+Completed 200 OK in 474ms (Views: 470.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/4/posts/1" for ::1 at 2017-05-08 23:22:46 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+Completed 200 OK in 6ms (Views: 2.2ms | ActiveRecord: 1.0ms)
+
+
