@@ -2,14 +2,19 @@ angular
   .module('seedAndSee')
   .controller('PostShowController', PostShowController);
 
-PostShowController.$inject = ['$stateParams','postsService'];
+PostShowController.$inject = ['$stateParams','postsService', 'commentsService'];
 
-function PostShowController($stateParams, postsService) {
+function PostShowController($stateParams, postsService, commentsService) {
   var vm = this;
 
   vm.post = {};
-  // vm.comments = [];
+  vm.comments = [];
   vm.user = {};
+  vm.newComment = {
+    content:''
+  };
+  
+  vm.createComment = createComment;
 
   var userId = $stateParams.userId;
   var id = $stateParams.id;
@@ -20,6 +25,23 @@ function PostShowController($stateParams, postsService) {
       console.log(res);
       vm.post = res.data.post;
       vm.user = res.data.user;
+      vm.comments = res.data.comments
     });
-  
+
+  function createComment() {
+    var postId = $stateParams.id
+
+    commentsService
+      .createComment(postId, vm.newComment)
+      .then(function(res) {
+        if(res.status == 201) {
+          console.log(res.data.content)
+        } else {
+          alert('something went wrong')
+        }
+      })
+  }
+
+
+
 }

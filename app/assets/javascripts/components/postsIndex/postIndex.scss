@@ -1,12 +1,29 @@
+/* --- LIGHT GREEN ----------*/
+
+$color-lightgreen: #AAAD2A;
+$color-green: #47440F;
+$color-darkbrown: #0000FF;
+$color-skin: #F2DCCB;
+$color-softorange: #FCAC8A;
+$color-orange: #E06029;
+$color-black: #292108;
+
+.all-buttons {
+	border-radius: 3px;
+	background-color: white;
+	border-color: $color-lightgreen;
+}
+
 div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
+    margin: 3px;
+    border: 2px solid black;
     float: left;
     width: 180px;
 }
 
+/* --- DARK GREEN ----------*/
 div.gallery:hover {
-    border: 1px solid #777;
+    border: 2px solid $color-green; 
 }
 
 div.gallery img {
@@ -15,6 +32,11 @@ div.gallery img {
 }
 
 div.desc {
-    padding: 15px;
+    padding: 0px;
     text-align: center;
+}
+
+.title {
+	font-family: 'Galindo', cursive;
+	font-size: 20px;
 }

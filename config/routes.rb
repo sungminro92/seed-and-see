@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
     get '/users/:userId/garden' => 'garden#index'
     post '/users/gardenplants' => 'garden_plants#create'
+    post '/users/posts/:id/comments' => 'comments#create'
 
     # ???? DOES THIS WORK?
     post '/users/:userId/garden' => 'garden#create'

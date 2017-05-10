@@ -50,5 +50,6 @@
   </a>
   <div class="desc">{{ post.title }}</div>
   <div class="desc">{{ post.description }}</div>
+  <div class="desc"><a ui-sref="postEdit({userId: {{post.user_id}}, id: {{post.id}} })">edit</a> | <a ng-click="$ctrl.deletePost(post)">delete</a></div>
 </div>
 </ul>

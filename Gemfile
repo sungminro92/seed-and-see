@@ -38,9 +38,12 @@ gem 'angular_rails_csrf'
 
 # BOOTSTRAP ADDED ------
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootswatch-rails'
 gem 'autoprefixer-rails'
 # ----------------------
 
+# ----HTTPARTY ---------
+gem 'httparty'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

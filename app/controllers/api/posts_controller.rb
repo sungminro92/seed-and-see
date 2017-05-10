@@ -8,8 +8,11 @@ class Api::PostsController < ApplicationController
     @post = Post.find(params[:id])
     @user = User.find(@post.user_id)
     @comments = @post.comments
-    render json: {post: @post, user: @user, comments: @comments  }
-  end
+    render json: {post: @post, user: @user, comments: @comments}
+
+   # @comments = @post.find(params[:id])
+   #  render :json @comments.to_json(include: [:user, :post)
+  end 
 
 
   def create
@@ -37,13 +40,12 @@ class Api::PostsController < ApplicationController
     end
   end
 
-  # def destroy
-  #   @post = current_user.posts.find(params[:id])
+  def destroy
+    @post = current_user.posts.find(params[:id])
+    @post.destroy
 
-  #   @post.destroy
-
-  #   render json: '', status: :no_content
-  # end
+    render json: '', status: :no_content
+  end
 
   private
   # Only allow a trusted parameter "white list" through.

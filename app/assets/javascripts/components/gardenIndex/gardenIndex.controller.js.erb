@@ -9,7 +9,7 @@ function GardenIndexController( $stateParams, $state, gardenService) {
   //garden
   vm.garden = {};
   // vm.editGardenName = editGardenName;
-
+  vm.gardenPlants = vm.garden.garden_plants
 
   var userId = $stateParams.userId
   
@@ -26,6 +26,9 @@ function GardenIndexController( $stateParams, $state, gardenService) {
   		};
   	});
   
+  	// and show all garden_plants user has through a garden.
+
+
   	// function editGardenName() {
   	// 	$('.garden-name')
   	// 		.hide()
@@ -37,6 +40,4 @@ function GardenIndexController( $stateParams, $state, gardenService) {
 
 
 
-
-  // and show all garden_plants user has through a garden.
 }

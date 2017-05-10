@@ -9,8 +9,8 @@ function PostsIndexController($stateParams, postsService, usersService) {
 
   vm.posts = [];
   vm.users = [];
+
   // vm.userId = $stateParams.userId
-  vm.currentUser = {};
 
 	postsService
   	.getPosts() 

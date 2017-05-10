@@ -1,16 +1,16 @@
 <h1> Post Index </h1>
 
-<button ui-sref="postNew({ userId: $ctrl.currentUser.id })">Create a post</button>
-
 <ul ng-repeat="post in $ctrl.posts">
 	<div class="gallery">
 
-	  <a ui-sref="postShow({userId: {{post.user_id}}, id: {{post.id}}})">
-	    <img src="{{post.img_url}}" alt="Mountains" width="300" height="200">
-	  </a>
-	  <div class="desc">{{ post.title }}</div>
-	  <div class="desc">{{ post.description }}</div>
+	<a ui-sref="postShow({ userId: {{post.user_id}}, id: {{post.id}} })">
+	   <img src="{{post.img_url}}" alt="Picture" width="300" height="200">
+	</a>
+	
+	<div class="desc title">{{ post.title }}</div>
+	<div class="desc">{{ post.description }}</div>
+	<div class="desc">{{ post.user.name }}</div>
 
-	  <div class="desc">{{ post.user.name }}</div>
+	<div class="desc"><a ui-sref="postEdit({userId: {{post.user_id}}, id: {{post.id}} })">edit</a> | <a ng-click="deletePost()">delete</a></div>
 	</div>
 </ul>

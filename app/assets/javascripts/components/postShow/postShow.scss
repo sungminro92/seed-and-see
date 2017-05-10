@@ -1,0 +1,36 @@
+$color-lightgreen: #AAAD2A;
+$color-green: #47440F;
+$color-darkbrown: #0000FF;
+$color-skin: #F2DCCB;
+$color-softorange: #FCAC8A;
+$color-orange: #E06029;
+$color-black: #292108;
+
+.comment-box {
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 2px 5px 0px 5px;
+}
+
+.comment-time {
+	color: $color-orange;
+}
+
+.comment-input {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	width: 80%;
+}
+.comment-content {
+	padding-left: 5px;
+}
+
+.comment-input-wrap {
+	display: inline
+}
+
+.button {
+	border-radius: 3px;
+	background-color: white;
+
+}

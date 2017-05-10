@@ -2,13 +2,14 @@ angular
   .module('seedAndSee')
   .controller('UserShowController', UserShowController);
 
-UserShowController.$inject = ['$stateParams','usersService'];
+UserShowController.$inject = ['$stateParams','usersService', 'postsService'];
 
-function UserShowController($stateParams, usersService) {
+function UserShowController($stateParams, usersService, postsService) {
   var vm = this;
 
   vm.user = {};
   vm.posts = [];
+  vm.deletePost = deletePost;
 
 	usersService
   	.getUser($stateParams.id) 
@@ -18,4 +19,19 @@ function UserShowController($stateParams, usersService) {
 	    vm.user = res.data.user;
       vm.posts = res.data.posts;
 	});
+
+  function deletePost(post) {
+    var userId = $stateParams.userId;
+    // var id = $stateParams.id;
+    var id = post.id;
+
+    postsService
+      .deletePost(userId, id)
+      .then(function(res) {
+        console.log('post has been deleted');
+        alert('post has been deleted!');
+      });
+  };
+
+
 }

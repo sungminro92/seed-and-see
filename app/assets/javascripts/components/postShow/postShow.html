@@ -13,12 +13,41 @@
     <p><span class="glyphicon glyphicon-time"></span> Posted on {{ $ctrl.post.created_at | date:"MM/dd/yy @ h:mma"}}</p>
     <hr>
     <img class="img-responsive" src="{{$ctrl.post.img_url}}" alt="">
-    <hr>
     <p>{{$ctrl.post.description}}</p>
-    <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-
+<!--     <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+ -->
     <hr>
+    <h3> Comments: </h3>
+        <div class="comment-input-wrap">
+            <input class="comment-input" ng-model="$ctrl.newComment.content" placeholder="leave a comment here"> <button class="button" ng-click="$ctrl.createComment()"> Leave a comment! </button>
+            <p ng-bind="$ctrl.newComment.content"></p>
+        <div>
 
+    <div ng-repeat="comment in $ctrl.comments">
+        <div class="comment-box">
+            <p>
+                <span class="comment-time"> {{ comment.created_at | date:'medium'}}</span>
+                <span class="comment-content">{{ comment.content }}</span>
+            </p>
+
+        </div>
+    </div>
+<!-- 
+          <div class="itemsShowRight">
+        <div class='commentForm'>
+          <p class='posting-title'>Comments</p>
+          <form ng-submit='$ctrl.addItemComment($ctrl.newComment)'>
+            <textarea class='commentText' type="text" name="text" placeholder='Type your comment here' ng-model='$ctrl.newComment.text'></textarea>
+            <input class="newCommentSubmit" type="submit" value="Post Comment">
+          </form>
+        </div>
+
+        <div class='comment-box' ng-repeat="comment in $ctrl.comments | orderBy: '-created_at'">
+          <li>Comment:</strong> {{comment.text}}</li>
+          <li><strong>Posted by:</strong> {{comment.userName}}</li>
+          <li ng-show="comment.created_at"><strong>Posted:</strong> {{comment.created_at| date: 'short'}}</li>
+        </div>
+      </div> -->
 
     <!-- Pager -->
     <ul class="pager">
