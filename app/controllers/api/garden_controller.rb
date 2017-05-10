@@ -1,7 +1,7 @@
 class Api::GardenController < ApplicationController
   def index
-  	@garden = current_user.garden
-  	render json: @garden.to_json(include: :garden_plants)
+	@garden = current_user.garden
+	render json: @garden.to_json(include: [:user, :garden_plants]) # is this necessary ?
   end
 
 

@@ -2,14 +2,29 @@ angular
   .module('seedAndSee')
   .controller('GardenIndexController', GardenIndexController);
 
-GardenIndexController.$inject = ['gardenService'];
+GardenIndexController.$inject = ['$stateParams','$state', 'gardenService'];
 
-function GardenIndexController(gardenService) {
+function GardenIndexController($stateParams, $state, gardenService) {
   var vm = this;
   //garden
+  vm.garden = {};
 
-  // If user does not have a garden redirect to 'gardenNew'
+  var userId = $stateParams.userId
+  
+  gardenService
+  	.getGarden()
+  	.then(function(res){
+  		// If user does not have a garden redirect to 'gardenNew'
+  		if (res.data == null) {
+  			$state.go('gardenNew', {userId: userId})
+  		} else {
+  		// If user does have a garden, display that garden
+  		console.log(res);
+  		vm.garden = res.data;
+  		};
+  	});
+  
 
-  // If user does have a garden, stay
+
   // and show all garden_plants user has through a garden.
 }
