@@ -18,6 +18,8 @@
 //= require angular-ui-router/release/angular-ui-router
 // ---------------------
 
+//= require bootstrap
+
 // -- ADDED ------------
 //= require_self
 // This makes app initialization/configuration code  is loaded before any files in assets/javascript folder.
