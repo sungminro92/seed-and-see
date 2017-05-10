@@ -11033,3 +11033,2314 @@ Completed 200 OK in 177ms (Views: 163.2ms | ActiveRecord: 0.6ms)
 Completed 200 OK in 127ms (Views: 118.4ms | ActiveRecord: 2.0ms)
 
 
+Started GET "/posts" for ::1 at 2017-05-09 11:54:37 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"posts"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (90.3ms)
+Completed 200 OK in 109ms (Views: 92.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/posts" for ::1 at 2017-05-09 11:54:38 -0400
+  
+SyntaxError (/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/posts_controller.rb:5: syntax error, unexpected ( arg, expecting keyword_end
+currentUser: @user }.to_json (include: :user)
+                              ^
+/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/posts_controller.rb:59: syntax error, unexpected end-of-input, expecting keyword_end):
+Started GET "/%7B%7Bpost.img_url%7D%7D" for ::1 at 2017-05-09 11:54:38 -0400
+  
+app/controllers/api/posts_controller.rb:5: syntax error, unexpected ( arg, expecting keyword_end
+app/controllers/api/posts_controller.rb:59: syntax error, unexpected end-of-input, expecting keyword_end
+Processing by ClientController#index as 
+  Parameters: {"path"=>"{{post"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (87.5ms)
+Completed 200 OK in 112ms (Views: 98.0ms | ActiveRecord: 1.3ms)
+
+
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.4ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.1ms)
+Started GET "/api/posts" for ::1 at 2017-05-09 11:54:52 -0400
+  
+SyntaxError (/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/posts_controller.rb:5: syntax error, unexpected ( arg, expecting keyword_end
+currentUser: @user }.to_json (include: :user)
+                              ^
+/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/posts_controller.rb:59: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/posts_controller.rb:5: syntax error, unexpected ( arg, expecting keyword_end
+app/controllers/api/posts_controller.rb:59: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.8ms)
+Started GET "/api/posts" for ::1 at 2017-05-09 11:57:21 -0400
+  
+SyntaxError (/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/posts_controller.rb:6: syntax error, unexpected '}', expecting =>
+n: @posts, :include => {:user}
+                              ^
+/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/posts_controller.rb:60: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/posts_controller.rb:6: syntax error, unexpected '}', expecting =>
+app/controllers/api/posts_controller.rb:60: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.5ms)
+Started GET "/api/posts" for ::1 at 2017-05-09 11:58:05 -0400
+  
+SyntaxError (/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/posts_controller.rb:6: syntax error, unexpected =>
+    render json: =>@posts, :include => {:user}
+                   ^
+/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/posts_controller.rb:6: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+er json: =>@posts, :include => {:user}
+                              ^
+/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/posts_controller.rb:6: syntax error, unexpected '}', expecting =>
+ =>@posts, :include => {:user}
+                              ^
+/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/posts_controller.rb:60: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/posts_controller.rb:6: syntax error, unexpected =>
+app/controllers/api/posts_controller.rb:6: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/controllers/api/posts_controller.rb:6: syntax error, unexpected '}', expecting =>
+app/controllers/api/posts_controller.rb:60: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (95.0ms)
+Started GET "/api/posts" for ::1 at 2017-05-09 11:58:26 -0400
+  
+SyntaxError (/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/posts_controller.rb:6: syntax error, unexpected '}', expecting =>
+=> @posts, :include => {:user}
+                              ^
+/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/posts_controller.rb:60: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/posts_controller.rb:6: syntax error, unexpected '}', expecting =>
+app/controllers/api/posts_controller.rb:60: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.8ms)
+Started GET "/api/posts" for ::1 at 2017-05-09 11:58:42 -0400
+  
+SyntaxError (/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/posts_controller.rb:6: syntax error, unexpected '}', expecting =>
+=> @posts, :include => {:user}
+                              ^
+/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/posts_controller.rb:61: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/posts_controller.rb:6: syntax error, unexpected '}', expecting =>
+app/controllers/api/posts_controller.rb:61: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.1ms)
+Started GET "/api/posts" for ::1 at 2017-05-09 11:58:50 -0400
+  
+SyntaxError (/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/posts_controller.rb:6: syntax error, unexpected '}', expecting =>
+=> @posts, :include => {:user}
+                              ^
+/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/posts_controller.rb:61: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/posts_controller.rb:6: syntax error, unexpected '}', expecting =>
+app/controllers/api/posts_controller.rb:61: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.2ms)
+Started GET "/api/posts" for ::1 at 2017-05-09 11:58:59 -0400
+  
+SyntaxError (/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/posts_controller.rb:6: syntax error, unexpected '}', expecting =>
+=> @posts, :include => {:user}
+                              ^
+/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/posts_controller.rb:61: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/posts_controller.rb:6: syntax error, unexpected '}', expecting =>
+app/controllers/api/posts_controller.rb:61: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.6ms)
+Started GET "/api/posts" for ::1 at 2017-05-09 12:01:39 -0400
+  
+SyntaxError (/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/posts_controller.rb:7: syntax error, unexpected tIVAR, expecting keyword_end
+    render :json @posts.to_json({:include => :user})
+                       ^
+/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/posts_controller.rb:61: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/posts_controller.rb:7: syntax error, unexpected tIVAR, expecting keyword_end
+app/controllers/api/posts_controller.rb:61: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.5ms)
+Started GET "/api/posts" for ::1 at 2017-05-09 12:05:24 -0400
+  
+SyntaxError (/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/posts_controller.rb:62: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/posts_controller.rb:62: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.4ms)
+Started GET "/api/posts" for ::1 at 2017-05-09 12:05:41 -0400
+Processing by Api::PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 54ms (Views: 0.2ms | ActiveRecord: 19.6ms)
+
+
+Started GET "/posts" for ::1 at 2017-05-09 12:05:59 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"posts"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (98.3ms)
+Completed 200 OK in 105ms (Views: 100.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/posts" for ::1 at 2017-05-09 12:06:00 -0400
+Processing by Api::PostsController#index as HTML
+Started GET "/%7B%7Bpost.img_url%7D%7D" for ::1 at 2017-05-09 12:06:00 -0400
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Processing by ClientController#index as 
+  Parameters: {"path"=>"{{post"}
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (15.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 41ms (Views: 0.2ms | ActiveRecord: 17.7ms)
+
+
+  Rendered client/index.html.erb (75.3ms)
+Completed 200 OK in 109ms (Views: 90.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts" for ::1 at 2017-05-09 12:06:12 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"posts"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (415.4ms)
+Completed 200 OK in 421ms (Views: 416.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/posts" for ::1 at 2017-05-09 12:06:13 -0400
+Started GET "/%7B%7Bpost.img_url%7D%7D" for ::1 at 2017-05-09 12:06:13 -0400
+Processing by Api::PostsController#index as HTML
+Processing by ClientController#index as 
+  Parameters: {"path"=>"{{post"}
+  [1m[36mUser Load (16.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (15.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (18.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mUser Load (16.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 67ms (Views: 0.2ms | ActiveRecord: 51.1ms)
+
+
+  Rendered client/index.html.erb (107.9ms)
+Completed 200 OK in 165ms (Views: 127.3ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/posts" for ::1 at 2017-05-09 12:07:02 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"posts"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (404.1ms)
+Completed 200 OK in 414ms (Views: 406.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/posts" for ::1 at 2017-05-09 12:07:03 -0400
+Started GET "/%7B%7Bpost.img_url%7D%7D" for ::1 at 2017-05-09 12:07:03 -0400
+Processing by Api::PostsController#index as HTML
+Processing by ClientController#index as 
+  Parameters: {"path"=>"{{post"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mUser Load (14.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 51ms (Views: 0.2ms | ActiveRecord: 16.6ms)
+
+
+Started GET "/posts" for ::1 at 2017-05-09 12:07:03 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"posts"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (186.1ms)
+Completed 200 OK in 231ms (Views: 207.5ms | ActiveRecord: 0.9ms)
+
+
+  Rendered client/index.html.erb (125.2ms)
+Completed 200 OK in 139ms (Views: 131.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/users/4/posts/4" for ::1 at 2017-05-09 12:29:33 -0400
+Processing by Api::PostsController#show as HTML
+  Parameters: {"user_id"=>"4", "id"=>"4"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (20.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+Completed 200 OK in 125ms (Views: 8.3ms | ActiveRecord: 60.0ms)
+
+
+Started GET "/api/posts" for ::1 at 2017-05-09 12:29:34 -0400
+Started GET "/%7B%7Bpost.img_url%7D%7D" for ::1 at 2017-05-09 12:29:34 -0400
+Processing by Api::PostsController#index as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Processing by ClientController#index as 
+  [1m[36mPost Load (5.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Parameters: {"path"=>"{{post"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 35ms (Views: 0.2ms | ActiveRecord: 9.5ms)
+
+
+  [1m[36mUser Load (20.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started GET "/posts" for ::1 at 2017-05-09 12:29:34 -0400
+  Rendering client/index.html.erb
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"posts"}
+  [1m[36mUser Load (34.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (684.3ms)
+Completed 200 OK in 733ms (Views: 688.9ms | ActiveRecord: 34.9ms)
+
+
+  Rendered client/index.html.erb (929.0ms)
+Completed 200 OK in 983ms (Views: 944.9ms | ActiveRecord: 20.8ms)
+
+
+Started GET "/posts" for ::1 at 2017-05-09 14:01:47 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"posts"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (79.4ms)
+Completed 200 OK in 86ms (Views: 81.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/posts" for ::1 at 2017-05-09 14:01:48 -0400
+Processing by Api::PostsController#index as HTML
+Started GET "/%7B%7Bpost.img_url%7D%7D" for ::1 at 2017-05-09 14:01:48 -0400
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Processing by ClientController#index as 
+  Parameters: {"path"=>"{{post"}
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 38ms (Views: 0.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/posts" for ::1 at 2017-05-09 14:01:48 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"posts"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (159.1ms)
+Completed 200 OK in 192ms (Views: 173.7ms | ActiveRecord: 1.6ms)
+
+
+  Rendered client/index.html.erb (120.5ms)
+Completed 200 OK in 134ms (Views: 125.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/garden" for ::1 at 2017-05-09 14:12:19 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"garden"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (1952.1ms)
+Completed 200 OK in 1996ms (Views: 1953.8ms | ActiveRecord: 27.7ms)
+
+
+Started GET "/users/garden" for ::1 at 2017-05-09 14:13:22 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (354.2ms)
+Completed 200 OK in 359ms (Views: 355.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 14:13:23 -0400
+Processing by Api::UsersController#show as HTML
+Started GET "/users/%7B%7Bpost.img_url%7D%7D" for ::1 at 2017-05-09 14:13:23 -0400
+  Parameters: {"id"=>"garden"}
+Processing by ClientController#index as 
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Parameters: {"path"=>"users/{{post"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 5ms (ActiveRecord: 2.0ms)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=garden):
+  
+  Rendering client/index.html.erb
+app/controllers/api/users_controller.rb:8:in `show'
+  Rendered client/index.html.erb (138.8ms)
+Completed 200 OK in 168ms (Views: 152.8ms | ActiveRecord: 0.8ms)
+
+
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.6ms)
+DEPRECATION WARNING: Omitting the route path is deprecated. Specify the path with a String or a Symbol instead. (called from block (2 levels) in <top (required)> at /Users/sungminnie/Desktop/seed-and-see/config/routes.rb:13)
+DEPRECATION WARNING: Omitting the route path is deprecated. Specify the path with a String or a Symbol instead. (called from block (2 levels) in <top (required)> at /Users/sungminnie/Desktop/seed-and-see/config/routes.rb:13)
+Started GET "/users/4" for ::1 at 2017-05-09 14:15:16 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (69.3ms)
+Completed 200 OK in 89ms (Views: 70.8ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/api/users/4" for ::1 at 2017-05-09 14:15:17 -0400
+Processing by Api::UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+Started GET "/users/%7B%7Bpost.img_url%7D%7D" for ::1 at 2017-05-09 14:15:17 -0400
+Processing by ClientController#index as 
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Parameters: {"path"=>"users/{{post"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (88.1ms)
+Completed 200 OK in 115ms (Views: 99.4ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 137ms (Views: 9.3ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/users/4" for ::1 at 2017-05-09 14:15:17 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (77.9ms)
+Completed 200 OK in 84ms (Views: 80.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/garden" for ::1 at 2017-05-09 14:16:58 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (71.2ms)
+Completed 200 OK in 86ms (Views: 72.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 14:16:59 -0400
+  
+Started GET "/users/%7B%7Bpost.img_url%7D%7D" for ::1 at 2017-05-09 14:16:59 -0400
+LoadError (Unable to autoload constant Api::GardenController, expected /Users/sungminnie/Desktop/seed-and-see/app/controllers/api/garden_controller.rb to define it):
+  
+activesupport (5.0.2) lib/active_support/dependencies.rb:512:in `load_missing_constant'
+activesupport (5.0.2) lib/active_support/dependencies.rb:203:in `const_missing'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:270:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:270:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+activesupport (5.0.2) lib/active_support/dependencies.rb:583:in `get'
+activesupport (5.0.2) lib/active_support/dependencies.rb:614:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Processing by ClientController#index as 
+  Parameters: {"path"=>"users/{{post"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendered client/index.html.erb (127.5ms)
+Completed 200 OK in 155ms (Views: 140.0ms | ActiveRecord: 1.6ms)
+
+
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.9ms)
+Started GET "/users/garden" for ::1 at 2017-05-09 14:18:51 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (470.9ms)
+Completed 200 OK in 478ms (Views: 473.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 14:18:52 -0400
+  
+LoadError (Unable to autoload constant Api::GardenController, expected /Users/sungminnie/Desktop/seed-and-see/app/controllers/api/garden_controller.rb to define it):
+  
+Started GET "/users/%7B%7Bpost.img_url%7D%7D" for ::1 at 2017-05-09 14:18:52 -0400
+activesupport (5.0.2) lib/active_support/dependencies.rb:512:in `load_missing_constant'
+activesupport (5.0.2) lib/active_support/dependencies.rb:203:in `const_missing'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:270:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:270:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+activesupport (5.0.2) lib/active_support/dependencies.rb:583:in `get'
+activesupport (5.0.2) lib/active_support/dependencies.rb:614:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Processing by ClientController#index as 
+  Parameters: {"path"=>"users/{{post"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered client/index.html.erb (228.1ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+Completed 200 OK in 259ms (Views: 242.6ms | ActiveRecord: 0.9ms)
+
+
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (101.7ms)
+Started GET "/users/garden" for ::1 at 2017-05-09 14:22:03 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (384.8ms)
+Completed 200 OK in 390ms (Views: 386.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 14:22:04 -0400
+Started GET "/users/%7B%7Bpost.img_url%7D%7D" for ::1 at 2017-05-09 14:22:04 -0400
+  
+LoadError (Unable to autoload constant Api::GardenController, expected /Users/sungminnie/Desktop/seed-and-see/app/controllers/api/garden_controller.rb to define it):
+  
+activesupport (5.0.2) lib/active_support/dependencies.rb:512:in `load_missing_constant'
+activesupport (5.0.2) lib/active_support/dependencies.rb:203:in `const_missing'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:270:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:270:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+activesupport (5.0.2) lib/active_support/dependencies.rb:583:in `get'
+activesupport (5.0.2) lib/active_support/dependencies.rb:614:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Processing by ClientController#index as 
+  Parameters: {"path"=>"users/{{post"}
+  [1m[36mUser Load (11.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.2ms)
+  Rendered client/index.html.erb (345.8ms)
+Completed 200 OK in 385ms (Views: 356.1ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 14:22:12 -0400
+  
+LoadError (Unable to autoload constant Api::GardenController, expected /Users/sungminnie/Desktop/seed-and-see/app/controllers/api/garden_controller.rb to define it):
+  
+activesupport (5.0.2) lib/active_support/dependencies.rb:512:in `load_missing_constant'
+activesupport (5.0.2) lib/active_support/dependencies.rb:203:in `const_missing'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:270:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:270:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+activesupport (5.0.2) lib/active_support/dependencies.rb:583:in `get'
+activesupport (5.0.2) lib/active_support/dependencies.rb:614:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.9ms)
+Started GET "/api/users/garden" for ::1 at 2017-05-09 14:23:02 -0400
+Processing by Api::GardenController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (6.3ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 32ms (Views: 0.2ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/users/garden" for ::1 at 2017-05-09 14:23:17 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (82.6ms)
+Completed 200 OK in 88ms (Views: 84.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 14:23:18 -0400
+Processing by Api::GardenController#index as HTML
+Started GET "/users/%7B%7Bpost.img_url%7D%7D" for ::1 at 2017-05-09 14:23:18 -0400
+Processing by ClientController#index as 
+  Parameters: {"path"=>"users/{{post"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (14.1ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 32ms (Views: 0.1ms | ActiveRecord: 16.1ms)
+
+
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (98.8ms)
+Completed 200 OK in 129ms (Views: 111.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/garden" for ::1 at 2017-05-09 14:24:34 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (366.4ms)
+Completed 200 OK in 372ms (Views: 367.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/garden" for ::1 at 2017-05-09 14:25:01 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (381.2ms)
+Completed 200 OK in 388ms (Views: 383.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 14:45:46 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (398.6ms)
+Completed 200 OK in 414ms (Views: 400.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 14:46:26 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (457.7ms)
+Completed 200 OK in 463ms (Views: 459.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 15:06:10 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (421.6ms)
+Completed 200 OK in 447ms (Views: 423.5ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 15:06:29 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (419.8ms)
+Completed 200 OK in 425ms (Views: 421.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 15:06:31 -0400
+  
+SyntaxError (/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/garden_controller.rb:32: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/api/garden_controller.rb:32: syntax error, unexpected keyword_end, expecting end-of-input
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.3ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.8ms)
+Started GET "/api/users/garden/new" for ::1 at 2017-05-09 15:06:38 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"api/users/garden/new"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (105.0ms)
+Completed 200 OK in 110ms (Views: 107.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 15:07:34 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (401.8ms)
+Completed 200 OK in 407ms (Views: 403.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 15:07:35 -0400
+  
+SyntaxError (/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/garden_controller.rb:32: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/api/garden_controller.rb:32: syntax error, unexpected keyword_end, expecting end-of-input
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.4ms)
+Started GET "/api/users/garden" for ::1 at 2017-05-09 15:07:48 -0400
+  
+SyntaxError (/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/garden_controller.rb:32: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/api/garden_controller.rb:32: syntax error, unexpected keyword_end, expecting end-of-input
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.0ms)
+Started GET "/api/users/garden" for ::1 at 2017-05-09 15:08:29 -0400
+Processing by Api::GardenController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (0.2ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 20ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 15:08:40 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (90.3ms)
+Completed 200 OK in 96ms (Views: 92.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 15:08:41 -0400
+Processing by Api::GardenController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (1.3ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 15:09:16 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (379.9ms)
+Completed 200 OK in 385ms (Views: 381.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 15:09:17 -0400
+Processing by Api::GardenController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (0.3ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/users/garden" for ::1 at 2017-05-09 15:09:30 -0400
+  
+SyntaxError (/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/garden_plants_controller.rb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+ct_to @job, notice: ‘Job was successfully created.’ }
+                              ^
+/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/garden_plants_controller.rb:20: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/api/garden_plants_controller.rb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/controllers/api/garden_plants_controller.rb:20: syntax error, unexpected keyword_end, expecting end-of-input
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.4ms)
+Started GET "/users/garden/new" for ::1 at 2017-05-09 15:10:30 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (395.2ms)
+Completed 200 OK in 401ms (Views: 397.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 15:10:31 -0400
+Processing by Api::GardenController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (9.8ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 10.2ms)
+
+
+Started POST "/api/users" for ::1 at 2017-05-09 15:10:37 -0400
+Processing by Api::GardenController#create as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: garden):
+  
+app/controllers/api/garden_controller.rb:25:in `garden_params'
+app/controllers/api/garden_controller.rb:9:in `create'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.1ms)
+Started GET "/users/garden/new" for ::1 at 2017-05-09 15:45:45 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (488.4ms)
+Completed 200 OK in 560ms (Views: 495.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 15:45:51 -0400
+Processing by Api::GardenController#index as HTML
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (1.0ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 75ms (Views: 0.6ms | ActiveRecord: 35.0ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 15:52:39 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (35.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (655.5ms)
+Completed 200 OK in 741ms (Views: 667.6ms | ActiveRecord: 35.2ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 15:52:41 -0400
+Processing by Api::GardenController#index as HTML
+  [1m[36mUser Load (19.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (0.6ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 25ms (Views: 0.2ms | ActiveRecord: 19.6ms)
+
+
+Started POST "/api/users" for ::1 at 2017-05-09 15:52:47 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for Api::UsersController):
+  
+actionpack (5.0.2) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+Started GET "/users/garden/new" for ::1 at 2017-05-09 15:54:24 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (24.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (125.1ms)
+Completed 200 OK in 181ms (Views: 128.3ms | ActiveRecord: 24.6ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 15:54:25 -0400
+Processing by Api::GardenController#index as HTML
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (0.2ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 47ms (Views: 0.2ms | ActiveRecord: 38.4ms)
+
+
+Started POST "/api/users" for ::1 at 2017-05-09 15:54:32 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for Api::UsersController):
+  
+actionpack (5.0.2) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+Started GET "/users/garden/new" for ::1 at 2017-05-09 15:57:39 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (442.7ms)
+Completed 200 OK in 464ms (Views: 445.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 15:57:41 -0400
+Processing by Api::GardenController#index as HTML
+  [1m[36mUser Load (17.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (0.5ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 60ms (Views: 0.2ms | ActiveRecord: 50.7ms)
+
+
+Started POST "/api/users" for ::1 at 2017-05-09 15:57:45 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for Api::UsersController):
+  
+actionpack (5.0.2) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (1.4ms)
+Started GET "/users/garden/new" for ::1 at 2017-05-09 15:58:43 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (501.3ms)
+Completed 200 OK in 508ms (Views: 503.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 16:01:05 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (413.9ms)
+Completed 200 OK in 422ms (Views: 415.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 16:01:12 -0400
+Processing by Api::GardenController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (6.2ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 16:01:15 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (85.2ms)
+Completed 200 OK in 90ms (Views: 86.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 16:01:33 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (420.2ms)
+Completed 200 OK in 426ms (Views: 422.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 16:01:33 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (86.6ms)
+Completed 200 OK in 91ms (Views: 87.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 16:02:15 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (392.1ms)
+Completed 200 OK in 397ms (Views: 393.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 16:02:20 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (77.7ms)
+Completed 200 OK in 83ms (Views: 79.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 16:02:37 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (391.9ms)
+Completed 200 OK in 404ms (Views: 393.7ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 16:06:24 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (397.4ms)
+Completed 200 OK in 413ms (Views: 399.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/garden/new?garden-size=1" for ::1 at 2017-05-09 16:06:50 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"garden-size"=>"1", "path"=>"users/garden/new"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (464.5ms)
+Completed 200 OK in 471ms (Views: 466.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/garden/new?garden-size=1" for ::1 at 2017-05-09 16:07:13 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"garden-size"=>"1", "path"=>"users/garden/new"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (409.9ms)
+Completed 200 OK in 416ms (Views: 411.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/garden/new?garden-size=1" for ::1 at 2017-05-09 16:07:16 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"garden-size"=>"1", "path"=>"users/garden/new"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (96.2ms)
+Completed 200 OK in 102ms (Views: 97.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/garden/new?garden-size=1" for ::1 at 2017-05-09 16:07:41 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"garden-size"=>"1", "path"=>"users/garden/new"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (81.8ms)
+Completed 200 OK in 87ms (Views: 83.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 16:07:45 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (80.3ms)
+Completed 200 OK in 86ms (Views: 82.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 16:08:42 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (411.4ms)
+Completed 200 OK in 417ms (Views: 413.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 16:09:43 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (386.1ms)
+Completed 200 OK in 391ms (Views: 387.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/undefinedgarden" for ::1 at 2017-05-09 16:09:44 -0400
+Processing by Api::UsersController#show as HTML
+  Parameters: {"id"=>"undefinedgarden"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (12.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 29ms (ActiveRecord: 12.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=undefinedgarden):
+  
+app/controllers/api/users_controller.rb:8:in `show'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.1ms)
+Started GET "/users/garden/new" for ::1 at 2017-05-09 16:10:06 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (407.6ms)
+Completed 200 OK in 413ms (Views: 409.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/undefined/garden" for ::1 at 2017-05-09 16:10:08 -0400
+Processing by Api::GardenController#index as HTML
+  Parameters: {"user_id"=>"undefined"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (0.2ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 47ms (Views: 0.1ms | ActiveRecord: 39.2ms)
+
+
+Started POST "/api/users/garden" for ::1 at 2017-05-09 16:10:15 -0400
+Processing by Api::GardenController#create as HTML
+  [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 400 Bad Request in 9ms (ActiveRecord: 6.8ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: garden):
+  
+app/controllers/api/garden_controller.rb:26:in `garden_params'
+app/controllers/api/garden_controller.rb:10:in `create'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.8ms)
+Started POST "/api/users/garden" for ::1 at 2017-05-09 16:11:13 -0400
+Processing by Api::GardenController#create as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: garden):
+  
+app/controllers/api/garden_controller.rb:26:in `garden_params'
+app/controllers/api/garden_controller.rb:10:in `create'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.3ms)
+Started POST "/api/users/garden" for ::1 at 2017-05-09 16:11:16 -0400
+Processing by Api::GardenController#create as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: garden):
+  
+app/controllers/api/garden_controller.rb:26:in `garden_params'
+app/controllers/api/garden_controller.rb:10:in `create'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.0ms)
+Started GET "/users/garden/new" for ::1 at 2017-05-09 16:11:17 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (84.3ms)
+Completed 200 OK in 91ms (Views: 86.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/undefined/garden" for ::1 at 2017-05-09 16:11:18 -0400
+Processing by Api::GardenController#index as HTML
+  Parameters: {"user_id"=>"undefined"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (0.2ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/users/garden" for ::1 at 2017-05-09 16:11:22 -0400
+Processing by Api::GardenController#create as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: garden):
+  
+app/controllers/api/garden_controller.rb:26:in `garden_params'
+app/controllers/api/garden_controller.rb:10:in `create'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.2ms)
+Started GET "/users/garden/new" for ::1 at 2017-05-09 16:13:28 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (81.3ms)
+Completed 200 OK in 97ms (Views: 82.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/undefined/garden" for ::1 at 2017-05-09 16:13:29 -0400
+Processing by Api::GardenController#index as HTML
+  Parameters: {"userId"=>"undefined"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (0.2ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/users/garden" for ::1 at 2017-05-09 16:13:33 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/api/users/garden"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered collection of /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [53 times] (38.4ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (16.2ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (144.5ms)
+Started GET "/users/garden/new" for ::1 at 2017-05-09 16:14:05 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (394.7ms)
+Completed 200 OK in 410ms (Views: 396.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/users/undefined/garden" for ::1 at 2017-05-09 16:14:06 -0400
+Processing by Api::GardenController#index as HTML
+  Parameters: {"userId"=>"undefined"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (0.2ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 16:14:21 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (422.5ms)
+Completed 200 OK in 431ms (Views: 425.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/users/undefined/garden" for ::1 at 2017-05-09 16:14:22 -0400
+Processing by Api::GardenController#index as HTML
+  Parameters: {"userId"=>"undefined"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (0.4ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 16:17:52 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (404.5ms)
+Completed 200 OK in 419ms (Views: 406.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 16:17:53 -0400
+Processing by Api::GardenController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (0.3ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/users/garden" for ::1 at 2017-05-09 16:17:57 -0400
+Processing by Api::GardenController#create as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: garden):
+  
+app/controllers/api/garden_controller.rb:26:in `garden_params'
+app/controllers/api/garden_controller.rb:10:in `create'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.4ms)
+Started GET "/users/garden/new" for ::1 at 2017-05-09 16:18:26 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (403.7ms)
+Completed 200 OK in 409ms (Views: 405.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 16:18:27 -0400
+Processing by Api::GardenController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (0.3ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/users/garden" for ::1 at 2017-05-09 16:18:30 -0400
+Processing by Api::GardenController#create as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: garden):
+  
+app/controllers/api/garden_controller.rb:26:in `garden_params'
+app/controllers/api/garden_controller.rb:10:in `create'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.3ms)
+Started POST "/api/users/garden" for ::1 at 2017-05-09 16:18:35 -0400
+Processing by Api::GardenController#create as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: garden):
+  
+app/controllers/api/garden_controller.rb:26:in `garden_params'
+app/controllers/api/garden_controller.rb:10:in `create'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.3ms)
+Started GET "/api/users/garden" for ::1 at 2017-05-09 16:18:45 -0400
+Processing by Api::GardenController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (6.6ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 16:18:51 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (82.1ms)
+Completed 200 OK in 88ms (Views: 83.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 16:18:52 -0400
+Processing by Api::GardenController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (0.5ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 16:19:23 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (417.5ms)
+Completed 200 OK in 423ms (Views: 418.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 16:19:25 -0400
+Processing by Api::GardenController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (0.2ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/garden/new" for ::1 at 2017-05-09 16:19:45 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/garden/new"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (387.1ms)
+Completed 200 OK in 392ms (Views: 388.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 16:19:47 -0400
+Processing by Api::GardenController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (0.2ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/users/garden" for ::1 at 2017-05-09 16:19:50 -0400
+Processing by Api::GardenController#create as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: garden):
+  
+app/controllers/api/garden_controller.rb:26:in `garden_params'
+app/controllers/api/garden_controller.rb:10:in `create'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.5ms)
+Started GET "/api/users/garden/new" for ::1 at 2017-05-09 16:21:46 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"api/users/garden/new"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (78.4ms)
+Completed 200 OK in 94ms (Views: 80.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 16:21:55 -0400
+Processing by Api::GardenController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (0.1ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/4" for ::1 at 2017-05-09 16:23:46 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (77.4ms)
+Completed 200 OK in 84ms (Views: 79.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/users/4" for ::1 at 2017-05-09 16:23:47 -0400
+Processing by Api::UsersController#show as HTML
+Started GET "/users/%7B%7Bpost.img_url%7D%7D" for ::1 at 2017-05-09 16:23:47 -0400
+  Parameters: {"id"=>"4"}
+Processing by ClientController#index as 
+  Parameters: {"path"=>"users/{{post"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (13.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (90.2ms)
+Completed 200 OK in 120ms (Views: 104.1ms | ActiveRecord: 1.2ms)
+
+
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 166ms (Views: 9.9ms | ActiveRecord: 42.1ms)
+
+
+Started GET "/users/4" for ::1 at 2017-05-09 16:23:47 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (95.7ms)
+Completed 200 OK in 107ms (Views: 97.3ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/users/4/posts/new" for ::1 at 2017-05-09 16:23:57 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/posts/new"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (80.0ms)
+Completed 200 OK in 85ms (Views: 81.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/4" for ::1 at 2017-05-09 16:24:00 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (75.2ms)
+Completed 200 OK in 79ms (Views: 76.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/4" for ::1 at 2017-05-09 16:24:01 -0400
+Processing by Api::UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+Started GET "/users/%7B%7Bpost.img_url%7D%7D" for ::1 at 2017-05-09 16:24:01 -0400
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Processing by ClientController#index as 
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Parameters: {"path"=>"users/{{post"}
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 10ms (Views: 2.8ms | ActiveRecord: 3.2ms)
+
+
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+Started GET "/users/4" for ::1 at 2017-05-09 16:24:01 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (129.8ms)
+Completed 200 OK in 157ms (Views: 141.9ms | ActiveRecord: 2.8ms)
+
+
+  Rendered client/index.html.erb (126.1ms)
+Completed 200 OK in 144ms (Views: 136.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users/4" for ::1 at 2017-05-09 16:25:29 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (387.6ms)
+Completed 200 OK in 393ms (Views: 389.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/4" for ::1 at 2017-05-09 16:25:30 -0400
+Processing by Api::UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+Started GET "/users/%7B%7Bpost.img_url%7D%7D" for ::1 at 2017-05-09 16:25:30 -0400
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Processing by ClientController#index as 
+  Parameters: {"path"=>"users/{{post"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (10.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 18ms (Views: 2.3ms | ActiveRecord: 11.8ms)
+
+
+  Rendering client/index.html.erb
+Started GET "/users/4" for ::1 at 2017-05-09 16:25:30 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (165.6ms)
+Completed 200 OK in 194ms (Views: 178.8ms | ActiveRecord: 1.8ms)
+
+
+  Rendered client/index.html.erb (131.3ms)
+Completed 200 OK in 148ms (Views: 140.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/4" for ::1 at 2017-05-09 16:26:25 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (396.7ms)
+Completed 200 OK in 402ms (Views: 398.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/4" for ::1 at 2017-05-09 16:26:26 -0400
+Processing by Api::UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+Started GET "/users/%7B%7Bpost.img_url%7D%7D" for ::1 at 2017-05-09 16:26:26 -0400
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Processing by ClientController#index as 
+  Parameters: {"path"=>"users/{{post"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (10.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 19ms (Views: 3.0ms | ActiveRecord: 12.4ms)
+
+
+  Rendering client/index.html.erb
+Started GET "/users/4" for ::1 at 2017-05-09 16:26:26 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (167.4ms)
+Completed 200 OK in 198ms (Views: 182.1ms | ActiveRecord: 1.9ms)
+
+
+  Rendered client/index.html.erb (131.5ms)
+Completed 200 OK in 140ms (Views: 133.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/4" for ::1 at 2017-05-09 16:26:47 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (396.3ms)
+Completed 200 OK in 401ms (Views: 398.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/4" for ::1 at 2017-05-09 16:26:49 -0400
+Processing by Api::UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+Started GET "/users/%7B%7Bpost.img_url%7D%7D" for ::1 at 2017-05-09 16:26:49 -0400
+Processing by ClientController#index as 
+  Parameters: {"path"=>"users/{{post"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (11.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 46ms (Views: 2.6ms | ActiveRecord: 13.7ms)
+
+
+  Rendering client/index.html.erb
+Started GET "/users/4" for ::1 at 2017-05-09 16:26:49 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (181.6ms)
+Completed 200 OK in 216ms (Views: 198.5ms | ActiveRecord: 0.8ms)
+
+
+  Rendered client/index.html.erb (122.9ms)
+Completed 200 OK in 137ms (Views: 126.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/users/4" for ::1 at 2017-05-09 16:27:13 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (395.2ms)
+Completed 200 OK in 401ms (Views: 396.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/4" for ::1 at 2017-05-09 16:27:14 -0400
+Processing by Api::UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started GET "/users/%7B%7Bpost.img_url%7D%7D" for ::1 at 2017-05-09 16:27:14 -0400
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Processing by ClientController#index as 
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 4]]
+  Parameters: {"path"=>"users/{{post"}
+Completed 200 OK in 8ms (Views: 2.4ms | ActiveRecord: 2.2ms)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+Started GET "/users/4" for ::1 at 2017-05-09 16:27:15 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (167.1ms)
+Completed 200 OK in 193ms (Views: 178.8ms | ActiveRecord: 0.8ms)
+
+
+  Rendered client/index.html.erb (156.3ms)
+Completed 200 OK in 167ms (Views: 160.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/4" for ::1 at 2017-05-09 16:27:38 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (391.5ms)
+Completed 200 OK in 396ms (Views: 393.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/4" for ::1 at 2017-05-09 16:27:39 -0400
+Processing by Api::UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+Started GET "/users/%7B%7Bpost.img_url%7D%7D" for ::1 at 2017-05-09 16:27:39 -0400
+Processing by ClientController#index as 
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Parameters: {"path"=>"users/{{post"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 31ms (Views: 24.6ms | ActiveRecord: 3.1ms)
+
+
+  Rendering client/index.html.erb
+Started GET "/users/4" for ::1 at 2017-05-09 16:27:39 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (176.5ms)
+Completed 200 OK in 206ms (Views: 192.2ms | ActiveRecord: 2.0ms)
+
+
+  Rendered client/index.html.erb (149.4ms)
+Completed 200 OK in 162ms (Views: 153.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/users/4" for ::1 at 2017-05-09 16:27:42 -0400
+Started GET "/users/%7B%7Bpost.img_url%7D%7D" for ::1 at 2017-05-09 16:27:42 -0400
+Processing by Api::UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+Processing by ClientController#index as 
+  Parameters: {"path"=>"users/{{post"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (11.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 34ms (Views: 3.3ms | ActiveRecord: 14.2ms)
+
+
+  Rendering client/index.html.erb
+Started GET "/users/4" for ::1 at 2017-05-09 16:27:42 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (236.8ms)
+Completed 200 OK in 271ms (Views: 252.1ms | ActiveRecord: 1.2ms)
+
+
+  Rendered client/index.html.erb (200.9ms)
+Completed 200 OK in 233ms (Views: 204.0ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/users/4" for ::1 at 2017-05-09 16:30:21 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (151.5ms)
+Completed 200 OK in 157ms (Views: 153.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/4" for ::1 at 2017-05-09 16:30:22 -0400
+Processing by Api::UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+Started GET "/users/%7B%7Bpost.img_url%7D%7D" for ::1 at 2017-05-09 16:30:22 -0400
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Processing by ClientController#index as 
+  Parameters: {"path"=>"users/{{post"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (29.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 4]]
+  Rendering client/index.html.erb
+Completed 200 OK in 40ms (Views: 3.5ms | ActiveRecord: 31.7ms)
+
+
+Started GET "/users/4" for ::1 at 2017-05-09 16:30:22 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (189.1ms)
+Completed 200 OK in 227ms (Views: 208.7ms | ActiveRecord: 2.6ms)
+
+
+  Rendered client/index.html.erb (153.4ms)
+Completed 200 OK in 163ms (Views: 157.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/4/garden/new" for ::1 at 2017-05-09 16:34:18 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/garden/new"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (438.2ms)
+Completed 200 OK in 456ms (Views: 439.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/garden" for ::1 at 2017-05-09 16:34:20 -0400
+Processing by Api::UsersController#show as HTML
+  Parameters: {"id"=>"garden"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=garden):
+  
+app/controllers/api/users_controller.rb:8:in `show'
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.0ms)
+Started GET "/users/4/garden/new" for ::1 at 2017-05-09 16:36:18 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/garden/new"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (397.3ms)
+Completed 200 OK in 403ms (Views: 399.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/undefined/garden" for ::1 at 2017-05-09 16:36:20 -0400
+Processing by Api::GardenController#index as HTML
+  Parameters: {"userId"=>"undefined"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (0.3ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/4/garden/new" for ::1 at 2017-05-09 16:37:06 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/garden/new"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (394.7ms)
+Completed 200 OK in 400ms (Views: 396.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/4/garden/new" for ::1 at 2017-05-09 16:37:16 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/garden/new"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (93.4ms)
+Completed 200 OK in 99ms (Views: 95.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/4/garden/new" for ::1 at 2017-05-09 16:37:30 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/garden/new"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (463.2ms)
+Completed 200 OK in 468ms (Views: 464.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/undefined/garden" for ::1 at 2017-05-09 16:37:31 -0400
+Processing by Api::GardenController#index as HTML
+  Parameters: {"userId"=>"undefined"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (0.2ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/4/garden/new" for ::1 at 2017-05-09 16:40:40 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4/garden/new"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (429.4ms)
+Completed 200 OK in 435ms (Views: 431.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/undefined/garden" for ::1 at 2017-05-09 16:40:41 -0400
+Processing by Api::GardenController#index as HTML
+  Parameters: {"userId"=>"undefined"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mGarden Load (0.2ms)[0m  [1m[34mSELECT  "gardens".* FROM "gardens" WHERE "gardens"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/users/4/garden" for ::1 at 2017-05-09 16:40:49 -0400
+Processing by Api::GardenController#create as HTML
+  Parameters: {"name"=>"fefeef", "size"=>"", "userId"=>"4", "garden"=>{"name"=>"fefeef", "size"=>""}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (8.7ms)[0m  [1m[32mINSERT INTO "gardens" ("name", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "fefeef"], ["created_at", 2017-05-09 20:40:49 UTC], ["updated_at", 2017-05-09 20:40:49 UTC], ["user_id", 4]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 23ms (Views: 0.5ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/users/edit" for ::1 at 2017-05-09 16:41:03 -0400
+Processing by Users::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 97ms (Views: 94.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-09 16:41:07 -0400
+Processing by ClientController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (76.9ms)
+Completed 200 OK in 83ms (Views: 78.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users/4" for ::1 at 2017-05-09 16:41:15 -0400
+Processing by Api::UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+Started GET "/users/%7B%7Bpost.img_url%7D%7D" for ::1 at 2017-05-09 16:41:15 -0400
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Processing by ClientController#index as 
+  Parameters: {"path"=>"users/{{post"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (80.6ms)
+Completed 200 OK in 106ms (Views: 91.0ms | ActiveRecord: 1.2ms)
+
+
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 4]]
+Completed 200 OK in 150ms (Views: 8.0ms | ActiveRecord: 28.3ms)
+
+
+Started GET "/users/4" for ::1 at 2017-05-09 16:41:15 -0400
+Processing by ClientController#index as HTML
+  Parameters: {"path"=>"users/4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering client/index.html.erb
+  Rendered client/index.html.erb (84.8ms)
+Completed 200 OK in 90ms (Views: 86.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/4/posts/2" for ::1 at 2017-05-09 16:41:21 -0400
+  
+SyntaxError (/Users/sungminnie/Desktop/seed-and-see/app/controllers/api/posts_controller.rb:60: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/posts_controller.rb:60: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.9ms)
