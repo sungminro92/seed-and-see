@@ -9,7 +9,7 @@
   </head>
 
   <body>
-      <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" style="margin:0">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -19,40 +19,45 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
+          <a class="navbar-brand brand" href="/">
+            <img class="brandimg img-responsive" src="http://i.imgur.com/YSEdmh5.png" alt="">
+          </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
+
           <% if user_signed_in? %>
-            <li class="active">
-              <a ui-sref="userShow({id:<%= current_user.id %>})">View Profile<span class="sr-only">(current)</span></a>
-            </li>
+          <ul class="nav navbar-nav">
             <li>
-                <%= link_to 'Home', root_path %>
-            </a>
-            <li>
-                <%= link_to 'Edit account', edit_user_registration_path, target: '_self' %>
+              <%= link_to 'News Feed', root_path %>
             </li>
-            <li>
-                <%= link_to 'Sign out', destroy_user_session_path, method: 'delete', target: '_self' %>
-            </li>
-          <% end %>
+            
           </ul>
+
+
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
+            <li>
+              <a ui-sref="gardenIndex({id:<%= current_user.id%>})">My Garden</a>
+            </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
+                <li>
+                  <a ui-sref="userShow({id:<%= current_user.id %>})">View Profile<span class="sr-only">(current)</span></a>
+                </li>
+                <li>
+                  <%= link_to 'Edit Account', edit_user_registration_path, target: '_self' %>
+                </li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
+                <li>
+                  <%= link_to 'Sign Out', destroy_user_session_path, method: 'delete', target: '_self' %>
+                </li>
               </ul>
             </li>
           </ul>
+          <% end %>
+
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
