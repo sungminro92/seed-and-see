@@ -1,7 +1,7 @@
 class Api::GardenPlantsController < ApplicationController
 
   def create
-  	@gardenPlant = GardenPlant.new(garden_id: current_user.garden.id, plant_id: params[:plant_id])
+  	@gardenPlant = GardenPlant.new(garden_id: current_user.garden.id, plant_id: params[:plant_id], name: params[:plant_name], icon: params[:plant_icon])
 
     if @gardenPlant.save
       render json: @gardenPlant, status: :created

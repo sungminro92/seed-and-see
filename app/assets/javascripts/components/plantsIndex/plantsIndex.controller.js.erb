@@ -23,13 +23,15 @@ function PlantsIndexController($state, plantsService) {
 
   function saveToGarden(plant) {
     console.log(plant);
-    var plant_id = plant.id
+    var plant_id = plant.id;
+    var plant_name = plant.name;
+    var plant_icon = plant.icon;
       if (vm.currentUserGarden == null) {
         alert('you must create a garden to save garden plants!');
         $state.go('gardenNew', {userId: userId});
       } else {
         plantsService
-        .saveToGarden(plant_id)
+        .saveToGarden(plant_id, plant_name, plant_icon)
         .then(function(res) {
           if(res.status == 201) {alert('plant has been saved in your garden!')};
         });   
