@@ -1,6 +1,12 @@
 <h1>Post Show Page</h1>
 
+<img src="{{$ctrl.post.img_url}}" alt="Mountains">
+<div class="desc">{{ post.title }}</div>
+<div class="desc">{{ post.description }}</div>
+
+<div class="desc">Posted By {{ post.user.name }} | </div>
+
 <p>{{$ctrl.post.title}}</p>
 <p>{{$ctrl.post.description}}</p>
 <a ui-sref="postEdit({userId: $ctrl.post.user_id, id: $ctrl.post.id})">Edit Post</a><br>
-<a ng-click="$ctrl.deletePost()">delete Post</a>
+<a ng-click="$ctrl.deletePost()">Delete Post</a>
