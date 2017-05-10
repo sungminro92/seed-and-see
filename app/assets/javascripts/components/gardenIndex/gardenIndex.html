@@ -1,7 +1,11 @@
-<h1>Garden Index</h1>
+<div class="garden-index">
+<!-- User's garden lives here -->
+	<h1 class="garden-name"> {{ $ctrl.garden.name }} </h1> <button class="inline"> < edit</button>
+	<h4> Garden Owner | <a ui-sref="userShow({id:$ctrl.garden.user_id})">{{ $ctrl.garden.user.name }} </a></h4>
+	<div class="garden" >
+		<p> There will be plants here </p>
+	</div>
 
-{{$ctrl.garden.name}}
-<p> disply garden </p>
-<p> displan all plants </p>
 <p> display what will need water </p>
 
+</div>

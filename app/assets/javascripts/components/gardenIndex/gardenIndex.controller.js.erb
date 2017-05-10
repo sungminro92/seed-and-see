@@ -4,10 +4,12 @@ angular
 
 GardenIndexController.$inject = ['$stateParams','$state', 'gardenService'];
 
-function GardenIndexController($stateParams, $state, gardenService) {
+function GardenIndexController( $stateParams, $state, gardenService) {
   var vm = this;
   //garden
   vm.garden = {};
+  // vm.editGardenName = editGardenName;
+
 
   var userId = $stateParams.userId
   
@@ -24,6 +26,16 @@ function GardenIndexController($stateParams, $state, gardenService) {
   		};
   	});
   
+  	// function editGardenName() {
+  	// 	$('.garden-name')
+  	// 		.hide()
+  	// 		.append("ng-model='$ctrl.garden.name' /><button></button>")
+  	// 		.then(function(event) {
+  	// 			$
+  	// 		})
+  	// }
+
+
 
 
   // and show all garden_plants user has through a garden.
