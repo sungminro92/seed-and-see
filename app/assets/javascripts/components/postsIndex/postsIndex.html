@@ -3,11 +3,6 @@
 <button ui-sref="postNew({ userId: $ctrl.currentUser.id })">Create a post</button>
 
 <ul ng-repeat="post in $ctrl.posts">
-	<a ui-sref="postShow({ userId: post.user_id, id: post.id })"><li> {{ post.title }} </li></a>
-	<li> {{ post.description }} </li>
-</ul>
-
-<ul ng-repeat="post in $ctrl.posts">
 	<div class="gallery">
 
 	  <a ui-sref="postShow({userId: {{post.user_id}}, id: {{post.id}}})">
@@ -16,6 +11,6 @@
 	  <div class="desc">{{ post.title }}</div>
 	  <div class="desc">{{ post.description }}</div>
 
-	  <div class="desc">{{ post.user.email }}</div>
+	  <div class="desc">{{ post.user.name }}</div>
 	</div>
 </ul>
