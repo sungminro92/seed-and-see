@@ -37,6 +37,14 @@ angular
         url: '/',
         component: 'homePage'
       })
+      .state('gardenIndex', {
+        url: '/users/:userId/garden',
+        component: 'gardenIndex'
+      })
+      .state('gardenNew', {
+        url: '/users/:userId/garden/new',
+        component: 'gardenNew'
+      })
       // WHERE PLANTS LIBRARY IS
       .state('plants', {
         url: '/plants',

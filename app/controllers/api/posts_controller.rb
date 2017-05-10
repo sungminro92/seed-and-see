@@ -1,9 +1,11 @@
 class Api::PostsController < ApplicationController
   def index
     @posts = Post.all
-    @user = current_user
-    render json: { posts: @posts, currentUser: @user }
-  end
+    # @user = current_user
+    render json: @posts.to_json(include: :user)
+    # currentUser: @user
+    # render json: => @posts, :include => {:user}
+    # render :json @posts.to_json({:include => :user})
 
   def show
   	@post = Post.find(params[:id])
@@ -56,4 +58,3 @@ class Api::PostsController < ApplicationController
   end
 
 end
-

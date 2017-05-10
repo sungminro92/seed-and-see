@@ -16,8 +16,9 @@ function PostsIndexController($stateParams, postsService, usersService) {
   	.getPosts() 
   	.then(function(res) {
       console.log(res);
-	    vm.posts = res.data.posts;
-      vm.currentUser = res.data.currentUser;
+	    vm.posts = res.data
+      // posts;
+      // vm.currentUser = res.data.currentUser;
 	});
 
 }

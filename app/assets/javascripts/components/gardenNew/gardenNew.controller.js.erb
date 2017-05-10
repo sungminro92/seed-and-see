@@ -2,9 +2,9 @@ angular
   .module('seedAndSee')
   .controller('GardenNewController', GardenNewController);
 
-GardenNewController.$inject = ['$state', 'gardenService'];
+GardenNewController.$inject = ['$state', '$stateParams', 'gardenService'];
 
-function GardenNewController($state, gardenService) {
+function GardenNewController($state, $stateParams, gardenService) {
   var vm = this;
   
 	vm.garden = {
@@ -19,7 +19,7 @@ function GardenNewController($state, gardenService) {
   	.getGarden()
   	.then(function(res) {
   		if (res.data == !null) {
-  			$state.go('gardenIndex')
+  			$state.go('gardenIndex', { userId: res.data.user_id })
   		} else {
   			alert('You must create a garden to have garden_plants')
   		};
@@ -28,11 +28,11 @@ function GardenNewController($state, gardenService) {
   // create a garden to user's
   function saveGarden() {
   	gardenService
-      .createGarden(vm.garden)
+      .createGarden($stateParams.userId, vm.garden)
       .then(function(res) {
-      	console.log(vm.garden)
+      	// console.log(vm.garden)
       	if(res.status == 201) {
-      		$state.go('gardenIndex')
+      		$state.go('gardenIndex', {userId: res.data.user_id })
       	} else {
       		alert('Something went wrong')
       	};

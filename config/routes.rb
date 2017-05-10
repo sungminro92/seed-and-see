@@ -8,14 +8,14 @@ Rails.application.routes.draw do
     resources :posts, :only => [:index]
     resources :plants
 
-    get '/users/garden' => 'garden#index'
+    get '/users/:userId/garden' => 'garden#index'
     post '/users/gardenplants' => 'garden_plants#create'
 
     # ???? DOES THIS WORK?
-    post '/users/garden' => 'garden#create'
+    post '/users/:userId/garden' => 'garden#create'
     # post 
     resources :users do
-      resources :garden, :only => [:index]
+      resources :garden
     	resources :posts, :except => :index do
     		resources :comments
     	end
