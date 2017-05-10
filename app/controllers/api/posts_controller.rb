@@ -6,7 +6,8 @@ class Api::PostsController < ApplicationController
     # currentUser: @user
     # render json: => @posts, :include => {:user}
     # render :json @posts.to_json({:include => :user})
-
+  end
+  
   def show
   	@post = Post.find(params[:id])
     @comments = @post.comments
