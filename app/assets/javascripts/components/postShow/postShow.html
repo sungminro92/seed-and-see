@@ -1,12 +1,33 @@
 <h1>Post Show Page</h1>
 
-<img src="{{$ctrl.post.img_url}}" alt="Mountains">
-<div class="desc">{{ post.title }}</div>
-<div class="desc">{{ post.description }}</div>
+<div class="col-md-8">
 
-<div class="desc">Posted By {{ post.user.name }} | </div>
+    <!-- First Blog Post -->
+    <h2>
+        <a href="#">{{$ctrl.post.title}}</a>
+    </h2>
+    <p class="lead">
+    <p></p>
+        by <a ui-sref="userShow({id: $ctrl.post.user_id})">{{ $ctrl.user.name }}</a>
+    </p>
+    <p><span class="glyphicon glyphicon-time"></span> Posted on {{ $ctrl.post.created_at | date:"MM/dd/yy @ h:mma"}}</p>
+    <hr>
+    <img class="img-responsive" src="{{$ctrl.post.img_url}}" alt="">
+    <hr>
+    <p>{{$ctrl.post.description}}</p>
+    <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
-<p>{{$ctrl.post.title}}</p>
-<p>{{$ctrl.post.description}}</p>
-<a ui-sref="postEdit({userId: $ctrl.post.user_id, id: $ctrl.post.id})">Edit Post</a><br>
-<a ng-click="$ctrl.deletePost()">Delete Post</a>
+    <hr>
+
+
+    <!-- Pager -->
+    <ul class="pager">
+        <li class="previous">
+            <a href="#">&larr; Older</a>
+        </li>
+        <li class="next">
+            <a href="#">Newer &rarr;</a>
+        </li>
+    </ul>
+
+</div>

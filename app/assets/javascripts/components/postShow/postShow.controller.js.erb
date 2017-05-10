@@ -9,6 +9,7 @@ function PostShowController($stateParams, postsService) {
 
   vm.post = {};
   // vm.comments = [];
+  vm.user = {};
 
   var userId = $stateParams.userId;
   var id = $stateParams.id;
@@ -16,9 +17,9 @@ function PostShowController($stateParams, postsService) {
   postsService
     .getPost(userId, id)
     .then(function(res){
-      console.log(res)
+      console.log(res);
       vm.post = res.data.post;
-      // vm.comments = res.data.comments;
+      vm.user = res.data.user;
     });
   
 }
