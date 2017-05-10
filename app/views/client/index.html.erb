@@ -26,20 +26,20 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <% if user_signed_in? %>
+          <% if user_signed_in? %>
             <li class="active">
               <a ui-sref="userShow({id:<%= current_user.id %>})">View Profile<span class="sr-only">(current)</span></a>
             </li>
-            <li><a href="#">
+            <li>
                 <%= link_to 'Home', root_path %>
-            </a></li>
-            <li><a href="#">
+            </a>
+            <li>
                 <%= link_to 'Edit account', edit_user_registration_path, target: '_self' %>
-            </a></li>
-            <li><a href="#">
+            </li>
+            <li>
                 <%= link_to 'Sign out', destroy_user_session_path, method: 'delete', target: '_self' %>
-            </a></li>
-            <% end %>
+            </li>
+          <% end %>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Link</a></li>
