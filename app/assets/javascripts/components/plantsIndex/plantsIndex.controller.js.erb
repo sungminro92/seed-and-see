@@ -8,22 +8,33 @@ function PlantsIndexController($state, plantsService) {
   var vm = this;
 
   vm.plants = [];
+  vm.currentUserGarden = {};
   vm.saveToGarden = saveToGarden;
+  vm.userId = {};
+  var userId = vm.userId;
 
   plantsService
     .getPlants()
     .then(function(res) {
       console.log(res);
-      vm.plants = res.data;
+      vm.plants = res.data.plants;
+      vm.currentUserGarden = res.data.garden
     });
 
   function saveToGarden(plant) {
     console.log(plant);
-    plantsService
-      .saveToGarden(plant)
-      .then(function(res){
-        if(res.status == 201) {alert('plant has been saved in your garden!')};
-      }); 
+    var plant_id = plant.id
+      if (vm.currentUserGarden == null) {
+        alert('you must create a garden to save garden plants!');
+        $state.go('gardenNew', {userId: userId});
+      } else {
+        plantsService
+        .saveToGarden(plant_id)
+        .then(function(res) {
+          if(res.status == 201) {alert('plant has been saved in your garden!')};
+        });   
+      }
+      
   }
 
 }

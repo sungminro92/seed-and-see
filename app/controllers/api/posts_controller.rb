@@ -8,7 +8,8 @@ class Api::PostsController < ApplicationController
     @post = Post.find(params[:id])
     @user = User.find(@post.user_id)
     @comments = @post.comments
-    render json: {post: @post, user: @user, comments: @comments}
+    @currentUser = current_user
+    render json: {post: @post, user: @user, comments: @comments, currentUser: @currentUser}
 
    # @comments = @post.find(params[:id])
    #  render :json @comments.to_json(include: [:user, :post)

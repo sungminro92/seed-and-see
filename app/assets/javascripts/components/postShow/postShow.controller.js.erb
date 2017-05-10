@@ -2,9 +2,9 @@ angular
   .module('seedAndSee')
   .controller('PostShowController', PostShowController);
 
-PostShowController.$inject = ['$stateParams','postsService', 'commentsService'];
+PostShowController.$inject = ['$stateParams','postsService', 'commentsService', '$window'];
 
-function PostShowController($stateParams, postsService, commentsService) {
+function PostShowController($stateParams, postsService, commentsService, $window) {
   var vm = this;
 
   vm.post = {};
@@ -13,35 +13,59 @@ function PostShowController($stateParams, postsService, commentsService) {
   vm.newComment = {
     content:''
   };
-  
+
+  vm.currentUserId = {};
+  vm.isCurrentUser = false;
+
+  // CALLED FUNCTIONS
   vm.createComment = createComment;
+  vm.deleteComment = deleteComment;
 
   var userId = $stateParams.userId;
   var id = $stateParams.id;
+  var postId = $stateParams.id
 
+
+  // ONLOAD
   postsService
     .getPost(userId, id)
     .then(function(res){
       console.log(res);
-      vm.post = res.data.post;
-      vm.user = res.data.user;
-      vm.comments = res.data.comments
-    });
+      vm.post = res.data.post,
+      vm.user = res.data.user,
+      vm.comments = res.data.comments,
+      vm.currentUserId = res.data.currentUser.id
+    })
+    // .then(function isCurrentUser() {
+    //   if (userId == vm.currentUser.id) {
+    //     vm.isCurrentUser = true;
+    //   }
+    // })
 
+  // FUNCTIONS
   function createComment() {
-    var postId = $stateParams.id
-
     commentsService
       .createComment(postId, vm.newComment)
       .then(function(res) {
         if(res.status == 201) {
-          console.log(res.data.content)
+          console.log(res.data.content);
+          $window.location.reload();
         } else {
           alert('something went wrong')
         }
       })
   }
-
+  // DELETE COMMENT
+  function deleteComment(comment) {
+    var id = comment.id;
+    commentsService
+      .deleteComment(userId, postId, id)
+      .then(function(res) {
+        console.log('your comment has been deleted!');
+        alert('your comment has been deleted!');
+        $window.location.reload();
+      })
+  }
 
 
 }

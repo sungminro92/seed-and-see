@@ -27,7 +27,8 @@
         <div class="comment-box">
             <p>
                 <span class="comment-time"> {{ comment.created_at | date:'medium'}}</span>
-                <span class="comment-content">{{ comment.content }}</span>
+                <span class="comment-content"> {{ comment.content }} </span>
+                <a ng-if=" comment.user_id == $ctrl.currentUserId" ng-click="$ctrl.deleteComment(comment)">delete</button>
             </p>
 
         </div>

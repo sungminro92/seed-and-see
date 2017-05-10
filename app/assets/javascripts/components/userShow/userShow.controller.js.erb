@@ -28,8 +28,8 @@ function UserShowController($stateParams, usersService, postsService) {
     postsService
       .deletePost(userId, id)
       .then(function(res) {
-        console.log('post has been deleted');
-        alert('post has been deleted!');
+        console.log('your post has been deleted');
+        alert('your post has been deleted!');
       });
   };
 
