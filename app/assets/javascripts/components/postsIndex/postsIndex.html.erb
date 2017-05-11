@@ -1,7 +1,7 @@
 <div class="search-and-filter">
-	<label class="serach-bar nav-separation">Search:</label><input ng-model="searchText">
+	<label class="search-bar nav-separation">Search:</label><input ng-model="searchText">
 	<div class="order-by-wrap"><span class="nav-separation">|</span>
-	<span class="nav-separation">Order by:</span><button ng-click="$ctrl.propertyName = 'created_at'; $ctrl.reverse = false">Most Recent<button class="nav-separation" ng-click="$ctrl.sortBy('title')">title</button><button ng-click="$ctrl.sortBy('description')">user name</button>
+	<span class="nav-separation">Sort By:</span><button ng-click="$ctrl.propertyName = 'created_at'; $ctrl.reverse = false">Most Recent<button class="nav-separation" ng-click="$ctrl.sortBy('title')">Title</button><button ng-click="$ctrl.sortBy('description')">User Name</button>
 	</div>
 </div>
 
