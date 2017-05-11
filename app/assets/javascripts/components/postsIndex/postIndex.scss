@@ -40,3 +40,21 @@ div.desc {
 	font-family: 'Galindo', cursive;
 	font-size: 20px;
 }
+
+.posts-index-page {
+    display: flex;
+    width: 100%;
+    justify-content: space-between
+}
+
+.posts-wrap {
+    display: flex;
+    align-items: flex-start;
+    min-width: 500px;
+    max-width: 100%;
+}
+
+.twitter-wrap {
+    float: right;
+    margin-right: 5%;
+}

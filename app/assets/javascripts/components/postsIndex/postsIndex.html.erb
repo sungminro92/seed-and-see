@@ -1,15 +1,23 @@
 <h1> Post Index </h1>
+<div class="posts-index-page">
+	<div class="posts-wrap">
+		<ul ng-repeat="post in $ctrl.posts">
+			<div class="gallery">
 
-<ul ng-repeat="post in $ctrl.posts">
-	<div class="gallery">
-
-	<a ui-sref="postShow({ userId: {{post.user_id}}, id: {{post.id}} })">
-	   <img src="{{post.img_url}}" alt="Picture" width="300" height="200">
-	</a>
-	
-	<div class="desc title">{{ post.title }}</div>
-	<div class="desc">{{ post.description }}</div>
-	
-	<div ng-if ="$ctrl.currentUser.id == post.user_id" class="desc"><a ui-sref="postEdit({userId: {{post.user_id}}, id: {{post.id}} })">Edit</a> | <a ng-click="deletePost()">Delete</a>
+			<a ui-sref="postShow({ userId: {{post.user_id}}, id: {{post.id}} })">
+			   <img src="{{post.img_url}}" alt="Picture" width="300" height="200">
+			</a>
+			
+			<div class="desc title">{{ post.title }}</div>
+			<div class="desc">{{ post.description }}</div>
+			
+			<div ng-if ="$ctrl.currentUser.id == post.user_id" class="desc"><a ui-sref="postEdit({userId: {{post.user_id}}, id: {{post.id}} })">Edit</a> | <a ng-click="deletePost()">Delete</a>
+			</div>
+			</div>
+		</ul>
 	</div>
-</ul>
+
+	<div class="twitter-wrap"><a class="twitter-timeline" data-width="350" data-height="650px" data-theme="light" data-link-color="#19CF86" href="https://twitter.com/urbangardens">Tweets by urbangardens</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</div>
+
+</div>
