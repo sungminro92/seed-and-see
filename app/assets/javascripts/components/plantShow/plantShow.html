@@ -1,13 +1,13 @@
 <h1>Plant Show Page</h1>
-
+<button class="button button-margin"> < Back to Plants </button>
 <input ng-model="$ctrl.searchPlant" placeholder="search for any food nutrition facts!"><button ui-sref='plantShow({id: $ctrl.searchPlant })'> Search!</button>
 
 <ul ng-repeat="fact in $ctrl.facts">
 	<div class="nutrition-fact">
-	<p>{{fact.item_name}}</p>
-	<p>{{fact.brand_name}}</p>
-	<p>{{fact.nf_calories}}</p>
-	<p>s{{fact.nf_total_fat}}</p>
+	<p>Item Name : {{fact.fields.item_name}}</p>
+	<p>Brand Name : {{fact.fields.brand_name}}</p>
+	<p>Calories : {{fact.fields.nf_calories}}</p>
+	<p>Total Fat : {{fact.fields.nf_total_fat}}</p>
 	<div>
 </ul>
 
