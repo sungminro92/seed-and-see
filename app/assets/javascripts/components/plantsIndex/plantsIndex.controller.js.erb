@@ -9,6 +9,8 @@ function PlantsIndexController($state, plantsService) {
 
   vm.plants = [];
   vm.currentUserGarden = {};
+  vm.gardenPlants = {};
+
   vm.saveToGarden = saveToGarden;
   vm.userId = {};
   var userId = vm.userId;
@@ -18,7 +20,8 @@ function PlantsIndexController($state, plantsService) {
     .then(function(res) {
       console.log(res);
       vm.plants = res.data.plants;
-      vm.currentUserGarden = res.data.garden
+      vm.currentUserGarden = res.data.garden;
+      vm.gardenPlants = res.data.garden_plants;
     });
 
   function saveToGarden(plant) {
@@ -33,7 +36,9 @@ function PlantsIndexController($state, plantsService) {
         plantsService
         .saveToGarden(plant_id, plant_name, plant_icon)
         .then(function(res) {
-          if(res.status == 201) {alert('plant has been saved in your garden!')};
+          if(res.status == 201) {
+            vm.myPlants += 1;
+            alert('plant has been saved in your garden!')};
         });   
       }
       

@@ -10,8 +10,11 @@ function PostsIndexController($stateParams, postsService, usersService) {
   vm.posts = [];
   vm.currentUser = {};
   // vm.userId = $stateParams.userId
-  vm.sortBy = sortBy
+  vm.sortBy = sortBy;
+  vm.limit = 9;
+  vm.loadMore = loadMore;
   activate();
+
 
   function activate() {
     $(window).resize(function() {
@@ -21,8 +24,13 @@ function PostsIndexController($stateParams, postsService, usersService) {
       } else {
       $('.order-by-wrap').show();
       }
-    });
+    })
   };
+
+  function loadMore() {
+    vm.limit = vm.posts.length
+  };
+  
 
 	postsService
   	.getPosts() 

@@ -20,20 +20,39 @@ user2 = User.create(
 user3 = User.create(
 	name: 'Mario Cart', email: 'mariocart@gmail.com', password: '123456', password_confirmation:'123456' )
 
-plant1 = Plant.create(
-	name: 'Beans', days_to_water:'2', img_url: 'http://i.imgur.com/O9EobIJ.png' )
+radish = Plant.create(
+	name: 'Radish', days_to_water:'', img_url: 'https://image.ibb.co/fx7jVk/3.png' )
 
-plant2 = Plant.create(
-	name: 'Beets', days_to_water:'1', img_url: 'http://i.imgur.com/O9EobIJ.png' )
+onion = Plant.create(
+	name: 'Onion', days_to_water:'', img_url: 'https://image.ibb.co/kpnjVk/6.png' )
 
-plant3 = Plant.create(
-	name: 'Broccoli', days_to_water:'2', img_url: 'http://i.imgur.com/O9EobIJ.png' )
+tomato = Plant.create(
+	name: 'Tomato', days_to_water:'', img_url: 'https://image.ibb.co/muRYO5/1.png' )
 
-plant4 = Plant.create(
-	name: 'Brussels sprouts', days_to_water:'', img_url: 'http://i.imgur.com/O9EobIJ.png' )
+strawberry = Plant.create(
+	name: 'Strawberry', days_to_water:'', img_url: 'https://image.ibb.co/cHhjVk/2.png' )
+
+beet = Plant.create(
+	name: 'Beet', days_to_water:'', img_url: 'https://image.ibb.co/b2Yf35/7.png' )
+
+beans = Plant.create(
+	name: 'Beans', days_to_water:'', img_url: 'https://image.ibb.co/nhCJqk/8.png' )
+
+pepper = Plant.create(
+	name: 'Red Pepper', days_to_water:'', img_url: 'https://image.ibb.co/muNwbQ/10.png' )
+
+cucumber = Plant.create(
+	name: 'Cucumber', days_to_water:'', img_url: 'https://image.ibb.co/dBdrAk/11.png' )
+
+squash = Plant.create(
+	name: 'Squash', days_to_water:'', img_url: 'https://image.ibb.co/egUCi5/12.png' )
+
+
 
 post1 = Post.create(
 	title: "POWMEOW!", description: "This is my cat in the garden!", img_url: "http://i.imgur.com/O9EobIJ.png", user_id: user1.id)
+
+
 
 comment1 = Comment.create(
 	content: "This is the first comment", post_id: post1.id, user_id: user1.id)

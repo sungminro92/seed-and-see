@@ -6,12 +6,12 @@ Rails.application.routes.draw do
 
   namespace :api do
     resources :posts, :only => [:index]
-    resources :plants
+    resources :plants, :except => [:show]
 
     get '/users/:userId/garden' => 'garden#index'
     post '/users/gardenplants' => 'garden_plants#create'
     post '/users/posts/:id/comments' => 'comments#create'
-
+    get '/plants/:plant_name' => 'plants#show'
     # ???? DOES THIS WORK?
     post '/users/:userId/garden' => 'garden#create'
     # post 

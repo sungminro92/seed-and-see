@@ -49,6 +49,10 @@ gem 'httparty'
 #---- Nutritionnix -----
 gem 'nutritionix'
 #-----------------------
+
+#---- Nutritionnix -----
+gem 'friendly_id', '~> 5.1.0'
+#-----------------------
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

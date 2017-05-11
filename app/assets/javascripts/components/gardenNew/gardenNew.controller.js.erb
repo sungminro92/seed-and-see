@@ -21,7 +21,7 @@ function GardenNewController($state, $stateParams, gardenService) {
   		if (res.data == !null) {
   			$state.go('gardenIndex', { userId: res.data.user_id })
   		} else {
-  			alert('You must create a garden to have garden_plants')
+  			vm.garden.name = 'Name your garden'
   		};
   	})
 

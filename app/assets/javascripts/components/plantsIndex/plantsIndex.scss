@@ -6,18 +6,44 @@ $color-softorange: #FCAC8A;
 $color-orange: #E06029;
 $color-black: #292108;
 
+p.title {
+	text-align: center;
+}
+
 .plants-index-page {
 	margin-top: 2%;
     display: flex;
     width: 100%;
     justify-content: center;
-
+    flex-wrap: wrap;
 }
 
 .plants-wrap {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    max-width: 800px;
-    min-width: 300px;
+    justify-content: center;
 }
+
+/*search-nutritionix-wrap {
+	display:flex;
+	width: 350;
+}
+*/
+.each-plant {
+	margin: 5px;
+    border: 1px solid $color-orange;
+    width: 150px;
+    height: 300px;
+    padding: 2px; 
+    text-align: center;
+
+}
+.plant-icon {
+	margin-left: 20px;
+	display: flex;
+	width: 100px;
+	height: 100px;
+	background-color: none;
+}
+

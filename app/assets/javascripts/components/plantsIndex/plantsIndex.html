@@ -1,12 +1,18 @@
-<h1>Plants Index Page</h1>
-
-<!-- Search: <input ng-model="$ctrl.query" />
- -->
+<span><p class="title">Plants Index</p></span>
+<div class="my-plants-number"> Number of my plants: {{ $ctrl.gardenPlants }} </div>
 <div class="plants-index-page">
-	<div class="plants-wrap" ng-repeat="plant in $ctrl.plants">
-		<div>
-		  <p>name: <a ui-sref="plantShow({id: plant.id})">{{ plant.name }}</a></p>
-		  <a ng-click="$ctrl.saveToGarden(plant)">Save to My Garden</a>
+
+	<div class="plants-wrap" ng-repeat="plant in $ctrl.plants"> 
+		<div class="each-plant">
+		<div class="plant-icon">
+			<img src="{{plant.img_url}}" style="width:100%">
+		</div><br>
+		<p class="title"><a ui-sref="plantShow({id: (plant.name | lowercase) })">{{ plant.name }}</a></p><br>
+		<p><a ng-click="$ctrl.saveToGarden(plant)">Save to my garden</a></p>
 		</div>
 	</div>
 </div>
+
+	<div class="search-nutritionix-wrap">
+	<input ng-model="$ctrl.searchPlant" placeholder="search for any food nutrition facts!"><button ui-sref='plantShow({id: $ctrl.serachPlant })'> Search!</button>
+	</div> 

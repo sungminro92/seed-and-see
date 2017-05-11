@@ -11,8 +11,8 @@ function plantsService($http) {
     return $http.get('/api/plants');
   }
 
-  factory.plantShow = function(id) {
-  	return $http.get('/api/plants/' + id);
+  factory.plantShow = function(plant_name) {
+  	return $http.get('/api/plants/' + plant_name);
   }
 
   // NEED MORE CLEAR UNDERSTANDING! 
