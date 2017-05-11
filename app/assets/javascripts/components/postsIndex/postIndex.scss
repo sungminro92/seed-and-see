@@ -53,14 +53,17 @@ p.desc {
 .posts-index-page {
     display: flex;
     width: 100%;
-    justify-content: space-between
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .posts-wrap {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
-    min-width: 500px;
-    max-width: 100%;
+    max-width: 1000px;
+    min-width: 300px;
 }
 
 .twitter-wrap {
@@ -70,5 +73,5 @@ p.desc {
 }
 
 .content {
-    padding:5px
+    padding:5px;
 }

@@ -2,7 +2,6 @@
 
 <div class="garden-index">
 <!-- User's garden lives here -->
-	<h1 class="garden-name"> {{ $ctrl.garden.name }} </h1> <button class="button"> < edit</button>
 	<p class="page-title">  {{ $ctrl.garden.name }} </p>
 	<button class="button"> < edit</button>
 	<button class="button" ui-sref="plants">Add plants now!</button>
@@ -12,7 +11,7 @@
 		</div>
 	
 	<div class="garden">
-		<div ng-repeat="gardenPlant in $ctrl.gardenPlants" ng-class="{garden-small:$ctrl.small, garden-medium:$ctrl.medium, garden-large:$ctrl.large}"><p>{{gardenPlant.id}}</p></div>
+		<div ng-repeat="gardenPlant in $ctrl.gardenPlants" ng-class="[{small:$ctrl.small, medium:$ctrl.medium, large:$ctrl.large}]"><p>{{gardenPlant.id}}</p></div>
 		<!-- <p> {{ $ctrl.gardenPlants }} </p> -->
 	</div>
 
