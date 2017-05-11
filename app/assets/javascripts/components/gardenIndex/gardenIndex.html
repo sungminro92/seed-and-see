@@ -1,7 +1,11 @@
+<h1> My Garden </h1>
+
 <div class="garden-index">
 <!-- User's garden lives here -->
 	<h1 class="garden-name"> {{ $ctrl.garden.name }} </h1> <button class="button"> < edit</button>
-	<button class="button" ng-show" ui-sref="plants">Add plants now!</button>
+	<p class="page-title">  {{ $ctrl.garden.name }} </p>
+	<button class="button"> < edit</button>
+	<button class="button" ui-sref="plants">Add plants now!</button>
 		<br>
 		<div class="garden-index-top-content">
 			<h4> Garden Owner | <a ui-sref="userShow({id:$ctrl.garden.user_id})">{{ $ctrl.garden.user.name }} </a></h4>

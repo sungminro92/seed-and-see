@@ -5,24 +5,3 @@ $color-skin: #F2DCCB;
 $color-softorange: #FCAC8A;
 $color-orange: #E06029;
 $color-black: #292108;
-
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-}
-
-div.gallery:hover {
-    border: 1px solid #777;
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-}

@@ -15,10 +15,12 @@ $color-black: #292108;
 }
 
 div.gallery {
-    margin: 3px;
-    border: 2px solid black;
+    margin: 5px;
+    border: 1px solid #ccc;
     float: left;
-    width: 180px;
+    width: 200px;
+    height: 250px;
+    padding: 2px;
 }
 
 /* --- DARK GREEN ----------*/
@@ -27,13 +29,20 @@ div.gallery:hover {
 }
 
 div.gallery img {
-    width: 100%;
-    height: auto;
+    max-width: 200px;
+    width: auto;
+    height: 70%;
+    display: block;
+    margin: 0 auto;
 }
 
-div.desc {
+p.desc {
     padding: 0px;
-    text-align: center;
+    margin: 0px;
+}
+
+.edit {
+    float:right;
 }
 
 .title {
@@ -57,4 +66,9 @@ div.desc {
 .twitter-wrap {
     float: right;
     margin-right: 5%;
+	font-size: 17px;
+}
+
+.content {
+    padding:5px
 }

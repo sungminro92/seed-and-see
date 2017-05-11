@@ -19,9 +19,6 @@ class Api::PostsController < ApplicationController
     @comments = @post.comments
     @currentUser = current_user
     render :json => {post: @post, user: @user, comments: @comments, currentUser: @currentUser}
-
-   # @comments = @post.find(params[:id]) 
-   #  render :json @comments.to_json(include: [:user, :post)
   end 
 
 
