@@ -44,6 +44,11 @@ gem 'autoprefixer-rails'
 
 # ----HTTPARTY ---------
 gem 'httparty'
+#-----------------------
+
+#---- Nutritionnix -----
+gem 'nutritionix'
+#-----------------------
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

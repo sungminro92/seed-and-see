@@ -2,8 +2,11 @@
 
 <!-- Search: <input ng-model="$ctrl.query" />
  -->
-
-<div ng-repeat="plant in $ctrl.plants">
-  <p>name: <a ui-sref="plantShow({id: plant.id})">{{ plant.name }}</a></p>
-  <a ng-click="$ctrl.saveToGarden(plant)">Save to My Garden</a>
+<div class="plants-index-page">
+	<div class="plants-wrap" ng-repeat="plant in $ctrl.plants">
+		<div>
+		  <p>name: <a ui-sref="plantShow({id: plant.id})">{{ plant.name }}</a></p>
+		  <a ng-click="$ctrl.saveToGarden(plant)">Save to My Garden</a>
+		</div>
+	</div>
 </div>

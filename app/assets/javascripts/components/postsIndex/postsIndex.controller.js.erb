@@ -10,6 +10,19 @@ function PostsIndexController($stateParams, postsService, usersService) {
   vm.posts = [];
   vm.currentUser = {};
   // vm.userId = $stateParams.userId
+  vm.sortBy = sortBy
+  activate();
+
+  function activate() {
+    $(window).resize(function() {
+      windowWidth = $(window).innerWidth();
+      if (windowWidth <= 500) {
+      $('.order-by-wrap').hide();
+      } else {
+      $('.order-by-wrap').show();
+      }
+    });
+  };
 
 	postsService
   	.getPosts() 
@@ -20,5 +33,13 @@ function PostsIndexController($stateParams, postsService, usersService) {
       // posts;
       // vm.currentUser = res.data.currentUser;
 	});
+
+  vm.propertyName = 'created_at';
+  vm.reverse = true;
+
+  function sortBy(propertyName) {
+    vm.reverse = (vm.propertyName === propertyName) ? !vm.reverse : false;
+    vm.propertyName = propertyName;
+  };
 
 }

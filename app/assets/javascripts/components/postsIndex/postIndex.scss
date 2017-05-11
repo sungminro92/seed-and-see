@@ -8,6 +8,26 @@ $color-softorange: #FCAC8A;
 $color-orange: #E06029;
 $color-black: #292108;
 
+.search-and-filter {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-by-wra {
+    display: flex;
+}
+.nav-separation {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.serach-bar {
+    display: flex;
+}
+
 .all-buttons {
 	border-radius: 3px;
 	background-color: white;
@@ -51,11 +71,11 @@ p.desc {
 }
 
 .posts-index-page {
-    margin-top: 2%;
+    flex-wrap: wrap;
     display: flex;
     width: 100%;
     justify-content: center;
-
+    padding-bottom: 5%;
 }
 
 .posts-wrap {
@@ -63,7 +83,8 @@ p.desc {
     flex-wrap: wrap;
     align-items: flex-start;
     max-width: 800px;
-    min-width: 300px;
+    min-width: 400px;
+    justify-content: center;
 }
 
 .twitter-wrap {

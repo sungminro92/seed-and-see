@@ -5,3 +5,19 @@ $color-skin: #F2DCCB;
 $color-softorange: #FCAC8A;
 $color-orange: #E06029;
 $color-black: #292108;
+
+.plants-index-page {
+	margin-top: 2%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.plants-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 800px;
+    min-width: 300px;
+}
