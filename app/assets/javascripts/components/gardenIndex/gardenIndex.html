@@ -1,15 +1,14 @@
 <div class="garden-index">
 <!-- User's garden lives here -->
 	<h1 class="garden-name"> {{ $ctrl.garden.name }} </h1> <button class="button"> < edit</button>
-	<button class="button" ui-sref="plants">Add plants now!</button>
+	<button class="button" ng-show" ui-sref="plants">Add plants now!</button>
 		<br>
 		<div class="garden-index-top-content">
 			<h4> Garden Owner | <a ui-sref="userShow({id:$ctrl.garden.user_id})">{{ $ctrl.garden.user.name }} </a></h4>
 		</div>
 	
-	<div class="garden" ng-reppeat="gardenPlant in $ctrl.gardenPlants">
-		<div ng-class="{small:$ctrl.small, medium:$ctrl.medium, large:$ctrl.large}"><p>{{gardenPlant.name}}</p></div>
-		<p> There will be plants here </p>
+	<div class="garden">
+		<div ng-repeat="gardenPlant in $ctrl.gardenPlants" ng-class="{garden-small:$ctrl.small, garden-medium:$ctrl.medium, garden-large:$ctrl.large}"><p>{{gardenPlant.id}}</p></div>
 		<!-- <p> {{ $ctrl.gardenPlants }} </p> -->
 	</div>
 

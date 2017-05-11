@@ -6,11 +6,35 @@ $color-softorange: #FCAC8A;
 $color-orange: #E06029;
 $color-black: #292108;
 
+.garden-small {
+	width: 200px;
+	height: 200px;
+	background-color: green;
+	display: flex;
+}
+
+.garden-medium {
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	display: flex;
+	
+}
+
+.garden-large {
+	width: 50px;
+	height: 50px;
+	background-color: green;
+	display: flex;
+}
+
 .garden { 
 	width: 800px;
 	height: 600px;
 	background-color: yellow;
 	position: relative;
+	display: flex;
+	flex-direction: column;
 }
 
 .garden-index-top-content {

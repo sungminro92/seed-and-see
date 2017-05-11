@@ -8,14 +8,14 @@ function GardenIndexController( $stateParams, $state, gardenService) {
   var vm = this;
   //garden
   vm.garden = {};
-  vm.gardenPlants = vm.garden.garden_plants;
+  vm.gardenPlants = [];
   // garden size
   vm.small = false;
   vm.medium = false;
   vm.large = false;
 
   // vm.editGardenName = editGardenName;
-  vm.gardenPlants = vm.garden.garden_plants
+
 
   var userId = $stateParams.userId
   
@@ -29,8 +29,10 @@ function GardenIndexController( $stateParams, $state, gardenService) {
   		// If user does have a garden, display that garden
   		console.log(res);
   		vm.garden = res.data;
+  		vm.gardenPlants = res.data.garden_plants
   		}
   	}).then(function() {
+  		console.log(vm.gardenPlants)
   		if (vm.garden.size == 1) {
   			vm.small = true;
   		} else if (vm.garden.size ==2) {
