@@ -8,14 +8,15 @@ function PostsIndexController($stateParams, postsService, usersService) {
   var vm = this;
 
   vm.posts = [];
- 
+  vm.currentUser = {};
   // vm.userId = $stateParams.userId
 
 	postsService
   	.getPosts() 
   	.then(function(res) {
       console.log(res);
-	    vm.posts = res.data
+	    vm.posts = res.data.posts
+      vm.currentUser = res.data.currentUser
       // posts;
       // vm.currentUser = res.data.currentUser;
 	});

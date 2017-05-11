@@ -9,8 +9,7 @@
 	
 	<div class="desc title">{{ post.title }}</div>
 	<div class="desc">{{ post.description }}</div>
-	<div class="desc">{{ post.user.name }}</div>
-
-	<div class="desc"><a ui-sref="postEdit({userId: {{post.user_id}}, id: {{post.id}} })">edit</a> | <a ng-click="deletePost()">delete</a></div>
+	
+	<div ng-if ="$ctrl.currentUser.id == post.user_id" class="desc"><a ui-sref="postEdit({userId: {{post.user_id}}, id: {{post.id}} })">Edit</a> | <a ng-click="deletePost()">Delete</a>
 	</div>
 </ul>

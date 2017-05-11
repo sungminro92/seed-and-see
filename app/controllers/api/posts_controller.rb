@@ -1,7 +1,16 @@
 class Api::PostsController < ApplicationController
   def index
     @posts = Post.all
-    render json: @posts.to_json(include: :user)
+    @currentUser = current_user
+    #@users = User.all
+
+    @posts.each { |x|
+      x.description =  User.find(x.user_id).name # lol
+    }
+
+    render json: {posts: @posts, currentUser: @currentUser}
+    # render json: @posts.to_json(include: :user)
+
   end
   
   def show
@@ -9,9 +18,9 @@ class Api::PostsController < ApplicationController
     @user = User.find(@post.user_id)
     @comments = @post.comments
     @currentUser = current_user
-    render json: {post: @post, user: @user, comments: @comments, currentUser: @currentUser}
+    render :json => {post: @post, user: @user, comments: @comments, currentUser: @currentUser}
 
-   # @comments = @post.find(params[:id])
+   # @comments = @post.find(params[:id]) 
    #  render :json @comments.to_json(include: [:user, :post)
   end 
 
