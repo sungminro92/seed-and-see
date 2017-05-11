@@ -5,3 +5,68 @@ $color-skin: #F2DCCB;
 $color-softorange: #FCAC8A;
 $color-orange: #E06029;
 $color-black: #292108;
+
+.search-bar {
+	display: flex;
+	width: 50%;
+	float: right;
+	justify-content: flex-end;
+	margin-right: 5%;
+}
+
+.search-input {
+	padding-left: 10px;
+	display: flex;
+	float:right;
+	display: inline;
+	width: 75%;
+	height: 40px;
+	max-width: 350px;
+	min-width: 300px;
+	margin-right: 15px;
+}
+
+.search-button {
+	font-family: 'Galindo', cursive;
+	font-size: 20px;
+	float:right;
+	display:flex;
+	border-radius: 5px;
+	background-color: white;
+}
+.button-margin {
+	padding-right: 5px;
+	margin-top: 5px;
+	margin-left: 5%;
+	height: 40px;
+}
+
+.plant-show-page {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 20px;
+}
+
+.nutrition-fact-title {
+	font-family: 'Galindo', cursive;
+	font-size: 35px;
+}
+
+.nutrition-fact {
+	padding: 3px;
+	margin: 10px;
+	border: 5px solid $color-green;
+	display: block;
+	width: 300px;
+	height: 500px;
+}
+
+.nutri-content {
+	font-size: 18px;	
+}
+
+.sercondary-font {
+	font-family: 'Muli', sans-serif;
+}

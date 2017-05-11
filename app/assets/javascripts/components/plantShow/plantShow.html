@@ -1,16 +1,23 @@
 <h1>Plant Show Page</h1>
-<button class="button button-margin"> < Back to Plants </button>
-<input ng-model="$ctrl.searchPlant" placeholder="search for any food nutrition facts!"><button ui-sref='plantShow({id: $ctrl.searchPlant })'> Search!</button>
 
-<ul ng-repeat="fact in $ctrl.facts">
-	<div class="nutrition-fact">
-	<p>Item Name : {{fact.fields.item_name}}</p>
-	<p>Brand Name : {{fact.fields.brand_name}}</p>
-	<p>Calories : {{fact.fields.nf_calories}}</p>
-	<p>Total Fat : {{fact.fields.nf_total_fat}}</p>
-	<div>
-</ul>
+<button class="button button-margin title"> < Back to Plants </button>
 
+<div class="search-bar"><input class="search-input" ng-model="$ctrl.searchPlant" placeholder="search for any food nutrition facts!">
+	<button class="search-button" ui-sref='plantShow({id: ($ctrl.searchPlant | lowercase) })'> Search!</button>
+</div>
+
+<div class="plant-show-page">
+	<div class="nutrition-fact" ng-repeat="fact in $ctrl.facts">
+	<div class="nutri-contnet nutrition-fact-title"> Nutrition Fact </div>
+	<div class="secondary-font nutri-content"><p>{{fact.fields.item_name}}</p></div>
+	<div style="margin-bottom:3px; margin-top:0px; text-align:center; width:98%; height:10px; background-color:#47440F"></div>
+	<p class="secondary-font nutri-content"><strong>Amount Per Serving</strong></p>
+	<div style="margin-bottom:3px; margin-top:-5px; text-align:center; width:98%; height:2px; background-color:#47440F"></div>
+	<div class="secondary-font nutri-content"><p>Brand Name : {{fact.fields.brand_name}}</p></div><hr>
+	<div class="secondary-font nutri-content"><p>Calories : {{fact.fields.nf_calories}}</p></div><hr>
+	<div class="secondary-font nutri-content"><p>Total Fat : {{fact.fields.nf_total_fat}}</p></div><hr>
+	</div>
+</div>
 <!-- 
 {
   "total_hits": 20277,
