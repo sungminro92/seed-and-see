@@ -11,7 +11,6 @@ function GardenIndexController( $stateParams, $state, gardenService) {
   vm.gardenPlants = [];
   // garden size
   vm.small = false;
-  vm.medium = false;
   vm.large = false;
 
   // vm.editGardenName = editGardenName;
@@ -22,9 +21,11 @@ function GardenIndexController( $stateParams, $state, gardenService) {
   gardenService
   	.getGarden()
   	.then(function(res){
+  		console.log(res)
   		// If user does not have a garden redirect to 'gardenNew'
   		if (res.data == null) {
-  			$state.go('gardenNew', {userId: userId})
+  			alert("You must create a garden first!");
+  			$state.go('gardenNew', {userId: userId});
   		} else {
   		// If user does have a garden, display that garden
   		console.log(res);
@@ -36,10 +37,8 @@ function GardenIndexController( $stateParams, $state, gardenService) {
   		if (vm.garden.size == 1) {
   			vm.small = true;
   		} else if (vm.garden.size ==2) {
-  			vm.medium = true;
-  		} else {
   			vm.large = true;
-  		};
+  		}
   	});
   	
 

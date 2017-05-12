@@ -17,9 +17,8 @@
 		</div>
 	
 	<div class="garden">
-		<div ng-repeat="gardenPlant in $ctrl.gardenPlants" ng-class="[{smalls:$ctrl.small, medium:$ctrl.medium, large:$ctrl.large}]"><p>{{gardenPlant.id}}</p></div>
+		<div ng-repeat="gardenPlant in $ctrl.gardenPlants" ng-class="[{smalls:$ctrl.small, large:$ctrl.large}]"><div style="background-image:url({{gardenPlant.icon}}); ">{{gardenPlant.id}}</p></div>
 		<!-- <p> {{ $ctrl.gardenPlants }} </p> -->
 	</div>
-<p> display what will need water </p>
 
 </div>

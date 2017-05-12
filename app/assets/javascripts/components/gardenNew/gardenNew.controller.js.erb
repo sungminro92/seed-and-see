@@ -18,7 +18,8 @@ function GardenNewController($state, $stateParams, gardenService) {
   gardenService
   	.getGarden()
   	.then(function(res) {
-  		if (res.data != null) {
+      console.log(res)
+  		if (res != null) {
         alert('you already have a garden!');
   			$state.go('gardenIndex', { userId: res.data.user_id })
   		} else {
