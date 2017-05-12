@@ -51,17 +51,18 @@
         </div>
     </div>
 
-<center><h1> {{ $ctrl.user.name }}'s Gallery </h1> <button ui-sref="postNew({userId: $ctrl.user.id})">New Post!</button></center>
+
 
 <ul ng-repeat="post in $ctrl.posts">
 <div class="gallery">
   <a ui-sref="postShow({userId: {{post.user_id}}, id: {{post.id}}})">
-    <img src="{{post.img_url}}" alt="Mountains" width="300" height="200">
+    <img src="{{post.img_url}}" alt="pictures">
   </a>
-  <div class="desc">{{ post.title }}</div>
-  <div class="desc">{{ post.description }}</div>
-  <span ng-if ="$ctrl.currentUser.id == post.user_id" class=" edit desc"><a ui-sref="postEdit({userId: {{post.user_id}}, id: {{post.id}} })">edit</a> | <a ng-click="$ctrl.deletePost(post)">delete</a></span>
-</div>
+  <div class="content">
+      <p class="desc title">{{ post.title | limitTo:38 }}<span ng-show="post.title.length >= 38"> ...</span></p>
+      <span ng-if ="$ctrl.currentUser.id == post.user_id" class=" edit desc"><a ui-sref="postEdit({userId: {{post.user_id}}, id: {{post.id}} })">edit</a> | <a ng-click="$ctrl.deletePost(post)">delete</a></span>
+    </div>
+    </div>
 </ul>
 
 </div>

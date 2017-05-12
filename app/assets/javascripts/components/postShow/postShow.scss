@@ -19,6 +19,11 @@ $color-black: #292108;
 	padding: 2px 5px 0px 5px;
 }
 
+.comment-wrap {
+	width: 100%;
+	max-width: 800px;
+}
+
 .comment-time {
 	color: $color-orange;
 }
@@ -26,7 +31,8 @@ $color-black: #292108;
 .comment-input {
 	margin-top: 10px;
 	margin-bottom: 15px;
-	width: 80%;
+	width: 70%;
+	height: 40px;
 }
 .comment-content {
 	padding-left: 5px;
@@ -34,8 +40,6 @@ $color-black: #292108;
 
 .comment-input-wrap {
 	display: flex;
-	flex-wrap: wrap;
-	height: 100%;
 	justify-content: space-between;
 }
 
@@ -47,12 +51,15 @@ $color-black: #292108;
 .post-image-wrap {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    max-width: 800px;
+    align-items: center;
+    max-width: 720px;
     min-width: 300px;
+
 }
 
-.post-show-wrap {
+.search-button:hover {
+	background-color:#AAAD2A;
+   color: white;
 }
 
 .img-sm {
@@ -66,6 +73,18 @@ $color-black: #292108;
 
 .post-img {
    padding:1px;
-   border:1px solid #292108;
    background-color: #AAAD2A;
+   border: 2px solid #AAAD2A;
+}
+
+.post-show-separation {
+	height: 2px;
+	max-width: 800px;
+	background-color: #AAAD2A;
+	margin-bottom: 25px;
+}
+
+.post-show-button {
+	margin-top: 10px;
+	height: 80%;
 }
