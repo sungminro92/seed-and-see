@@ -16,6 +16,7 @@ function PlantsIndexController($state, plantsService) {
   vm.userId = {};
   vm.tellUserToStop = tellUserToStop;
   var userId = vm.userId;
+  
 
   activate();
   tellUserToStop();
@@ -69,7 +70,6 @@ function PlantsIndexController($state, plantsService) {
               alert('plant has been saved in your garden!')};
           });   
       }
-  }   
-  
+  } 
 
 }

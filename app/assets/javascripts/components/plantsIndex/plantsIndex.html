@@ -1,6 +1,11 @@
 <span><p class="title"></p></span>
+<div class="search-nutritionix-wrap">
+	<p class="primary-font" style="padding-top:5px"> Learn more about other <span style="color:#AAAD2A">plants</span> & <span style="color:#E06029">food </span></p>
+	<input style="margin-left:15px"class="plant-index-search search-input" ng-model="$ctrl.searchPlant" placeholder="search for any food nutrition facts!">
+	<button class="button garden-button nutrition-button" ui-sref='plantShow({id: $ctrl.searchPlant })'>Search!</button>
+</div> 	
 <div class="notification">
-	<div ng-hide ="$ctrl.gardenPlants == null" class="my-plants-number"> Number of my plants: {{ $ctrl.gardenPlants }} </div>
+	<div style="font-size:20px" ng-hide ="$ctrl.gardenPlants == null" class="my-plants-number"> <strong>Number of my plants: {{ $ctrl.gardenPlants }} </strong></div>
 	<div class="notice secondary-font" ng-show ="$ctrl.gardenPlants == null" class="my-plants-number"><span class="primary-font">You must <span style="color:#E06029">create</span> a <span style="color:#AAAD2A">garden</span> to add plants!</div>
 	<button ng-show ="$ctrl.gardenPlants == null" class="button garden-button" ui-sref="gardenNew({userId:$ctrl.currentUser.id})">Create A Garden</button>
 </div>
@@ -23,8 +28,6 @@
 	</div>
 </div>
 
-<div class="search-nutritionix-wrap">
-	<p class="primary-font" style="padding-top:5px"> Learn more about other <span style="color:#AAAD2A">plants</span> & <span style="color:#E06029">food </span></p>
-	<input style="margin-left:15px"class="plant-index-search search-input" ng-model="$ctrl.searchPlant" placeholder="search for any food nutrition facts!">
-	<button class="button garden-button nutrition-button" ui-sref='plantShow({id: $ctrl.searchPlant })'>Search!</button>
-</div> 	
+<div class="text-align-center"><div class="separation-hr"></div></div>
+
+
