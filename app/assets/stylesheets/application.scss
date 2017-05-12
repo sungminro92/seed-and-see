@@ -18,6 +18,18 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.navbar-toggle {
+	padding-top: 5%;
+}
+
+.navbar-default {
+	background-color: white;
+}
+
+.navbar {
+	height: 65px;
+}
+
 .brand {
     position: absolute;
     left: 50%;
@@ -27,5 +39,6 @@
 }
 
 .brandimg {
-    height: 100%;
+    height: 99%;
+    padding-top: 2px;
 }

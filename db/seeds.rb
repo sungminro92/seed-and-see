@@ -61,6 +61,12 @@ cucumber = Plant.create(
 squash = Plant.create(
 	name: 'Squash', days_to_water:'', img_url: 'https://image.ibb.co/egUCi5/12.png' )
 
+brusselsprout = Plant.create(
+	name: 'brussel sprout', days_to_water:'', img_url: 'https://image.ibb.co/d0AmT5/brussel_sprouts.png' )
+
+bokchoy = Plant.create(
+	name: 'bokchoy', days_to_water:'', img_url: 'https://image.ibb.co/bxUfo5/bokchoy.png' )
+
 
 
 post1 = Post.create(
