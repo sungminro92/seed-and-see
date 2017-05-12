@@ -10,6 +10,14 @@ p.title {
 	text-align: center;
 }
 
+.plant-name {
+	color: black;
+}
+
+.plant-name:hover {
+	color: #E06029;
+}
+
 .plants-index-page {
 	margin-top: 2%;
     display: flex;
@@ -25,16 +33,46 @@ p.title {
     justify-content: center;
 }
 
-/*search-nutritionix-wrap {
+.search-nutritionix-wrap {
+	margin: 10px;
+	width: 100%;
 	display:flex;
 	width: 350;
+	justify-content: center;
+	align-items: center;
 }
-*/
+
+.plant-image-box {
+	border-radius: 50%;
+}
+
+.plant-image-box:hover {
+	background-color: $color-skin;
+}
+
+.plant-index-search {
+	font-family: 'Muli', sans-serif;
+	display: flex;
+	margin-right: -5px;
+}
+
+.save-to-my-garden {
+	font-family: 'Muli', sans-serif;
+}
+
+.nutrition-button {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.primary-font {
+	font-family: 'Galindo', cursive;
+	font-size: 20px;
+}
+
 .each-plant {
 	margin: 5px;
-    border: 1px solid $color-orange;
     width: 150px;
-    height: 300px;
+    height: 200px;
     padding: 2px; 
     text-align: center;
 
@@ -47,3 +85,30 @@ p.title {
 	background-color: none;
 }
 
+.notification {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.notice {
+	display: flex;
+}
+
+.garden-button {
+	margin-left: 15px;
+	height: 35px;
+	font-family: 'Muli', sans-serif;
+	font-size: 15px;
+	border-color: #AAAD2A;
+}
+
+.garden-button:hover {
+	background-color:#AAAD2A;
+	color: white;
+}
+
+.secondary-font {
+	font-family: 'Muli', sans-serif;
+	font: 20px;
+}
