@@ -17,6 +17,7 @@ function PlantsIndexController($state, plantsService) {
   var userId = vm.userId;
 
   activate();
+  tellUserToStop();
 
   function activate() {
   plantsService
@@ -34,20 +35,10 @@ function PlantsIndexController($state, plantsService) {
         console.log(vm.currentUserGarden.size)
         console.log(vm.limit)
         console.log(vm.gardenPlants)
-      } else if (vm.currentUserGarden.size == 1) {
+      } else if (vm.currentUserGarden.size == 2) {
         vm.limit = 48;
       }
     }) 
-  }
-
-// GIVE LIMIT TO THE USER HOW MANY TO ADD
-  // function tellUserToStop() {
-  //   if(vm.limit <= vm.gardenPlants) {
-  //      console.log('this is full')
-  //     alert('your garden is full now!')
-  //     $('.save-to-my-garden').hide();
-  //   }
-  // }
 
   function saveToGarden(plant) {
     console.log(plant);
