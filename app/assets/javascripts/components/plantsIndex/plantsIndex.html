@@ -17,8 +17,8 @@
 			<div class="plant-image-box"><img src="{{plant.img_url}}" style="width:100%"></a></div>
 		</div><br>
 		<p class="title garden-name"><a ui-sref="plantShow({id: (plant.name | lowercase) })">{{ plant.name }}</a></p>
-		<p ng-hide="$ctrl.gardenPlants == vm.limit"><a class="save-to-my-garden" ng-click="$ctrl.saveToGarden(plant)">seed it!</a></p>
-		<p ng-show="$ctrl.gardenPlants == vm.limit"
+		<p ng-hide="$ctrl.limit <= $ctrl.gardenPlants"><a class="save-to-my-garden" ng-click="$ctrl.saveToGarden(plant)">seed it!</a></p><p style="color:red" ng-show="$ctrl.limit <= $ctrl.gardenPlants">Garden Is Full</p>
+		
 		</div>
 	</div>
 </div>
