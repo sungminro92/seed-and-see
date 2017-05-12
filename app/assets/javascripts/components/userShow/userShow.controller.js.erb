@@ -2,9 +2,9 @@ angular
   .module('seedAndSee')
   .controller('UserShowController', UserShowController);
 
-UserShowController.$inject = ['$stateParams','usersService', 'postsService'];
+UserShowController.$inject = ['$stateParams','usersService', 'postsService', '$window'];
 
-function UserShowController($stateParams, usersService, postsService) {
+function UserShowController($stateParams, usersService, postsService, $window) {
   var vm = this;
 
   vm.user = {};
@@ -32,6 +32,7 @@ function UserShowController($stateParams, usersService, postsService) {
       .then(function(res) {
         console.log('your post has been deleted');
         alert('your post has been deleted!');
+        $window.location.reload();
       });
   };
 
