@@ -9,6 +9,7 @@ function PlantsIndexController($state, plantsService) {
 
   vm.plants = [];
   vm.currentUserGarden = {};
+  vm.currentUser = {};
   vm.gardenPlants = {};
 
   vm.saveToGarden = saveToGarden;
@@ -21,6 +22,7 @@ function PlantsIndexController($state, plantsService) {
       console.log(res);
       vm.plants = res.data.plants;
       vm.currentUserGarden = res.data.garden;
+      vm.currentUser = res.data.current_user;
       vm.gardenPlants = res.data.garden_plants;
     });
 
