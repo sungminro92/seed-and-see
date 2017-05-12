@@ -1,46 +1,57 @@
 <div class="container">
-    <div class="span3 well">
+
         <center>
         <img data-toggle="modal" data-target="#myModal" src="{{$ctrl.user.img_url}}" width="140" height="140" class="img-circle">
         <h3>{{ $ctrl.user.name }}</h3>
-        <em>{{ $ctrl.user.email }}</em>
+        <p><em>{{ $ctrl.user.email }}</em></p>
+        <p>Join Date:
+            {{$ctrl.user.created_at | date:"MM/dd/yy"}}</p>
+        <p>Last Updated:
+            {{$ctrl.user.updated_at | date:"MM/dd/yy"}}</p>
+        <p># of Posts:
+            {{$ctrl.posts.length}}</p>
 		</center>
-    </div>
+
+<div class="text-align-center"><div class="separation-hr"></div></div>
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                    <h4 class="modal-title" id="myModalLabel">More About Joe</h4>
+                    <h4 class="modal-title" id="myModalLabel">More About {{ $ctrl.user.name }}</h4>
                 </div>
                 <div class="modal-body">
                     <center>
 	                    <img src="{{$ctrl.user.img_url}}" name="aboutme" width="140" height="140" border="0" class="img-circle">
-	                    <h3 class="media-heading">{{ $ctrl.user.name }}<small>{{ $ctrl.user.email }}</small></h3>
+	                    <h3 class="media-heading">{{ $ctrl.user.name }}<br><small>{{ $ctrl.user.email }}</small></h3>
 	                    <span><strong>Skills: </strong></span>
-	                        <span class="label label-warning">HTML5/CSS</span>
-	                        <span class="label label-info">Adobe CS 5.5</span>
-	                        <span class="label label-info">Microsoft Office</span>
-	                        <span class="label label-success">Windows XP, Vista, 7</span>
+	                        <span class="label label-warning">1</span>
+	                        <span class="label label-info">2</span>
+	                        <span class="label label-info">3</span>
+	                        <span class="label label-success">4</span>
                     </center>
                     <hr>
                     <center>
-                    <p class="text-left"><strong>Bio: </strong><br>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.</p>
-                    <br>
+                    <p class="text-left"><strong>Join Date: </strong>
+                        {{$ctrl.user.created_at | date:"MM/dd/yy"}}</p>
+                    <p class="text-left"><strong>Last Updated: </strong>
+                        {{$ctrl.user.updated_at | date:"MM/dd/yy"}}</p>
+
+                    <p class="text-left"><strong># of Posts: </strong>
+                        {{$ctrl.posts.length}}</p>
                     </center>
                 </div>
                 <div class="modal-footer">
                     <center>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about Joe</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about {{ $ctrl.user.name }}</button>
                     </center>
                 </div>
             </div>
         </div>
     </div>
 
-<h1> {{ $ctrl.user.name }}'s Gallery </h1> <button ui-sref="postNew({userId: $ctrl.user.id})">New Post!</button>
+<center><h1> {{ $ctrl.user.name }}'s Gallery </h1> <button ui-sref="postNew({userId: $ctrl.user.id})">New Post!</button></center>
 
 <ul ng-repeat="post in $ctrl.posts">
 <div class="gallery">

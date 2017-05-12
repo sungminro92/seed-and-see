@@ -10,7 +10,9 @@ Rails.application.routes.draw do
 
     get '/users/:userId/garden' => 'garden#index'
     post '/users/gardenplants' => 'garden_plants#create'
+    delete '/users/garden/gardenplants/:id' => 'garden_plants#destroy'
     post '/users/posts/:id/comments' => 'comments#create'
+
     get '/plants/:plant_name' => 'plants#show'
     # ???? DOES THIS WORK?
     post '/users/:userId/garden' => 'garden#create'

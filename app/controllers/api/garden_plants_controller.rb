@@ -9,6 +9,15 @@ class Api::GardenPlantsController < ApplicationController
       render json: @gardenPlant.errors, status: :unprocessable_entity
    end
  end
+
+ def destroy
+ 	@garden = current_user.garden
+ 	@garden_plant = @garden.garden_plants.find(params[:id])
+    @garden_plant.destroy
+
+    render json: '', status: :no_content
+ end
+
   	# GardenPlant.create(garden_id: current_user.garden.id, plant_id: params[:plant_id])
 
 end

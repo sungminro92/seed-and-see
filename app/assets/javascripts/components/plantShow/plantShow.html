@@ -1,7 +1,9 @@
-<button class="button button-margin title" ui-sref="plants"> < Back to Plants </button>
+<div class="plant-show-top-area">
+  <div style="display:flex"><button class="search-button" ui-sref="plants"> < Back to Plants </button></div>
 
-<div class="search-bar"><input class="search-input" ng-model="$ctrl.searchPlant" placeholder="search for any food nutrition facts!">
+  <div style="display:flex" class="search-bar"><input class="search-input" ng-model="$ctrl.searchPlant" placeholder="search for any food nutrition facts!">
 	<button class="search-button" ui-sref='plantShow({id: ($ctrl.searchPlant | lowercase) })'> Search!</button>
+  </div>
 </div>
 
 <div class="plant-show-page">

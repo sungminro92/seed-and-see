@@ -9,21 +9,30 @@ $color-black: #292108;
 .smalls {
 	width: 200px;
 	height: 200px;
-	background-color: green;
+	background-color: white;
 	display: flex;
 }
 
 .large {
 	width: 100px;
 	height: 100px;
-	background-color: green;
+	background-color: white;
 	display: flex;
 }
 
+.garden-wrap {
+	width: 810px;
+	height: 610px;
+	border: 2px solid black;
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .garden { 
+
 	width: 800px;
 	height: 600px;
-	background-color: yellow;
+	background-color: white;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -34,10 +43,29 @@ $color-black: #292108;
 	margin-top: 20px;
 }
 
-.button {
-	float: left;
+.garden-index {
+	margin-left: 22%;
 }
 
-.garden-index-page {
-	text-align: center;
+.button:hover {
+	background-color:#AAAD2A;
+	color: white;
 }
+
+table {
+	width: 300px;
+	border: 1px solid ;
+	border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.button-area {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+

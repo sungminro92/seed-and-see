@@ -2,9 +2,9 @@ angular
   .module('seedAndSee')
   .controller('GardenIndexController', GardenIndexController);
 
-GardenIndexController.$inject = ['$stateParams','$state', 'gardenService'];
+GardenIndexController.$inject = ['$stateParams','$state', 'gardenService', '$window'];
 
-function GardenIndexController( $stateParams, $state, gardenService) {
+function GardenIndexController( $stateParams, $state, gardenService, $window) {
   var vm = this;
   //garden
   vm.garden = {};
@@ -12,7 +12,7 @@ function GardenIndexController( $stateParams, $state, gardenService) {
   // garden size
   vm.small = false;
   vm.large = false;
-
+  vm.deleteGardenPlant = deleteGardenPlant;
   // vm.editGardenName = editGardenName;
 
 
@@ -41,17 +41,14 @@ function GardenIndexController( $stateParams, $state, gardenService) {
   		}
   	});
   	
-
-  	// and show all garden_plants user has through a garden.
-
-
-  	// function editGardenName() {
-  	// 	$('.garden-name')
-  	// 		.hide()
-  	// 		.append("ng-model='$ctrl.garden.name' /><button></button>")
-  	// 		.then(function(event) {
-  	// 			$
-  	// 		})
-  	// }
-
+    function deleteGardenPlant(gardenPlant) {
+      var id = gardenPlant.id
+      gardenService
+        .deleteGardenPlant(id)
+        .then(function(res) {
+          console.log('your garden plant has been deleted');
+          alert('your garden plant has been deleted');
+          $window.location.reload();
+        })
+    };
 }

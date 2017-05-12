@@ -14,6 +14,9 @@ function gardenService($http) {
 	factory.createGarden = function(userId, garden) {
 		return $http.post('/api/users/' + userId + '/garden', garden);
 	}
+	factory.deleteGardenPlant = function(gardenPlant_id) {
+		return $http.delete('/api/users/garden/gardenplants/' + gardenPlant_id)
+	}
 
 	return factory;
 }

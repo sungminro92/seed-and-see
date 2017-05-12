@@ -14,6 +14,7 @@ function PlantsIndexController($state, plantsService) {
   vm.limit = {};
   vm.saveToGarden = saveToGarden;
   vm.userId = {};
+  vm.tellUserToStop = tellUserToStop;
   var userId = vm.userId;
 
   activate();
@@ -38,25 +39,37 @@ function PlantsIndexController($state, plantsService) {
       } else if (vm.currentUserGarden.size == 2) {
         vm.limit = 48;
       }
-    }) 
+    })
+  }
+
+//GIVE LIMIT TO THE USER HOW MANY TO ADD
+  function tellUserToStop() {
+    if(vm.limit >= vm.gardenPlants) {
+       console.log('vm.gardenPlants')
+      return false;
+    }
+    return true;
+  }
 
   function saveToGarden(plant) {
     console.log(plant);
     var plant_id = plant.id;
     var plant_name = plant.name;
-    var plant_icon = plant.icon;
+    var plant_icon = plant.img_url;
       if (vm.currentUserGarden == null) {
         alert('you must create a garden to save garden plants!');
         $state.go('gardenNew', {userId: userId});
       } else {
-        plantsService
-        .saveToGarden(plant_id, plant_name, plant_icon)
-        .then(function(res) {
-          if(res.status == 201) {
-            vm.gardenPlants += 1;
-            alert('plant has been saved in your garden!')};
-        });   
-      }   
-  }
+          plantsService
+          .saveToGarden(plant_id, plant_name, plant_icon)
+          .then(function(res) {
+            if(res.status == 201) {
+
+              vm.gardenPlants += 1;
+              alert('plant has been saved in your garden!')};
+          });   
+      }
+  }   
+  
 
 }

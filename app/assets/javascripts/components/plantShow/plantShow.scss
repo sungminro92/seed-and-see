@@ -11,7 +11,6 @@ $color-black: #292108;
 	width: 50%;
 	float: right;
 	justify-content: flex-end;
-	margin-right: 5%;
 }
 
 .search-input {
@@ -27,13 +26,19 @@ $color-black: #292108;
 }
 
 .search-button {
-	font-family: 'Galindo', cursive;
 	font-size: 20px;
 	float:right;
 	display:flex;
 	border-radius: 5px;
 	background-color: white;
+	border-color: #AAAD2A
 }
+
+.search-button:hover {
+	background-color:#AAAD2A;
+	color: white;
+}
+
 .button-margin {
 	padding-right: 5px;
 	margin-top: 5px;
@@ -71,4 +76,13 @@ $color-black: #292108;
 
 .sercondary-font {
 	font-family: 'Muli', sans-serif;
+}
+
+.plant-show-top-area {
+	margin: 0 auto;
+	display: flex;
+	width: 75%;
+	justify-content: space-between;
+	margin-top: 15px;
+	padding-top: 15px;
 }
