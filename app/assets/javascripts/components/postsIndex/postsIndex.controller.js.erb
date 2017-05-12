@@ -15,7 +15,7 @@ function PostsIndexController($stateParams, postsService, usersService) {
   vm.limit = 9;
   vm.loadMore = loadMore;
   activate();
-  hideLaodMore();
+  hideLoadMore();
 
   function activate() {
     $(window).resize(function() {
@@ -28,7 +28,7 @@ function PostsIndexController($stateParams, postsService, usersService) {
     })
   };
 
-  function hideLaodMore() {
+  function hideLoadMore() {
     if (vm.posts.length <= 9) {
       $('.load-more').hide();
     }
