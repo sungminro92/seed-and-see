@@ -33,7 +33,7 @@ SEED & SEE websites is educational garden plan for children. I planned this so t
 
 7. PROFILE
 	* User knows number of posts and comments user has currently
-	* Manage posts by editing and deleting.
+	gi* Manage posts by editing and deleting.
 
 # ERD diagram
 
@@ -41,7 +41,7 @@ SEED & SEE websites is educational garden plan for children. I planned this so t
 
 # WIREFRAMES
 
-![](/public/gimages/seedAndSeeWireframe.jpg?raw=true)
+![](/public/images/seedAndSeeWireframe.jpg?raw=true)
 
 # TOOLS USED
 
