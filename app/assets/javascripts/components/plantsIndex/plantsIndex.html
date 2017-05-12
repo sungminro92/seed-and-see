@@ -2,7 +2,7 @@
 <div class="notification">
 	<div ng-hide ="$ctrl.gardenPlants == null" class="my-plants-number"> Number of my plants: {{ $ctrl.gardenPlants }} </div>
 	<div class="notice secondary-font" ng-show ="$ctrl.gardenPlants == null" class="my-plants-number"><span class="primary-font">You must <span style="color:#E06029">create</span> a <span style="color:#AAAD2A">garden</span> to add plants!     </span></div>
-	<button class="button garden-button" ui-sref="gardenNew({userId:$ctrl.currentUser.id})">Create A Garden</button></div>
+	<button ng-show ="$ctrl.gardenPlants == null" class="button garden-button" ui-sref="gardenNew({userId:$ctrl.currentUser.id})">Create A Garden</button></div>
 </div>
 
 <!-- SEAPARATION -->
@@ -17,7 +17,8 @@
 			<div class="plant-image-box"><img src="{{plant.img_url}}" style="width:100%"></a></div>
 		</div><br>
 		<p class="title garden-name"><a ui-sref="plantShow({id: (plant.name | lowercase) })">{{ plant.name }}</a></p>
-		<p><a class="save-to-my-garden" ng-click="$ctrl.saveToGarden(plant)">seed it!</a></p>
+		<p ng-hide="$ctrl.gardenPlants == vm.limit"><a class="save-to-my-garden" ng-click="$ctrl.saveToGarden(plant)">seed it!</a></p>
+		<p ng-show="$ctrl.gardenPlants == vm.limit"
 		</div>
 	</div>
 </div>
