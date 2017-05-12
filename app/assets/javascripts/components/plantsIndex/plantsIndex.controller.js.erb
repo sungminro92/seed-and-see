@@ -10,11 +10,15 @@ function PlantsIndexController($state, plantsService) {
   vm.plants = [];
   vm.currentUserGarden = {};
   vm.gardenPlants = {};
+  vm.myPlants = {};
 
   vm.saveToGarden = saveToGarden;
   vm.userId = {};
   var userId = vm.userId;
 
+  activate();
+
+  function activate() {
   plantsService
     .getPlants()
     .then(function(res) {
@@ -22,7 +26,15 @@ function PlantsIndexController($state, plantsService) {
       vm.plants = res.data.plants;
       vm.currentUserGarden = res.data.garden;
       vm.gardenPlants = res.data.garden_plants;
-    });
+    })
+    .then(function(res) {
+      if (vm.currentUserGarden.size == 1) {
+        vm.myPlants == 12;
+      } else if (vm.currentUserGarden.size == 1) {
+        vm.myPlants == 48;
+      }
+    })
+  }
 
   function saveToGarden(plant) {
     console.log(plant);
