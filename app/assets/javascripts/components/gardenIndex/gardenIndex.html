@@ -1,11 +1,17 @@
-<h1> My Garden </h1>
+<div class="flex-center-wrap"><span class="primary-font text-center">My garden <span style="color:#AAAD2A">{{ $ctrl.garden.name }}</span></span></div>
+
+<div class="text-align-center"><div class="separation-hr"></div></div>
 
 <div class="garden-index">
+
 <!-- User's garden lives here -->
-	<p class="page-title">  {{ $ctrl.garden.name }} </p>
-	<button class="button"> < edit</button>
-	<button class="button" ui-sref="plants">Add plants now!</button>
-		<br>
+
+	<div class="garden-index-page">
+		<div>
+			<button class="garden-index-button"> < edit</button>
+			<button class="garden-index-button" ui-sref="plants">Add plants now!</button>
+		</div>
+			
 		<div class="garden-index-top-content">
 			<h4> Garden Owner | <a ui-sref="userShow({id:$ctrl.garden.user_id})">{{ $ctrl.garden.user.name }} </a></h4>
 		</div>
@@ -14,7 +20,6 @@
 		<div ng-repeat="gardenPlant in $ctrl.gardenPlants" ng-class="[{smalls:$ctrl.small, medium:$ctrl.medium, large:$ctrl.large}]"><p>{{gardenPlant.id}}</p></div>
 		<!-- <p> {{ $ctrl.gardenPlants }} </p> -->
 	</div>
-
 <p> display what will need water </p>
 
 </div>

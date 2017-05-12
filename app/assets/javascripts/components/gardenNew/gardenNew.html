@@ -1,14 +1,31 @@
-<h1> garden New </h1>
+<div class="flex-center-wrap"><span class="primary-font text-center">Make your <span style="color:#AAAD2A">garden</span> here!</span></div>
+<!-- SEPARATION -->
+<div class="text-align-center"><div class="separation-hr"></div></div>
+<!-- GARDEN INPUT FORM -->
+<div class="flex-center-wrap">
+	<div>
+	  <div><label class="primary-font">Garden Name:</label></div>
+	  <div><input class="garden-input" ng-model="$ctrl.garden.name" placeholder="Give your garden a name"></div>
 
-<form>
-  <label>Garden Name</label>
-  <input ng-model="$ctrl.garden.name">
-  <br/>
+	  <div class="error-message" ng-show="$ctrl.garden.name.length <=1">
+	  <p> Give your plant a name! </p>
+	  </div>
 
-  <label>Choose size</label><br>
-  <input ng-model="$ctrl.post.size" type="radio" name="garden-size" value="1"> small [ you can choose up to 12 plants ]<br>
-  <input ng-model="$ctrl.post.size" type="radio" name="garden-size" value="2"> large [ you can choose up to 48 plants ]<br>
-
-  <br/>
-  <button ng-click="$ctrl.saveGarden()"> Create a Garden</button>
-<form>
+	  <br>
+	  <!-- GARDEN SIZE CHOICES -->
+	  <div><label class="primary-font">Choose Size:</label></div>
+	  <div class="garden-size-wrap">
+	  	<div class="garden-size">
+		  <input ng-model="$ctrl.garden.size" type="radio" value="1" > small [ Seed up to <strong>12</strong> plants ]<br>
+		  <img class="garden-image" src="https://image.ibb.co/imhMT5/Screen_Shot_2017_05_12_at_12_27_22_AM.png">
+		</div>
+		<div class="garden-size">
+		  <input ng-model="$ctrl.garden.size" type="radio" value="2" > large [ Seed up to <strong>48</strong> plants ]<br>
+		  <img class="garden-image" src="https://image.ibb.co/gi1Fo5/Screen_Shot_2017_05_12_at_12_27_10_AM.png">
+		</div>
+	  </div>
+	  <button ng-click="$ctrl.saveGarden()" class="button garden-button"> Start Seeding!</button>
+	</div>
+</div>
+<br>
+<div class="text-align-center"><div class="separation-hr"></div></div>

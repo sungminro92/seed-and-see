@@ -5,3 +5,39 @@ $color-skin: #F2DCCB;
 $color-softorange: #FCAC8A;
 $color-orange: #E06029;
 $color-black: #292108;
+
+.garden-image {
+	width: 200px;
+	margin: 10px;
+}
+
+.flex-center-wrap {
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.garden-input {
+	width: 350px;
+	margin: 5px 0px 0px 0px;
+}
+
+.garden-size-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.garden-size {
+	margin: 15px;
+}
+
+.garden-size:hover {
+	background-color: $color-skin;
+}
+
+.error-message {
+	font-family: 'Muli', sans-serif;
+	font-size: 1em;
+	color: $color-orange;
+}

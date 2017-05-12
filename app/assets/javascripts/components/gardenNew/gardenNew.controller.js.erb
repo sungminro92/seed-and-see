@@ -18,10 +18,11 @@ function GardenNewController($state, $stateParams, gardenService) {
   gardenService
   	.getGarden()
   	.then(function(res) {
-  		if (res.data == !null) {
+  		if (res.data != null) {
+        alert('you already have a garden!');
   			$state.go('gardenIndex', { userId: res.data.user_id })
   		} else {
-  			vm.garden.name = 'Name your garden'
+  			vm.garden.name = '';
   		};
   	})
 
