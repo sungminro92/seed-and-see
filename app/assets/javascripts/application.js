@@ -74,7 +74,7 @@ angular
       .state('postEdit', {
       url: '/users/:userId/posts/:id/edit',
       component: 'postEdit'
-      })
+      });
 
     // default fall back route
     $urlRouterProvider.otherwise('/');

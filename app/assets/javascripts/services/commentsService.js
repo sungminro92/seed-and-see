@@ -13,7 +13,7 @@ function commentsService($http) {
 
 	factory.deleteComment = function(userId, postId, id) {
     return $http
-      .delete('/api/users/' + userId + '/posts/' + postId + '/comments/' +id, )
+      .delete('/api/users/' + userId + '/posts/' + postId + '/comments/' +id )
   	}
 
 	return factory;

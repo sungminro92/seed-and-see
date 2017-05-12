@@ -1,0 +1,62 @@
+<div class="flex-center-wrap"><span class="primary-font text-center">My garden <span style="color:#AAAD2A">{{ $ctrl.garden.name }}</span></span></div>
+<center>
+<div class="garden-index-top-content">
+	<h4> Garden Owner | <a ui-sref="userShow({id:$ctrl.garden.user_id})">{{ $ctrl.garden.user.name }} </a></h4>
+</div>
+
+<div class="button-area">
+	<button ng-hide="$ctrl.gardenPlants < 12" class="button garden-index-button" ui-sref="plants"> < Back to Plants</button>
+	<button ng-show="$ctrl.gardenPlants < 12" class="button garden-index-button" ui-sref="plants">Add plants now!</button>
+	<button class="button garden-index-button" ui-sref="plants">Delete my garden</button>
+</div>
+
+</center>
+
+<!-- <div class="text-align-center"><div class="separation-hr"></div></div> -->
+
+	<div class="garden-index">
+	<!-- User's garden lives here -->
+		<div class="garden-wrap">
+			<div class="garden">
+				<div ng-repeat="gardenPlant in $ctrl.gardenPlants" ng-class="[{smalls:$ctrl.small, large:$ctrl.large}]"><div><img ng-class="[{smalls:$ctrl.small, large:$ctrl.large}]" ng-src="{{gardenPlant.icon}}"></div></div>
+				<!-- <p> {{ $ctrl.gardenPlants }} </p> -->
+			</div>
+		</div>
+	</div>
+
+	<center>
+	<div style="padding-top: 20px">
+		<table>
+			<tr>
+			   <th>Plant Name</th>
+			   <th>Water?</th>
+	  		</tr>
+	  		<tr ng-repeat="gardenPlant in $ctrl.gardenPlants">
+			   <th>{{gardenPlant.name | uppercase}} <a style="margin-left:5px" ng-click="$ctrl.deleteGardenPlant(gardenPlant)"><img style="width:20px" src="https://image.ibb.co/fdjk5k/deletebtn.png"></a></th>
+			   <th></th>
+	  		</tr>
+		</table>
+	</div>
+	</center>
+
+	<!-- showing garden plants -->
+	
+	<!-- <div class="text-align-center"><div class="separation-hr"></div></div> -->
+
+	<!-- MY PLANTS TABLE -->
+
+
+
+<!-- 	<div class="plants-index-page">
+		<div class="plants-wrap" ng-repeat="gardenPlant in $ctrl.gardenPlants"> 
+			<div class="each-plant">
+				<div class="plant-icon">
+					<div class="plant-image-box"><img src="{{gardenPlant.icon}}" style="width:100%"></div>
+				</div><br>
+			</div>
+			<a ui-sref="plantShow({id: (gardenPlant.name | lowercase) })"><p class="title garden-name">{{ plant.name }}</p></a>
+			<br>
+			<a class="save-to-my-garden" ng-click="$ctrl.deleteGardenPlant"><p>delete</p></a>
+		</div>
+	</div> -->
+</div>

@@ -1,0 +1,38 @@
+<div class="search-and-filter">
+	<label class="nav-separation">Search:</label><input ng-model="searchText">
+	<div class="order-by-wrap"><span class="nav-separation">|</span>
+	<span class="nav-separation">Sort By:</span><button ng-click="$ctrl.propertyName = 'created_at'; $ctrl.reverse = false">Most Recent</button><button class="nav-separation" ng-click="$ctrl.sortBy('title')">Title</button><button ng-click="$ctrl.sortBy('description')">User Name</button>
+	</div>	
+</div>
+
+<div class="text-align-center"><div class="separation-hr"></div></div>
+
+<div class="posts-index-page">
+	<br>
+	<div class="posts-wrap">
+		<ul ng-repeat="post in $ctrl.posts | orderBy:$ctrl.propertyName:$ctrl.reverse | limitTo: $ctrl.limit | filter:searchText ">
+			<br>
+			<div class="gallery">
+
+				<a ui-sref="postShow({ userId: {{post.user_id}}, id: {{post.id}} })">
+				   <img src="{{post.img_url}}" alt="Picture">
+				</a>
+				
+				<div class="content">
+					<p class="desc title"> {{ post.title  | limitTo:38}}<span ng-show="post.title.length >= 38"> ...</span></p>
+					<p style="float:right;" class="desc"><span class="glyphicon glyphicon-user"></span> <a ui-sref="userShow({id: $ctrl.userArray[$ctrl.posts.indexOf(post)].id})">{{ $ctrl.userArray[$ctrl.posts.indexOf(post)].name }}</a></p>
+					<span style="float:left" ng-if ="$ctrl.currentUser.id == post.user_id" class=" edit desc">
+						<a ui-sref="postEdit({userId: {{post.user_id}}, id: {{post.id}} })">Edit</a> | <a ng-click="deletePost()">Delete</a>
+					</span>
+				</div>
+				
+				
+			</div>
+		</ul>
+		<button class="load-more" style = "width: 300px; margin: 2%" ng-click='$ctrl.loadMore()'> Load All </button>
+	</div>
+
+	<div class="twitter-wrap"><a class="twitter-timeline" data-width="100%" data-height="100%" data-theme="light" data-link-color="#19CF86" href="https://twitter.com/urbangardens">Tweets by urbangardens</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</div>
+
+</div>

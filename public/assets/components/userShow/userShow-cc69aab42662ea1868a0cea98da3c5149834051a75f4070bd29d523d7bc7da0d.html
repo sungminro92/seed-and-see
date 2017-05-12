@@ -1,0 +1,70 @@
+<div class="container">
+
+        <center>
+        <img data-toggle="modal" data-target="#myModal" src="{{$ctrl.user.img_url}}" width="140" height="140" class="img-circle">
+        <h3>{{ $ctrl.user.name }}</h3>
+        <p><em>{{ $ctrl.user.email }}</em></p>
+        <p>Join Date:
+            {{$ctrl.user.created_at | date:"MM/dd/yy"}}</p>
+        <p>Last Updated:
+            {{$ctrl.user.updated_at | date:"MM/dd/yy"}}</p>
+        <p># of Posts:
+            {{$ctrl.posts.length}}</p>
+		</center>
+
+<div class="text-align-center"><div class="separation-hr"></div></div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title" id="myModalLabel">More About {{ $ctrl.user.name }}</h4>
+                </div>
+                <div class="modal-body">
+                    <center>
+	                    <img src="{{$ctrl.user.img_url}}" name="aboutme" width="140" height="140" border="0" class="img-circle">
+	                    <h3 class="media-heading">{{ $ctrl.user.name }}<br><small>{{ $ctrl.user.email }}</small></h3>
+	                    <span><strong>Skills: </strong></span>
+	                        <span class="label label-warning">1</span>
+	                        <span class="label label-info">2</span>
+	                        <span class="label label-info">3</span>
+	                        <span class="label label-success">4</span>
+                    </center>
+                    <hr>
+                    <center>
+                    <p class="text-left"><strong>Join Date: </strong>
+                        {{$ctrl.user.created_at | date:"MM/dd/yy"}}</p>
+                    <p class="text-left"><strong>Last Updated: </strong>
+                        {{$ctrl.user.updated_at | date:"MM/dd/yy"}}</p>
+
+                    <p class="text-left"><strong># of Posts: </strong>
+                        {{$ctrl.posts.length}}</p>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <center>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about {{ $ctrl.user.name }}</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<ul ng-repeat="post in $ctrl.posts">
+<div class="gallery">
+  <a ui-sref="postShow({userId: {{post.user_id}}, id: {{post.id}}})">
+    <img src="{{post.img_url}}" alt="pictures">
+  </a>
+  <div class="content">
+      <p class="desc title">{{ post.title | limitTo:38 }}<span ng-show="post.title.length >= 38"> ...</span></p>
+      <span ng-if ="$ctrl.currentUser.id == post.user_id" class=" edit desc"><a ui-sref="postEdit({userId: {{post.user_id}}, id: {{post.id}} })">edit</a> | <a ng-click="$ctrl.deletePost(post)">delete</a></span>
+    </div>
+    </div>
+</ul>
+
+</div>
+
+
