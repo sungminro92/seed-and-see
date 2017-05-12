@@ -17,8 +17,13 @@ class Api::PostsController < ApplicationController
     @post = Post.find(params[:id])
     @user = User.find(@post.user_id)
     @comments = @post.comments
+    user_array = []
+    @comments.each { |x| # lol
+      user_array.push(User.find(x.user_id))
+    }
+
     @currentUser = current_user
-    render :json => {post: @post, user: @user, comments: @comments, currentUser: @currentUser}
+    render :json => {post: @post, user: @user, comments: @comments, currentUser: @currentUser, user_array: user_array}
   end 
 
 

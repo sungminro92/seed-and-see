@@ -32,12 +32,16 @@ $color-black: #292108;
 }
 
 .comment-input-wrap {
-	display: inline
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+	justify-content: space-between;
 }
 
 .button {
 	border-radius: 3px;
 	background-color: white;
+	height: 70%
 }
 
 .post-image-wrap {
@@ -46,4 +50,13 @@ $color-black: #292108;
     align-items: flex-start;
     max-width: 800px;
     min-width: 300px;
+}
+
+.smm {
+	width: 30px;
+    height: 30px;
+}
+
+.delete {
+	float:right;
 }

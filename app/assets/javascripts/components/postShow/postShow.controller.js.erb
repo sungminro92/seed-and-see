@@ -16,6 +16,7 @@ function PostShowController($stateParams, postsService, commentsService, $window
 
   vm.currentUserId = {};
   vm.isCurrentUser = false;
+  vm.userArray = [];
 
   // CALLED FUNCTIONS
   vm.createComment = createComment;
@@ -34,7 +35,8 @@ function PostShowController($stateParams, postsService, commentsService, $window
       vm.post = res.data.post,
       vm.user = res.data.user,
       vm.comments = res.data.comments,
-      vm.currentUserId = res.data.currentUser.id
+      vm.currentUserId = res.data.currentUser.id,
+      vm.userArray = res.data.user_array
     })
     // .then(function isCurrentUser() {
     //   if (userId == vm.currentUser.id) {
