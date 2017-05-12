@@ -12,13 +12,17 @@ Post.destroy_all
 Comment.destroy_all
 
 user1 = User.create(
-	name: 'Sungmin ro', email: 'sungminro@gmail.com', password: '123456', password_confirmation:'123456')
+	name: 'Sungmin Ro', email: 'sungminro@gmail.com', password: '123456', password_confirmation:'123456', img_url: "http://ibb.co/dNkGT5
+http://ibb.co/b92KgQ")
 
 user2 = User.create(
-	name: 'Jesse Lee', email: 'jesselee@gmail.com', password: '123456', password_confirmation:'123456')
+	name: 'Jesse Lee', email: 'jesselee@gmail.com', password: '123456', password_confirmation:'123456', img_url: "http://ibb.co/b92KgQ")
 
 user3 = User.create(
-	name: 'Mario Cart', email: 'mariocart@gmail.com', password: '123456', password_confirmation:'123456' )
+	name: 'Gatsby', email: 'gatsby@gmail.com', password: '123456', password_confirmation:'123456', img_url: "http")
+
+user4 = User.create(
+	name: 'Pepe', email: 'pepe@gmail.com', password: '123456', password_confirmation:'123456', img_url: "http ")
 
 radish = Plant.create(
 	name: 'Radish', days_to_water:'', img_url: 'https://image.ibb.co/fx7jVk/3.png' )
