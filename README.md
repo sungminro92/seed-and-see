@@ -1,24 +1,12 @@
-# README
+# SEED & SEE
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+SEED & SEE websites is educational garden plan for children. I planned this so that Chiildren involve in nature-friendly activities both online and in real life! Major activities children user can experience is: planning & managing current garden with automatic watering schedule alerts, share interesting facts and events about their garden to news feed & communicate through comments, search for nutrition facts about any kind of food and ingredients, and lastly learn about the importance of life! 
 
-Things you may want to cover:
 
-* Ruby version
+# ERD diagram
 
-* System dependencies
+![](images/seedAndSeeERD.jpg?raw=true)
 
-* Configuration
+# WIREFRAMES
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![](images/seedAndSeeWireframe.jpg?raw=true)
