@@ -6,7 +6,8 @@ gSEED & SEE websites is educational garden plan for children. I planned this so 
 * Rails back end sql database
 * Javascripts / jQuery
 * Photoshop / Illustrators
-* Third party APIs
+* Tweeter feeds
+* Nutritionix Seach API
 * Trello
 
 # USER STORIES
