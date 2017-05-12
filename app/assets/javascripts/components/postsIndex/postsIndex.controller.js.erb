@@ -9,6 +9,7 @@ function PostsIndexController($stateParams, postsService, usersService) {
 
   vm.posts = [];
   vm.currentUser = {};
+  vm.userArray = [];
   // vm.userId = $stateParams.userId
   vm.sortBy = sortBy;
   vm.limit = 9;
@@ -43,6 +44,7 @@ function PostsIndexController($stateParams, postsService, usersService) {
       console.log(res);
 	    vm.posts = res.data.posts
       vm.currentUser = res.data.currentUser
+      vm.userArray = res.data.user_array
       // posts;
       // vm.currentUser = res.data.currentUser;
 	});

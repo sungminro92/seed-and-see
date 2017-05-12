@@ -19,12 +19,14 @@
 				</a>
 				
 				<div class="content">
-					<p class="desc title"> {{ post.title }}</p>
-					<p class="desc">- {{ post.description }} -</p>
+					<p class="desc title"> {{ post.title  | limitTo:38}}<span ng-show="post.title.length >= 38"> ...</span></p>
+					<p style="float:right;" class="desc"><span class="glyphicon glyphicon-user"></span> <a ui-sref="userShow({id: $ctrl.userArray[$ctrl.posts.indexOf(post)].id})">{{ $ctrl.userArray[$ctrl.posts.indexOf(post)].name }}</a></p>
+					<span style="float:left" ng-if ="$ctrl.currentUser.id == post.user_id" class=" edit desc">
+						<a ui-sref="postEdit({userId: {{post.user_id}}, id: {{post.id}} })">Edit</a> | <a ng-click="deletePost()">Delete</a>
+					</span>
 				</div>
 				
-				<span ng-if ="$ctrl.currentUser.id == post.user_id" class=" edit desc"><a ui-sref="postEdit({userId: {{post.user_id}}, id: {{post.id}} })">Edit</a> | <a ng-click="deletePost()">Delete</a>
-				</span>
+				
 			</div>
 		</ul>
 		<button class="load-more" style = "width: 300px; margin: 2%" ng-click='$ctrl.loadMore()'> Load All </button>

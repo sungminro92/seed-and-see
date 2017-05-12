@@ -10,6 +10,7 @@ function UserShowController($stateParams, usersService, postsService) {
   vm.user = {};
   vm.posts = [];
   vm.deletePost = deletePost;
+  vm.currentUser = {};
 
 	usersService
   	.getUser($stateParams.id) 
@@ -18,6 +19,7 @@ function UserShowController($stateParams, usersService, postsService) {
       console.log(res)
 	    vm.user = res.data.user;
       vm.posts = res.data.posts;
+      vm.currentUser = res.data.current_user;
 	});
 
   function deletePost(post) {

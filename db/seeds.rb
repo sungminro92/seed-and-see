@@ -15,7 +15,7 @@ user1 = User.create(
 	name: 'Sungmin Ro', email: 'sungminro@gmail.com', password: '123456', password_confirmation:'123456', img_url: "http://i.imgur.com/JF9p0av.png")
 
 user2 = User.create(
-	name: 'Jesse Lee', email: 'jesselee@gmail.com', password: '123456', password_confirmation:'123456', img_url: "http://ibb.co/b92KgQ")
+	name: 'Jesse Lee', email: 'jesselee@gmail.com', password: '123456', password_confirmation:'123456', img_url: "http://i.imgur.com/OH3cV8K.jpg")
 
 user3 = User.create(
 	name: 'Gatsby', email: 'gatsby@gmail.com', password: '123456', password_confirmation:'123456', img_url: "http://i.imgur.com/bbaf9BW.jpg")

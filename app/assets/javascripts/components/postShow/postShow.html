@@ -3,14 +3,15 @@
     <div class="post-show-wrap">
         <div class="title">{{$ctrl.post.title}}</div>
         <div class="small">
-            Posted By - <a ui-sref="userShow({id: $ctrl.post.user_id})">{{ $ctrl.user.name }}</a>
+            <span class="glyphicon glyphicon-user"></span> 
+            Posted By - <a ui-sref="userShow({id: $ctrl.post.user_id})">{{ $ctrl.user.name }}</a><br>
             <span class="glyphicon glyphicon-time"></span> 
             Posted on {{ $ctrl.post.created_at | date:"MM/dd/yy @ h:mma"}}
         </div>
         <div class="text-align-center"><div class="separation-hr"></div></div>
-            
+
         <div class="post-image-wrap">
-            <img class="img-responsive" src="{{$ctrl.post.img_url}}" alt="">
+            <img class="post-img img-responsive" src="{{$ctrl.post.img_url}}" alt="">
             <p>{{$ctrl.post.description}}</p>
         </div>
 

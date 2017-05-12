@@ -7,7 +7,8 @@ class Api::UsersController < ApplicationController
   def show
   	@user = User.find(params[:id])
   	@posts = @user.posts
-  	render json: { user: @user, posts: @posts }
+  	@current_user = current_user
+  	render json: { user: @user, posts: @posts, current_user: @current_user }
 
 
   end

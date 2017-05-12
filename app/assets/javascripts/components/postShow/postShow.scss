@@ -7,10 +7,11 @@ $color-orange: #E06029;
 $color-black: #292108;
 
 .post-show-page {
-	margin-top: 2%;
     display: flex;
     width: 100%;
     justify-content: center;
+    
+	padding: 20px;
 }
 .comment-box {
 	margin-left: 5px;
@@ -52,6 +53,9 @@ $color-black: #292108;
     min-width: 300px;
 }
 
+.post-show-wrap {
+}
+
 .img-sm {
 	width: 30px;
     height: 30px;
@@ -59,4 +63,10 @@ $color-black: #292108;
 
 .delete {
 	margin-left:5px; 
+}
+
+.post-img {
+   padding:1px;
+   border:1px solid #292108;
+   background-color: #AAAD2A;
 }

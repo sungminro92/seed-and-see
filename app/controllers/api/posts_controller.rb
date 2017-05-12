@@ -2,13 +2,13 @@ class Api::PostsController < ApplicationController
   def index
     @posts = Post.all
     @currentUser = current_user
-    #@users = User.all
 
-    @posts.each { |x|
-      x.description =  User.find(x.user_id).name # lol
+    user_array = []
+    @posts.each { |x| # lol
+      user_array.push(User.find(x.user_id))
     }
 
-    render json: {posts: @posts, currentUser: @currentUser}
+    render json: {posts: @posts, currentUser: @currentUser, user_array: user_array}
     # render json: @posts.to_json(include: :user)
 
   end
