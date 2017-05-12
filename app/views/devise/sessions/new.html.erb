@@ -3,7 +3,7 @@
 .sign-in-page {
   margin: 0 auto;
   width: 50%;
-  max-width: 650px;
+  max-width: 500px;
   min-width: 350px;
 }
 </style>
@@ -12,7 +12,7 @@
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
 <div style="padding-top: 50px"></div>  
- <div style="margin:0 auto; padding-left:20%">
+ <div style="margin:0 auto;">
   <div class="form-group">
     <%= f.label :email, :class=>"control-label col-sm-3" %><br />
     <%= f.email_field :email, autofocus: true, :class=>"form-control" %>
