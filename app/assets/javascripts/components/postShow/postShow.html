@@ -1,60 +1,39 @@
 <div class="post-show-page">
 
     <div class="post-show-wrap">
-        <div class="post-image-wrap">
-            <img
+        <div class="title">{{$ctrl.post.title}}</div>
+        <div class="small">
+            Posted By - <a ui-sref="userShow({id: $ctrl.post.user_id})">{{ $ctrl.user.name }}</a>
+            <span class="glyphicon glyphicon-time"></span> 
+            Posted on {{ $ctrl.post.created_at | date:"MM/dd/yy @ h:mma"}}
         </div>
-        <p class="title">{{$ctrl.post.title}}</p>
-    
-    <p class="lead">
-    <p></p>
-        by <a ui-sref="userShow({id: $ctrl.post.user_id})">{{ $ctrl.user.name }}</a>
-    </p>
-    <p><span class="glyphicon glyphicon-time"></span> Posted on {{ $ctrl.post.created_at | date:"MM/dd/yy @ h:mma"}}</p>
-    <hr>
-    <img class="img-responsive" src="{{$ctrl.post.img_url}}" alt="">
-    <p>{{$ctrl.post.description}}</p>
-<!--     <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
- -->
-    </div>
-    <div class="comment-wrap">
-    <h3> Comments: </h3>
-        <div class="comment-input-wrap">
-            <input class="comment-input" ng-model="$ctrl.newComment.content" placeholder="Leave a comment here">
-            <button class="button" ng-click="$ctrl.createComment()"> Leave a comment! </button>
-            <p ng-bind="$ctrl.newComment.content"></p>
-        <div>
+        <div class="text-align-center"><div class="separation-hr"></div></div>
+            
+        <div class="post-image-wrap">
+            <img class="img-responsive" src="{{$ctrl.post.img_url}}" alt="">
+            <p>{{$ctrl.post.description}}</p>
+        </div>
 
-        <div ng-repeat="comment in $ctrl.comments">
-            <div class="comment-box">
-            <img src="{{$ctrl.userArray[$index].img_url}}" name="aboutme" class="img-circle smm" border="0">
-                {{$ctrl.userArray[$index].name}}
-                <span class="comment-time">@ {{ comment.created_at | date:'medium'}}</span>
-                <p>
-                    <span class="comment-content"> {{ comment.content }} </span>
-                    <a class="delete" ng-if=" comment.user_id == $ctrl.currentUserId" ng-click="$ctrl.deleteComment(comment)">delete</a>
-                </p>
+        <div class="comment-wrap">
+            <h3> Comments: </h3>
+            <div class="comment-input-wrap">
+                <input class="comment-input" ng-model="$ctrl.newComment.content" placeholder="Leave a comment here">
+                <button class="button" ng-click="$ctrl.createComment()"> Leave a comment! </button>
+                <p ng-bind="$ctrl.newComment.content"></p>
+            </div>
+
+            <div ng-repeat="comment in $ctrl.comments">
+                <div class="comment-box">
+                    <img src="{{$ctrl.userArray[$index].img_url}}" name="aboutme" class="img-circle img-sm" border="0">
+                    <a ui-sref="userShow({id: $ctrl.userArray[$index].id})">{{ $ctrl.userArray[$index].name }}</a>
+                    <span class="comment-time">@ {{ comment.created_at | date:'medium'}}</span><a class="delete" ng-if=" comment.user_id == $ctrl.currentUserId" ng-click="$ctrl.deleteComment(comment)">Delete</a>
+                    <p>
+                        <span class="comment-content"> {{ comment.content }} </span>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-<!--
-          <div class="itemsShowRight">
-        <div class='commentForm'>
-          <p class='posting-title'>Comments</p>
-          <form ng-submit='$ctrl.addItemComment($ctrl.newComment)'>
-            <textarea class='commentText' type="text" name="text" placeholder='Type your comment here' ng-model='$ctrl.newComment.text'></textarea>
-            <input class="newCommentSubmit" type="submit" value="Post Comment">
-          </form>
-        </div>
-
-        <div class='comment-box' ng-repeat="comment in $ctrl.comments | orderBy: '-created_at'">
-          <li>Comment:</strong> {{comment.text}}</li>
-          <li><strong>Posted by:</strong> {{comment.userName}}</li>
-          <li ng-show="comment.created_at"><strong>Posted:</strong> {{comment.created_at| date: 'short'}}</li>
-        </div>
-      </div> -->
-
-    <!-- Pager -->
 
 
 </div>
