@@ -1,6 +1,8 @@
 <span><p class="title">Plants Index</p></span>
-<p>You can have up to {{$ctrl.myPlants}} plants.</p>
-<div class="my-plants-number"> Number of my plants: {{ $ctrl.gardenPlants }} </div>
+<div ng-hide ="$ctrl.gardenPlants == null" class="my-plants-number"> Number of my plants: {{ $ctrl.gardenPlants }} </div>
+<div ng-show ="$ctrl.gardenPlants == null" class="my-plants-number"> You must create a garden</div>
+<button ui-sref="gardenNew({userId:$ctrl.currentUser.id})">Create A Garden</button>
+
 <div class="plants-index-page">
 
 	<div class="plants-wrap" ng-repeat="plant in $ctrl.plants"> 
