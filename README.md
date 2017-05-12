@@ -5,8 +5,8 @@ SEED & SEE websites is educational garden plan for children. I planned this so t
 
 # ERD diagram
 
-![](images/seedAndSeeERD.jpg?raw=true)
+![](/public/images/seedAndSeeERD.jpg?raw=true)
 
 # WIREFRAMES
 
-![](images/seedAndSeeWireframe.jpg?raw=true)
+![](/public/images/seedAndSeeWireframe.jpg?raw=true)
