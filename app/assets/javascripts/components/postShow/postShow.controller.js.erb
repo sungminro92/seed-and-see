@@ -18,16 +18,16 @@ function PostShowController($stateParams, postsService, commentsService, $window
   vm.isCurrentUser = false;
   vm.userArray = [];
 
-  // CALLED FUNCTIONS
   vm.createComment = createComment;
   vm.deleteComment = deleteComment;
 
   var userId = $stateParams.userId;
   var id = $stateParams.id;
-  var postId = $stateParams.id
+  var postId = $stateParams.id;
 
+  activate();
 
-  // ONLOAD
+  function activate() {
   postsService
     .getPost(userId, id)
     .then(function(res){
@@ -37,14 +37,10 @@ function PostShowController($stateParams, postsService, commentsService, $window
       vm.comments = res.data.comments,
       vm.currentUserId = res.data.currentUser.id,
       vm.userArray = res.data.user_array
-    })
-    // .then(function isCurrentUser() {
-    //   if (userId == vm.currentUser.id) {
-    //     vm.isCurrentUser = true;
-    //   }
-    // })
+    });
+  }
 
-  // FUNCTIONS
+  // NEW COMMENT
   function createComment() {
     commentsService
       .createComment(postId, vm.newComment)
@@ -53,10 +49,11 @@ function PostShowController($stateParams, postsService, commentsService, $window
           console.log(res.data.content);
           $window.location.reload();
         } else {
-          alert('something went wrong')
+          alert('something went wrong');
         }
-      })
+      });
   }
+
   // DELETE COMMENT
   function deleteComment(comment) {
     var id = comment.id;
@@ -66,8 +63,7 @@ function PostShowController($stateParams, postsService, commentsService, $window
         console.log('your comment has been deleted!');
         alert('your comment has been deleted!');
         $window.location.reload();
-      })
+      });
   }
-
-
+  
 }

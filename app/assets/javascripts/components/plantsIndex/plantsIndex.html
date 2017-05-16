@@ -1,8 +1,10 @@
-<span><p class="title"></p></span>
-	
+
 <div class="notification">
 	<div style="font-size:20px" ng-hide ="$ctrl.gardenPlants == null" class="my-plants-number"> <strong>Number of my plants: {{ $ctrl.gardenPlants }} </strong></div>
-	<div class="notice secondary-font" ng-show ="$ctrl.gardenPlants == null" class="my-plants-number"><span class="primary-font">You must <span style="color:#E06029">create</span> a <span style="color:#AAAD2A">garden</span> to add plants!</div>
+	<!-- IF USER DOESN'T HAVE A GARDEN -->
+	<div class="notice secondary-font" ng-show ="$ctrl.gardenPlants == null" class="my-plants-number">
+		<span class="primary-font">You must <span style="color:#E06029">create</span> a <span style="color:#AAAD2A">garden</span> to add plants!
+	</div>
 	<button ng-show ="$ctrl.gardenPlants == null" class="button garden-button" ui-sref="gardenNew({userId:$ctrl.currentUser.id})">Create A Garden</button>
 </div>
 
@@ -10,13 +12,14 @@
 <div class="text-align-center"><div class="separation-hr"></div></div>
 
 <div class="plants-index-page">
-
-	<div class="plants-wrap" ng-repeat="plant in $ctrl.plants"> 
+	<div class="plants-wrap" ng-repeat="plant in $ctrl.plants">
 		<div class="each-plant">
 			<div class="plant-icon">
 				<a ui-sref="plantShow({id: (plant.name | lowercase) })">
-				<div class="plant-image-box"><img src="{{plant.img_url}}" style="width:100%"></div></a>
-		</div><br>
+				<div class="plant-image-box"><img src="{{plant.img_url}}" style="width:100%"></div>
+				</a>
+			</div>
+			<br>
 		<a ui-sref="plantShow({id: (plant.name | lowercase) })"><p class="title garden-name">{{ plant.name }}</p></a>
 		<a class="save-to-my-garden" ng-hide="$ctrl.limit <= $ctrl.gardenPlants" ng-click="$ctrl.saveToGarden(plant)"><p>seed it!</p></a>
 		<p style="color:red" ng-show="$ctrl.limit <= $ctrl.gardenPlants">Garden Is Full</p>
@@ -24,11 +27,11 @@
 	</div>
 </div>
 
+<!-- SEPARATION -->
 <div class="text-align-center"><div class="separation-hr"></div></div>
 
 <div class="search-nutritionix-wrap">
 	<p class="primary-font" style="padding-top:5px"> Learn more about other <span style="color:#AAAD2A">plants</span> & <span style="color:#E06029">food </span></p>
 	<input style="margin-left:15px"class="plant-index-search search-input" ng-model="$ctrl.searchPlant" placeholder="search for any food nutrition facts!">
 	<button class="button garden-button nutrition-button" ui-sref='plantShow({id: $ctrl.searchPlant })'>Search!</button>
-</div> 
-
+</div>

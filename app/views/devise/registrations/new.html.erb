@@ -9,22 +9,19 @@
 </style>
 
 <div class="sign-up-page">
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-<div style="padding-top: 50px"></div>  
+<div style="padding-top: 50px"></div>
  <div style="margin:0 auto;">
   <div class="form-group">
-        <%= f.label :name, :class=>"control-label col-sm-3" %>
-
-        <%= f.text_field :name, autofocus: true, :class=>"form-control"%>
-
+    <%= f.label :name, :class=>"control-label col-sm-3" %>
+    <%= f.text_field :name, autofocus: true, :class=>"form-control"%>
   </div>
 
   <div class="form-group">
-      <%= f.label :email, :class=>"control-label col-sm-3"%>
-      <%= f.email_field :email, autofocus: true, :class=>"form-control"%>
-
+    <%= f.label :email, :class=>"control-label col-sm-3"%>
+    <%= f.email_field :email, autofocus: true, :class=>"form-control"%>
   </div>
 
   <div class="form-group">
@@ -43,12 +40,9 @@
   </div>
 
   <div class="form-group ">
-      <%= f.submit "Sign up", :class => "btn btn-success"%>
+    <%= f.submit "Sign up", :class => "btn btn-success"%>
   <%= render "devise/shared/links" %>
   </div>
   <% end %>
-
-  
-
-</div>
+  </div>
 </div>

@@ -2,30 +2,25 @@ class Api::PostsController < ApplicationController
   def index
     @posts = Post.all
     @currentUser = current_user
-
     user_array = []
     @posts.each { |x| # lol
       user_array.push(User.find(x.user_id))
     }
-
     render json: {posts: @posts, currentUser: @currentUser, user_array: user_array}
     # render json: @posts.to_json(include: :user)
-
   end
-  
+
   def show
     @post = Post.find(params[:id])
     @user = User.find(@post.user_id)
     @comments = @post.comments
     user_array = []
-    @comments.each { |x| # lol
+    @comments.each { |x|
       user_array.push(User.find(x.user_id))
     }
-
     @currentUser = current_user
     render :json => {post: @post, user: @user, comments: @comments, currentUser: @currentUser, user_array: user_array}
-  end 
-
+  end
 
   def create
   	@post = Post.new(post_params)

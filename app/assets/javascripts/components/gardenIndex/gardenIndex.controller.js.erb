@@ -8,6 +8,7 @@ function GardenIndexController( $stateParams, $state, gardenService, $window) {
   var vm = this;
   //garden
   vm.garden = {};
+  //garden-plants
   vm.gardenPlants = [];
   // garden size
   vm.small = false;
@@ -15,11 +16,10 @@ function GardenIndexController( $stateParams, $state, gardenService, $window) {
   vm.deleteGardenPlant = deleteGardenPlant;
   // vm.editGardenName = editGardenName;
 
-
   var userId = $stateParams.userId
-  
+
   gardenService
-  	.getGarden()
+  	.getGarden();
   	.then(function(res){
   		console.log(res)
   		// If user does not have a garden redirect to 'gardenNew'
@@ -40,7 +40,8 @@ function GardenIndexController( $stateParams, $state, gardenService, $window) {
   			vm.large = true;
   		}
   	});
-  	
+
+    // DELETE GARDEN-PLANT
     function deleteGardenPlant(gardenPlant) {
       var id = gardenPlant.id
       gardenService

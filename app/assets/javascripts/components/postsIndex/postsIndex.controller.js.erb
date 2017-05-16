@@ -10,15 +10,16 @@ function PostsIndexController($stateParams, postsService, usersService, $window)
   vm.posts = [];
   vm.currentUser = {};
   vm.userArray = [];
-  // vm.userId = $stateParams.userId
   vm.sortBy = sortBy;
   vm.limit = 9;
   vm.loadMore = loadMore;
   vm.deletePost = deletePost;
 
   activate();
+  loadPosts();
   hideLoadMore();
 
+// IF WINDOW SIZE IS SMALL, HIDE FILTERS
   function activate() {
     $(window).resize(function() {
       windowWidth = $(window).innerWidth();
@@ -27,8 +28,8 @@ function PostsIndexController($stateParams, postsService, usersService, $window)
       } else {
       $('.order-by-wrap').show();
       }
-    })
-  };
+    });
+  }
 
   function hideLoadMore() {
     if (vm.posts.length <= 9) {
@@ -36,32 +37,34 @@ function PostsIndexController($stateParams, postsService, usersService, $window)
     }
   }
 
+  // LOAD ALL POSTS FUNCTION
   function loadMore() {
-    vm.limit = vm.posts.length
-  };
+    vm.limit = vm.posts.length;
+  }
 
-	postsService
-  	.getPosts() 
+// LOAD ALL POSTS ON LOAD
+  function loadPosts() {
+  postsService
+  	.getPosts()
   	.then(function(res) {
       console.log(res);
-	    vm.posts = res.data.posts
-      vm.currentUser = res.data.currentUser
-      vm.userArray = res.data.user_array
-      // posts;
-      // vm.currentUser = res.data.currentUser;
-	});
+	    vm.posts = res.data.posts;
+      vm.currentUser = res.data.currentUser;
+      vm.userArray = res.data.user_array;
+	  });
+  }
 
   vm.propertyName = 'created_at';
   vm.reverse = true;
 
+// SORT BY
   function sortBy(propertyName) {
     vm.reverse = (vm.propertyName === propertyName) ? !vm.reverse : false;
     vm.propertyName = propertyName;
-  };
+  }
 
   function deletePost(post) {
     var userId = $stateParams.userId;
-    // var id = $stateParams.id;
     var id = post.id;
 
     postsService
@@ -71,7 +74,5 @@ function PostsIndexController($stateParams, postsService, usersService, $window)
         alert('your post has been deleted!');
         $window.location.reload();
       });
-  };
-
-
+  }
 }

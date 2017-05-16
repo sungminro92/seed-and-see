@@ -1,46 +1,24 @@
+<!-- PLANTS SHOW + NUTRITION FACT PAGE -->
 <div class="plant-show-top-area">
-  <div style="display:flex"><button class="search-button" ui-sref="plants"> < Back to Plants </button></div>
-
-  <div style="display:flex" class="search-bar"><input class="search-input" ng-model="$ctrl.searchPlant" placeholder="search for any food nutrition facts!">
-	<button class="search-button" ui-sref='plantShow({id: ($ctrl.searchPlant | lowercase) })'> Search!</button>
+  <div style="display:flex">
+    <button class="search-button" ui-sref="plants"> < Back to Plants </button>
+  </div>
+<!-- SEARCH BAR -->
+  <div style="display:flex" class="search-bar">
+    <input class="search-input" ng-model="$ctrl.searchPlant" placeholder="search for any food nutrition facts!">
+	   <button class="search-button" ui-sref='plantShow({id: ($ctrl.searchPlant | lowercase) })'> Search!</button>
   </div>
 </div>
 
 <div class="plant-show-page">
 	<div class="nutrition-fact" ng-repeat="fact in $ctrl.facts">
-	<div class="nutri-contnet nutrition-fact-title"> Nutrition Fact </div>
-	<div class="secondary-font nutri-content"><p>{{fact.fields.item_name}} - From <strong>{{fact.fields.brand_name}}</strong></p></div>
-	<div style="margin-bottom:3px; margin-top:0px; text-align:center; width:99%; height:10px; background-color:#47440F"></div>
-	<p class="secondary-font nutri-content"><strong>Amount Per Serving<span style="padding-left:15px; color:#AAAD2A">{{fact.fields.nf_serving_size_qty
-}}</span></strong></p>
-	<div style="margin-bottom:0px; margin-top:-5px; text-align:center; width:99%; height:2px; background-color:#47440F"></div>
-	<div class="secondary-font nutri-content"><p>Calories<span style="padding-left:15px; font-size:35px; color:#E06029">{{fact.fields.nf_calories}}</span></p></div>
-	<div style="margin-bottom:3px; margin-top:-5px; text-align:center; width:99%; height:5px; background-color:#47440F"></div>
-	<div class="secondary-font nutri-content"><p>Total Fat  <span style="padding-left:15px; font-size:35px; color:#E06029">{{fact.fields.nf_total_fat}}g</span></p></div>
+	   <div class="nutri-contnet nutrition-fact-title"> Nutrition Fact </div>
+	   <div class="secondary-font nutri-content"><p>{{fact.fields.item_name}} - From <strong>{{fact.fields.brand_name}}</strong></p></div>
+	   <div style="margin-bottom:3px; margin-top:0px; text-align:center; width:99%; height:10px; background-color:#47440F"></div>
+	   <p class="secondary-font nutri-content"><strong>Amount Per Serving<span style="padding-left:15px; color:#AAAD2A">{{fact.fields.nf_serving_size_qty}}</span></strong></p>
+	   <div style="margin-bottom:0px; margin-top:-5px; text-align:center; width:99%; height:2px; background-color:#47440F"></div>
+  	 <div class="secondary-font nutri-content"><p>Calories<span style="padding-left:15px; font-size:35px; color:#E06029">{{fact.fields.nf_calories}}</span></p></div>
+  	 <div style="margin-bottom:3px; margin-top:-5px; text-align:center; width:99%; height:5px; background-color:#47440F"></div>
+  	 <div class="secondary-font nutri-content"><p>Total Fat  <span style="padding-left:15px; font-size:35px; color:#E06029">{{fact.fields.nf_total_fat}}g</span></p></div>
 	</div>
 </div>
-<!-- 
-{
-  "total_hits": 20277,
-  "max_score": 10.676512,
-  "hits": [
-    {
-      "_id": "513fceb375b8dbbc21000022",
-      "fields": {
-        "item_name": "Cheddar Cheese - 1 cup, diced",
-        "brand_name": "USDA",
-        "nf_calories": 531.96,
-        "nf_total_fat": 43.74
-      }
-    },
-    {
-      "_id": "513fceb375b8dbbc2100001d",
-      "fields": {
-        "item_name": "Cheddar Cheese - 1 slice (1 oz)",
-        "brand_name": "USDA",
-        "nf_calories": 112.84,
-        "nf_total_fat": 9.28
-      }
-    }
-  ]
-} -->

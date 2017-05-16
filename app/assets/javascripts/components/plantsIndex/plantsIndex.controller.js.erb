@@ -7,6 +7,7 @@ PlantsIndexController.$inject = ['$state','plantsService'];
 function PlantsIndexController($state, plantsService) {
   var vm = this;
 
+  // PLANTS INDEX
   vm.plants = [];
   vm.currentUserGarden = {};
   vm.currentUser = {};
@@ -16,7 +17,6 @@ function PlantsIndexController($state, plantsService) {
   vm.userId = {};
   vm.tellUserToStop = tellUserToStop;
   var userId = vm.userId;
-  
 
   activate();
   tellUserToStop();
@@ -39,8 +39,8 @@ function PlantsIndexController($state, plantsService) {
         console.log(vm.gardenPlants)
       } else if (vm.currentUserGarden.size == 2) {
         vm.limit = 48;
-      }
-    })
+      };
+    });
   }
 
 //GIVE LIMIT TO THE USER HOW MANY TO ADD
@@ -61,15 +61,13 @@ function PlantsIndexController($state, plantsService) {
         alert('you must create a garden to save garden plants!');
         $state.go('gardenNew', {userId: userId});
       } else {
-          plantsService
-          .saveToGarden(plant_id, plant_name, plant_icon)
-          .then(function(res) {
-            if(res.status == 201) {
-
-              vm.gardenPlants += 1;
-              alert('plant has been saved in your garden!')};
-          });   
+        plantsService
+        .saveToGarden(plant_id, plant_name, plant_icon)
+        .then(function(res) {
+          if(res.status == 201) {
+            vm.gardenPlants += 1;
+            alert('plant has been saved in your garden!')};
+          });
       }
-  } 
-
+  }
 }

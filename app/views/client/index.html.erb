@@ -3,76 +3,54 @@
   <head>
     <title>SeedAndSee</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <link href="https://fonts.googleapis.com/css?family=Galindo|Muli" rel="stylesheet">
   </head>
 
-  <body ng-app="seedAndSee">
-    <nav class="navbar navbar-default" style="margin:0">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand brand" href="/">
-            <img class="brandimg img-responsive" src="http://i.imgur.com/YSEdmh5.png" alt="">
-          </a>
-        </div>
+<body ng-app="seedAndSee">
+  <nav class="navbar navbar-default" style="margin:0">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand brand" href="/">
+          <img class="brandimg img-responsive" src="http://i.imgur.com/YSEdmh5.png" alt="">
+        </a>
+      </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-          <% if user_signed_in? %>
-          <ul class="nav navbar-nav">
-            <li>
-              <a ui-sref="postIndex">News Feed</a>
-            </li>
-            <li>
-              <a ui-sref="plants({userId:<%= current_user.id%>})">View Plants</a>
-            </li>
-            <li>
-              <a ui-sref="postNew({userId:<%= current_user.id%>})">New Post</a>
-            </li>
-          </ul>
+      <% if user_signed_in? %>
+      <ul class="nav navbar-nav">
+        <li><a ui-sref="postIndex">News Feed</a></li>
+        <li><a ui-sref="plants({userId:<%= current_user.id%>})">View Plants</a></li>
+        <li><a ui-sref="postNew({userId:<%= current_user.id%>})">New Post</a></li>
+      </ul>
 
 
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a ui-sref="gardenIndex({userId:<%= current_user.id%>})">My Garden</a>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a ui-sref="userShow({id:<%= current_user.id %>})">View Profile<span class="sr-only">(current)</span></a>
-                </li>
-                <li>
-                  <%= link_to 'Edit Account', edit_user_registration_path, target: '_self' %>
-                </li>
-                <li role="separator" class="divider"></li>
-                <li>
-                  <%= link_to 'Sign Out', destroy_user_session_path, method: 'delete', target: '_self' %>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <% end %>
-
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-    <!-- 
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
-    <h1>Angular front-end</h1>
-    -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a ui-sref="gardenIndex({userId:<%= current_user.id%>})">My Garden</a></li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a></li>
+      </ul>
+      <ul class="dropdown-menu">
+        <li><a ui-sref="userShow({id:<%= current_user.id %>})">View Profile<span class="sr-only">(current)</span></a></li>
+            <li><%= link_to 'Edit Account', edit_user_registration_path, target: '_self' %></li>
+            <li role="separator" class="divider"></li>
+            <li><%= link_to 'Sign Out', destroy_user_session_path, method: 'delete', target: '_self' %></li>
+      </ul>
+      <% end %>
+    </div>
+  </div>
+</nav>
+    <!-- ANGULAR VIEW BELOW -->
     <ui-view></ui-view>
+
   </body>
 </html>

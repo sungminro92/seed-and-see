@@ -12,19 +12,23 @@ function UserShowController($stateParams, usersService, postsService, $window) {
   vm.deletePost = deletePost;
   vm.currentUser = {};
 
+  activate();
+
+  function activate() {
 	usersService
-  	.getUser($stateParams.id) 
-  	// ?????
+  var userId = $stateParams.id;
+  	.getUser(userId)
   	.then(function(res) {
       console.log(res)
 	    vm.user = res.data.user;
       vm.posts = res.data.posts;
       vm.currentUser = res.data.current_user;
-	});
+	  });
+  }
 
+  // DELETE POST
   function deletePost(post) {
     var userId = $stateParams.userId;
-    // var id = $stateParams.id;
     var id = post.id;
 
     postsService
@@ -34,7 +38,5 @@ function UserShowController($stateParams, usersService, postsService, $window) {
         alert('your post has been deleted!');
         $window.location.reload();
       });
-  };
-
-
+  }
 }

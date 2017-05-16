@@ -1,16 +1,17 @@
+<!-- POST EDIT PAGE -->
 <div class="post-edit-page">
-<h1 style="font-family: 'Galindo', cursive" class="edit-new-title">Edit Post</h1>
+  <h1 style="font-family: 'Galindo', cursive" class="edit-new-title">Edit Post</h1>
 
-<form class="form-group">
-  <label>Title</label>
-  <input class="form-control" ng-model="$ctrl.post.title" />
-  <br/>
-  <label>content</label>
-  <textarea rows="10" class="textarea-input form-control" ng-model="$ctrl.post.description"></textarea>
-  <br/>
-  <label>Image URL</label>
-  <input  class="form-control" ng-model="$ctrl.post.img_url" />
-  <br/>
-  <button class="button search-button" ng-click="$ctrl.savePost()">Update</button>
-</form>
+  <form class="form-group">
+    <label>Title</label>
+    <input class="form-control" ng-model="$ctrl.post.title" />
+      <br/>
+    <label>Content</label>
+    <textarea rows="10" class="textarea-input form-control" ng-model="$ctrl.post.description"></textarea>
+      <br/>
+    <label>Image URL</label>
+    <input  class="form-control" ng-model="$ctrl.post.img_url" />
+      <br/>
+    <button class="button search-button" ng-click="$ctrl.savePost()">Update</button>
+  </form>
 </div>

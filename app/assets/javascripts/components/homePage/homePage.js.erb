@@ -1,7 +1,7 @@
 angular
   .module('seedAndSee')
   .component('homePage', {
-  	// because we added .erb --> we can access rails stuff. 
+  	// because we added .erb --> we can access rails stuff.
   	// ex) we can use asset_path
     templateUrl: '<%= asset_path("components/homePage/homePage") %>',
     controller: HomePageController
@@ -11,7 +11,6 @@ HomePageController.$inject = ['$http'];
 
 function HomePageController($http) {
   var vm = this;
-
 
   vm.message = 'Hello World!';
 }

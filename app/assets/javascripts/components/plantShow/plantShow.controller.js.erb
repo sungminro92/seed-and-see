@@ -7,13 +7,14 @@ PlantShowController.$inject = ['$stateParams','plantsService'];
 function PlantShowController($stateParams, plantsService) {
   var vm = this;
 
+  // NUTRITION FACTS
   vm.facts = [];
   vm.serachPlant = {};
 
+  // SEARCH TERM DEFINED
   vm.plantName = $stateParams.id
-  // var id = $stateParams.id;
-  
-  activate();  
+
+  activate();
 
   function activate() {
     plantsService
@@ -23,5 +24,4 @@ function PlantShowController($stateParams, plantsService) {
         vm.facts = res.data.hits;
       });
   }
-
 }

@@ -15,22 +15,19 @@ function PostNewController($state, $stateParams, postsService) {
 
   vm.savePost = savePost;
 
-
+  // NEW POST
   function savePost() {
-    // console.log(vm.post);
     var userId = $stateParams.userId;
-
     postsService
-      .createPost(vm.post, userId) 
-      // backend already knows the user. don't need userId specified in front end
+      .createPost(vm.post, userId)
       .then(function(res) {
         if(res.status == 201) {
-          $state.go('userShow', { id: userId})
+          $state.go('userShow', {
+            id: userId
+          })
         } else {
           alert('Something went wrong. check your inputs again')
         };
       });
-  };
-
-  
+  }
 }

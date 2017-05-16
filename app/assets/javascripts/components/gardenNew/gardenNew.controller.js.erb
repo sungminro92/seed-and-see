@@ -6,28 +6,28 @@ GardenNewController.$inject = ['$state', '$stateParams', 'gardenService'];
 
 function GardenNewController($state, $stateParams, gardenService) {
   var vm = this;
-  
+
 	vm.garden = {
 	name:'',
 	size:''
-  	};
+  };
 
   vm.saveGarden = saveGarden;
 
-  // redirect user if user has a garden
+// GARDEN (if user has a garden, redirect to GARDEN INDEX)
   gardenService
   	.getGarden()
   	.then(function(res) {
       console.log(res)
   		if (res.data == null) {
-        //alert('you already have a garden!');
+        alert('you already have a garden!');
   			$state.go('gardenIndex', { userId: res.data.user_id })
   		} else {
   			vm.garden.name = '';
   		};
   	})
 
-  // create a garden to user's
+  // CREATE A GARDEN
   function saveGarden() {
   	gardenService
       .createGarden($stateParams.userId, vm.garden)
@@ -38,8 +38,6 @@ function GardenNewController($state, $stateParams, gardenService) {
       	} else {
       		alert('Something went wrong')
       	};
-    });
+      });
   };
-
-
 }

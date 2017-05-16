@@ -9,9 +9,6 @@ class Api::UsersController < ApplicationController
   	@posts = @user.posts
   	@current_user = current_user
   	render json: { user: @user, posts: @posts, current_user: @current_user }
-
-
   end
 
 end
-

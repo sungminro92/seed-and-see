@@ -4,8 +4,6 @@ class Api::GardenController < ApplicationController
 	  render json: @garden.to_json(include: [:user, :garden_plants]) # is this necessary ?
   end
 
-
-
   def create
   	@garden = Garden.new(garden_params)
 
@@ -16,10 +14,9 @@ class Api::GardenController < ApplicationController
     end
   end
 
-
   def destroy
-  end
 
+  end
 
   private
   def garden_params
@@ -27,6 +24,5 @@ class Api::GardenController < ApplicationController
           .permit(:name, :size)
           .merge(user_id: current_user.id)
   end
-
 
 end

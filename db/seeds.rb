@@ -67,8 +67,6 @@ brusselsprout = Plant.create(
 bokchoy = Plant.create(
 	name: 'bokchoy', days_to_water:'', img_url: 'https://image.ibb.co/bxUfo5/bokchoy.png' )
 
-
-
 post1 = Post.create(
 	title: "Intruder in my garden", description: "I found this plant (which I did not plant) growing in one of my garden pots. It does not look like a weed to me. Can anyone identify the plant?", img_url: "http://i.imgur.com/ShObbof.jpg", user_id: user1.id)
 post2 = Post.create(
@@ -86,7 +84,6 @@ post6 = Post.create(
 	title: "What's so bad about bamboo?", description: "I have five species of bamboo on my property and I love it. It’s the fastest growing woody plant in the world: Individual culms (stalks) can grow as fast as a foot per day (my elderly father-in-law would sometimes relax in our yard with a lawn chair and say he was watching the stuff grow).", img_url: "http://i.imgur.com/8o8Wm9z.gif", user_id: user1.id)
 post7 = Post.create(
 	title: "What is the name of this flower that blooms in every 50 years?", description: "This picture has been circulating in social media stating that it’s a flower which blooms once in 50 years and it is called \"Sankhupushpam\"", img_url: "http://i.imgur.com/CJ9yXDS.jpg", user_id: user1.id)
-
 
 comment1_post1 = Comment.create(
 	content: "I guessed Fraxinus because of the arrangement of leaves, which is pinnately compound with opposite arrangement along stems. The pattern of stems called \"opposite\" isn't as common as the \"alternating\" arrangement. It also looks hefty enough to become a tree. Keep us posted.", post_id: post1.id, user_id: user2.id)
@@ -157,9 +154,6 @@ The image shown in the question is nothing but a genus of Sea Snails. It’s jus
 comment2_post7 = Comment.create(
 	content: "I do not think this is a flower of any kind. But it is a sea shell photograph of which was taken by one Kuroda in 1959. Hirtomurex is a genus of sea snails, marine gastropod mollusks in the subfamily Coralliophilinae, the coral snails, within the family Muricidae, the murex snails and rock snails.", post_id: post7.id, user_id: user6.id)
 comment3_post7 = Comment.create(
-	content: "The picture you have there is made up. There is no flower like that. But there are plants that take a long time to flower for the first time.
-
-A saguaro cactus takes at least 70 years to do so in the wild, but will then flower every spring without fail for the next 150 years or so.", post_id: post7.id, user_id: user4.id)
-
+	content: "The picture you have there is made up. There is no flower like that. But there are plants that take a long time to flower for the first time. A saguaro cactus takes at least 70 years to do so in the wild, but will then flower every spring without fail for the next 150 years or so.", post_id: post7.id, user_id: user4.id)
 
 print "\n Seeding Done."

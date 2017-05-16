@@ -5,11 +5,11 @@ class ClientController < ApplicationController
   layout false
 
   def index
-  	# @plants = Plant.all
+
   end
 
   def show
-  	@user = User.find[params(:id)]
-  end 
+
+  end
 end
 # this controller action will render the HTML file.

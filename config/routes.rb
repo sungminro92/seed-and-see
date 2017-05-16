@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  
+
   devise_for :users, controllers: {
   registrations: 'users/registrations'
 	}
@@ -16,7 +16,7 @@ Rails.application.routes.draw do
     get '/plants/:plant_name' => 'plants#show'
     # ???? DOES THIS WORK?
     post '/users/:userId/garden' => 'garden#create'
-    # post 
+    # post
     resources :users do
       resources :garden
     	resources :posts, :except => :index do
@@ -24,7 +24,6 @@ Rails.application.routes.draw do
     	end
     end
   end
-
 
   root to: 'client#index'
   get '*path', to: 'client#index'

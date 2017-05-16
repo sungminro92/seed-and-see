@@ -14,7 +14,7 @@ function postsService($http, $stateParams) {
 
   factory.getPost = function(userId, id) {
     return $http
-      .get('/api/users/'+userId+'/posts/'+ id);
+      .get('/api/users/' + userId + '/posts/' + id);
   }
 
   factory.updatePost = function(userId, id, post) {
@@ -29,10 +29,8 @@ function postsService($http, $stateParams) {
 
   factory.deletePost = function(userId, id) {
     return $http
-      .delete('/api/users/' + userId + '/posts/' + id)
+      .delete('/api/users/' + userId + '/posts/' + id);
   }
 
   return factory;
-
-
 }
