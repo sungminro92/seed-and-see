@@ -19,7 +19,7 @@ function GardenIndexController( $stateParams, $state, gardenService, $window) {
   var userId = $stateParams.userId
 
   gardenService
-  	.getGarden();
+  	.getGarden()
   	.then(function(res){
   		console.log(res)
   		// If user does not have a garden redirect to 'gardenNew'

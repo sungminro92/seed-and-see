@@ -6,7 +6,6 @@ UserShowController.$inject = ['$stateParams','usersService', 'postsService', '$w
 
 function UserShowController($stateParams, usersService, postsService, $window) {
   var vm = this;
-
   vm.user = {};
   vm.posts = [];
   vm.deletePost = deletePost;
@@ -15,8 +14,8 @@ function UserShowController($stateParams, usersService, postsService, $window) {
   activate();
 
   function activate() {
-	usersService
   var userId = $stateParams.id;
+  usersService
   	.getUser(userId)
   	.then(function(res) {
       console.log(res)
