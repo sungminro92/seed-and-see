@@ -1,5 +1,5 @@
-# SEED & SEE 
-gSEED & SEE websites is educational garden plan for children. I planned this so that Chiildren involve in nature-friendly activities both online and in real life! Major activities children user can experience is: planning & managing current garden with automatic watering schedule alerts, share interesting facts and events about their garden to news feed & communicate through comments, search for nutrition facts about any kind of food and ingredients, and lastly learn about the importance of life! 
+# SEED & SEE / Build your own garden and learn more about food resources! 
+SEED & SEE website is educational garden plan for children. I planned this so that Chiildren involve in nature-friendly activities both online and in real life! Major activities children user can experience is: planning & managing current garden with automatic watering schedule alerts, share interesting facts and events about their garden to news feed & communicate through comments, search for nutrition facts about any kind of food and ingredients, and lastly learn about the importance of life! 
 
 # TOOLS USED
 * Angular front end views
