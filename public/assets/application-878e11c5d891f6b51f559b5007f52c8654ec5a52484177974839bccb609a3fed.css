@@ -5791,15 +5791,9 @@ tbody.collapse.in {
 /* line 163, /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-brand {
   float: left;
-  padding: 15px 15px;
-  font-size: 18px;
-  line-height: 20px;
-  height: 50px;
+  height: 65px;
 }
 /* line 170, /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-brand:hover, .navbar-brand:focus {
-  text-decoration: none;
-}
 /* line 175, /Users/sungminnie/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-brand > img {
   display: block;
