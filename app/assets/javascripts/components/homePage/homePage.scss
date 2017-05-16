@@ -19,6 +19,11 @@ body {
 .img-circle {
 	width: 200px;
 	height: 200px;
+  transition: all .2s ease-in-out;
+}
+
+.img-circle:hover {
+  transform: scale(1.15);
 }
 
 .circles {
