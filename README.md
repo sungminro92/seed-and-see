@@ -42,6 +42,9 @@ gSEED & SEE websites is educational garden plan for children. I planned this so 
 7. PROFILE
 	* User knows number of posts and comments user has currently
 	gi* Manage posts by editing and deleting.
+	
+# TRELLO BOARD
+[My Trello Board](https://trello.com/b/DqNb2Hmn/project-5-seed-see-ruby-on-rails-angular)
 
 # ERD diagram
 
