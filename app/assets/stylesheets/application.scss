@@ -33,14 +33,13 @@
 .brand {
   position: absolute;
   left: 50%;
-  margin-left: -50px !important;  /* 50% of your logo width */
+  margin-left: -58px !important;  /* 50% of your logo width */
   display: block;
   padding: 0;
+	height: 60px;
 }
 
 .brandimg {
-  padding-top: 2px;
-	display: block;
-  max-width: 50%;
-  height: auto;
+	height: 98%;
+	margin: 2px;
 }
